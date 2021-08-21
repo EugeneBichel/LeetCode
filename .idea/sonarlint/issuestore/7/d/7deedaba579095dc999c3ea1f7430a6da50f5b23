@@ -1,0 +1,37 @@
+
+m	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ë¦€8¿ª‡ó¬/
+m	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™…á“8‰­†ó¬/
+m	java:S117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Õ¶û8·Û„ó¬/
+l	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©‰è8Áª‡ó¬/
+t
+java:S3776&"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(ûç‡ þÿÿÿÿ8Ýª‡ó¬/
+L
+java:S6212("/Declare this local variable with "var" instead.(ä¾îÌ8¨­†ó¬/
+Q
+java:S6212)"/Declare this local variable with "var" instead.(Òüçšÿÿÿÿÿ8ÐÛ„ó¬/
+K
+java:S6212*"/Declare this local variable with "var" instead.(üòý8áª‡ó¬/
+L
+java:S6212."/Declare this local variable with "var" instead.(ãÝ“•8âª‡ó¬/
+L
+java:S62128"/Declare this local variable with "var" instead.(½¬‰ž8åª‡ó¬/
+<
+java:S16599"Declare "j" on a separate line.(‚Ìªñ8¯­†ó¬/
+A
+java:S1659:"Declare "y" on a separate line.(á¢æ×ýÿÿÿÿ8çª‡ó¬/
+a
+java:S3358A"DExtract this nested ternary operation into an independent statement.(øØÿ­8éª‡ó¬/
+o
+java:S3776H"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(™…á“8íª‡ó¬/
+L
+java:S6212K"/Declare this local variable with "var" instead.(íÿšô8îª‡ó¬/
+Q
+java:S6212N"/Declare this local variable with "var" instead.(Ô¡‚Ûþÿÿÿÿ8È­†ó¬/
+Q
+java:S6212O"/Declare this local variable with "var" instead.(Ü¥ŠÂüÿÿÿÿ8ðª‡ó¬/
+Q
+java:S6212_"/Declare this local variable with "var" instead.(ÑŸ®Ðÿÿÿÿÿ8ùª‡ó¬/
+`
+java:S3358a"DExtract this nested ternary operation into an independent statement.(ù‡€"8ÿª‡ó¬/
+L
+java:S1481;"*Remove this unused "write" local variable.(ô¬³ïüÿÿÿÿ8ƒ«‡ó¬/

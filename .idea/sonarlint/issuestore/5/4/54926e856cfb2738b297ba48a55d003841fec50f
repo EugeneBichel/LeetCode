@@ -1,0 +1,14 @@
+
+k
+java:S1104"PMake hash a static final constant or non-public and provide accessors if needed.(ß’ü¯ûÿÿÿÿ
+e
+java:S1104	"OMake key a static final constant or non-public and provide accessors if needed.(®éå†
+l
+java:S1104
+"QMake value a static final constant or non-public and provide accessors if needed.(Ù­Áæüÿÿÿÿ
+T
+java:S25895"7Remove this expression which always evaluates to "true"(êóÄž8Î®«š®/
+y
+java:S1488C"\Immediately return this expression instead of assigning it to the temporary variable "hash".(¹–ÐÝ8Ï®«š®/
+P
+java:S1144G".Remove this unused private "calcHash2" method.(é™ïäþÿÿÿÿ8å®«š®/

@@ -1,0 +1,27 @@
+
+L
+java:S3740C"/Provide the parametrized type for this generic.(ßî¶Û8š‹Œ®°/
+Q
+java:S3740D"/Provide the parametrized type for this generic.(‹¦°ñıÿÿÿÿ8›‹Œ®°/
+r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Šéôÿÿÿÿÿ8¢‹Œ®°/
+r	java:S117B"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Šéôÿÿÿÿÿ8£‹Œ®°/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¬‹Œ®°/
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8­‹Œ®°/
+m
+java:S1149C"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ßî¶Û8µ‹Œ®°/
+Q
+java:S62123"/Declare this local variable with "var" instead.(…„¥Éûÿÿÿÿ8Ä‹Œ®°/
+L
+java:S62124"/Declare this local variable with "var" instead.(Ÿ‰·ÿ8Å‹Œ®°/
+K
+java:S62125"/Declare this local variable with "var" instead.(ÖÑºC8Å‹Œ®°/
+Q
+java:S62126"/Declare this local variable with "var" instead.(µìÙäüÿÿÿÿ8Ñ‹Œ®°/
+;
+java:S1659J"Declare "c" on a separate line.(ªÈõ8Ù‹Œ®°/
+Q
+java:S6212K"/Declare this local variable with "var" instead.(ë¸Óƒşÿÿÿÿ8Ú‹Œ®°/
+B
+java:S1659L" Declare "nc" on a separate line.(›ç—şÿÿÿÿ8Ú‹Œ®°/

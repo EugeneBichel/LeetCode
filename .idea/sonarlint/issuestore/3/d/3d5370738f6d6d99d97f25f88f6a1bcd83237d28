@@ -1,0 +1,17 @@
+
+\
+java:S1118"":Add a private constructor to hide the implicit public one.(™Óöùÿÿÿÿ8¨½ŞÃµ/
+:
+java:S1659)"Declare "b" on a separate line.(¾†É§şÿÿÿÿ
+J
+java:S6212("/Declare this local variable with "var" instead.(¡ÕüÚûÿÿÿÿ
+J
+java:S62128"/Declare this local variable with "var" instead.(¿’ûùÿÿÿÿ
+D
+java:S62129"/Declare this local variable with "var" instead.(¹Ù§
+K
+java:S1144#".Remove this unused private "countBits" method.(½†Ğ‹8¼½ŞÃµ/
+B
+java:S1144'",Remove this unused private "usingDP" method.(ñŸŸ®
+M
+java:S11447"2Remove this unused private "usingPopCount" method.(¤¸™Ïùÿÿÿÿ

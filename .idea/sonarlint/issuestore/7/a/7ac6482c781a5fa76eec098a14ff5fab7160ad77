@@ -1,0 +1,19 @@
+
+m	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñ³ªÛ8ğ«°â©/
+E
+java:S6212%"/Declare this local variable with "var" instead.(²ŸÊÖ
+T	java:S106,"9Replace this use of System.out or System.err by a logger.(úñ»Y8°¸Ïá©/
+L
+java:S62128"/Declare this local variable with "var" instead.(ÍŞ‹¬8ù˜§â©/
+Q
+java:S6212:"/Declare this local variable with "var" instead.(¯–Ãèÿÿÿÿÿ8ú˜§â©/
+Q
+java:S6212;"/Declare this local variable with "var" instead.(Ú–ê½úÿÿÿÿ8ú˜§â©/
+t
+java:S3776U"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(şÖæùÿÿÿÿ8¯¬°â©/
+L
+java:S6212\"/Declare this local variable with "var" instead.(Ñ³ªÛ8Œî°â©/
+Q
+java:S6212^"/Declare this local variable with "var" instead.(¯–Ãèÿÿÿÿÿ8î°â©/
+Q
+java:S6212_"/Declare this local variable with "var" instead.(Ú–ê½úÿÿÿÿ8î°â©/

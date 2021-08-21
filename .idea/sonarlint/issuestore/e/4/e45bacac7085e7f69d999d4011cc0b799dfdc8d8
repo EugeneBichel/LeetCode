@@ -1,0 +1,16 @@
+
+z
+java:S4165-"_Remove this useless assignment; "s" already holds the assigned value along all execution paths.(³Öç¤üÿÿÿÿ
+z
+java:S41650"_Remove this useless assignment; "s" already holds the assigned value along all execution paths.(Ö ­Êüÿÿÿÿ
+u
+java:S4165'"_Remove this useless assignment; "s" already holds the assigned value along all execution paths.(ö¨»ò
+J
+java:S6212"/Declare this local variable with "var" instead.(ñ¿Œ¬úÿÿÿÿ
+J
+java:S6212	"/Declare this local variable with "var" instead.(€ê±Õúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(åö¡½úÿÿÿÿ
+J
+java:S6212#"/Declare this local variable with "var" instead.(¡Ò¾Žüÿÿÿÿ
+J
+java:S6212%"/Declare this local variable with "var" instead.(â¶ÓÉüÿÿÿÿ

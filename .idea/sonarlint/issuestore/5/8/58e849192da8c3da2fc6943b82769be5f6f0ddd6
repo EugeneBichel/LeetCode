@@ -1,0 +1,36 @@
+
+I
+java:S1121e".Extract the assignment out of this expression.(¶Ãèıÿÿÿÿ
+D
+java:S1121h".Extract the assignment out of this expression.(ãòÇÃ
+M
+java:S1854#"7Remove this useless assignment to local variable "res".(âœ»”
+N
+java:S1854"8Remove this useless assignment to local variable "dict".(ÜÈù¦
+K
+java:S1854"5Remove this useless assignment to local variable "s".(£ÿÚô
+M
+java:S1854"8Remove this useless assignment to local variable "dict".(Íê´~
+K
+java:S1854"5Remove this useless assignment to local variable "s".(¦¿’†
+S
+java:S1854"8Remove this useless assignment to local variable "dict".(ë±¶üÿÿÿÿ
+K
+java:S1854"5Remove this useless assignment to local variable "s".(è§”ß
+J
+java:S6212"/Declare this local variable with "var" instead.(¯™Ø‡øÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(è§”ß
+V	java:S125'"<This block of commented-out lines of code should be removed.(ßÍ¸Çıÿÿÿÿ
+L
+java:S6212-"/Declare this local variable with "var" instead.(‘‹ïš8¡ã¸°¨/
+L
+java:S6212/"/Declare this local variable with "var" instead.(Âç½ö8¢ã¸°¨/
+L
+java:S62120"/Declare this local variable with "var" instead.(Û†²Ğ8¢ã¸°¨/
+J
+java:S6212="/Declare this local variable with "var" instead.(ÿóÉ†úÿÿÿÿ
+>
+java:S1481#"(Remove this unused "res" local variable.(âœ»”
+\
+java:S1144+":Remove this unused private "useDynamicProgramming" method.(ÑÉˆøÿÿÿÿ8Ü­±°¨/

@@ -1,0 +1,39 @@
+
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÜ›É
+J
+java:S6212"/Declare this local variable with "var" instead.(¥ë´ëþÿÿÿÿ
+E
+java:S6212
+"/Declare this local variable with "var" instead.(¹ÕÜÌ
+J
+java:S6212"/Declare this local variable with "var" instead.(Ý÷Ó»üÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ª¯¢­ýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¸šñÙüÿÿÿÿ
+5
+java:S1659"Declare "m" on a separate line.(Ÿž²²
+5
+java:S1659"Declare "j" on a separate line.(º×â
+w
+java:S2234"\Parameters to addBinary2 have the same names but not the same order as the method arguments.(…ðÿûüÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(€ê±Õúÿÿÿÿ
+J
+java:S6212-"/Declare this local variable with "var" instead.(€ê±Õúÿÿÿÿ
+J
+java:S6212."/Declare this local variable with "var" instead.(þ»ªùÿÿÿÿ
+E
+java:S6212/"/Declare this local variable with "var" instead.(Šå©ª
+J
+java:S62125"/Declare this local variable with "var" instead.(€ê±Õúÿÿÿÿ
+J
+java:S62126"/Declare this local variable with "var" instead.(¥âœÏøÿÿÿÿ
+J
+java:S62127"/Declare this local variable with "var" instead.(†Ó„þÿÿÿÿ
+J
+java:S6212B"/Declare this local variable with "var" instead.(èŠ¿Éüÿÿÿÿ
+E
+java:S6212C"/Declare this local variable with "var" instead.(¦é­•
+<
+java:S1905F"&Remove this unnecessary cast to "int".(ÉÊ‘ý
+;
+java:S1905G"&Remove this unnecessary cast to "int".(Ê—‚	

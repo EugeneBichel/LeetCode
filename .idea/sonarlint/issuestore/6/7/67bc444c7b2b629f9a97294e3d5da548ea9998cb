@@ -1,0 +1,21 @@
+
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Ÿ˜‰‰©/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8 ˜‰‰©/
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¡˜‰‰©/
+T
+java:S1854"9Remove this useless assignment to local variable "start".(ÚƒßÌùÿÿÿÿ
+E
+java:S6212	"/Declare this local variable with "var" instead.(×€‚Ö
+Q
+java:S6212
+"/Declare this local variable with "var" instead.(¡Î»Äúÿÿÿÿ8÷¿‰‰©/
+]	java:S125"<This block of commented-out lines of code should be removed.(‰Ö‘ğÿÿÿÿÿ8ù¿‰‰©/
+J
+java:S6212"/Declare this local variable with "var" instead.(â¶ÓÉüÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(¢³¯¯
+E
+java:S1481"*Remove this unused "start" local variable.(ÚƒßÌùÿÿÿÿ

@@ -1,0 +1,9 @@
+
+m
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ë“Ô¾8™È¢î§/
+L
+java:S6212"/Declare this local variable with "var" instead.(é°Ží8Ú¬¢î§/
+Q
+java:S6212+"/Declare this local variable with "var" instead.(€ê±Õúÿÿÿÿ8á¬¢î§/
+N
+java:S1612,",Replace this lambda with a method reference.(ÓÐµ•øÿÿÿÿ8¿Ð£î§/

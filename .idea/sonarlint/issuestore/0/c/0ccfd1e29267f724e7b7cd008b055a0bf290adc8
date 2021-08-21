@@ -1,0 +1,9 @@
+
+d
+java:S2259"BA "NullPointerException" could be thrown; "prev" is nullable here.(’†±žÿÿÿÿÿ8ïµ¦¶³/
+_
+java:S2259"BA "NullPointerException" could be thrown; "head" is nullable here.(Â™ÉÑ8ðµ¦¶³/
+r
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¢Ìá²úÿÿÿÿ8óµ¦¶³/
+Q
+java:S6212"/Declare this local variable with "var" instead.(èïž­þÿÿÿÿ8÷µ¦¶³/

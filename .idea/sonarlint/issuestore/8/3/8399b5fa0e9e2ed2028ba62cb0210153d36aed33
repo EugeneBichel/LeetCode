@@ -1,0 +1,16 @@
+
+€
+java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "median".(ãàäúÿÿÿÿ8Æşó×ª/
+L
+java:S6212"/Declare this local variable with "var" instead.(›ÔË8Êşó×ª/
+{
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(†Šûôşÿÿÿÿ8Íşó×ª/
+Q
+java:S6212"/Declare this local variable with "var" instead.(†Šûôşÿÿÿÿ8Íşó×ª/
+L
+java:S6212"/Declare this local variable with "var" instead.(•úÙÚ8Îşó×ª/
+Q
+java:S6212	"/Declare this local variable with "var" instead.(¿£Ò¸üÿÿÿÿ8Ïşó×ª/
+L
+java:S6212
+"/Declare this local variable with "var" instead.(ñ¥®Ê8Ñşó×ª/

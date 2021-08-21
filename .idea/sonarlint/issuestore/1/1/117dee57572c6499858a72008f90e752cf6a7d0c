@@ -1,0 +1,30 @@
+
+Q
+java:S37404"/Provide the parametrized type for this generic.(‹¦°ñıÿÿÿÿ8Î³‹®°/
+L
+java:S3740N"/Provide the parametrized type for this generic.(ƒ©»8Ñ³‹®°/
+N
+java:S1128",Remove this unused import 'java.util.Stack'.(ŞÈ†üúÿÿÿÿ8¯Ø‹®°/
+m	java:S116""LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¢ÓÛüÿÿÿÿ8ï³‹®°/
+t
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(Úşüÿÿÿÿ8Š´‹®°/
+L
+java:S6212("/Declare this local variable with "var" instead.(şß×8¹Ø‹®°/
+Q
+java:S6212)"/Declare this local variable with "var" instead.(µÓğñûÿÿÿÿ8¹Ø‹®°/
+K
+java:S6212*"/Declare this local variable with "var" instead.(ÖÑºC8ºØ‹®°/
+Q
+java:S6212+"/Declare this local variable with "var" instead.(µìÙäüÿÿÿÿ8»Ø‹®°/
+Q
+java:S6212/"/Declare this local variable with "var" instead.(…„¥Éûÿÿÿÿ8´‹®°/
+K
+java:S62121"/Declare this local variable with "var" instead.(ÖÑºC8¾Ø‹®°/
+Q
+java:S62122"/Declare this local variable with "var" instead.(µìÙäüÿÿÿÿ8¿Ø‹®°/
+Q
+java:S62129"/Declare this local variable with "var" instead.(Õ³ÅÃøÿÿÿÿ8ÂØ‹®°/
+Q
+java:S6212A"/Declare this local variable with "var" instead.(íÍÃ©şÿÿÿÿ8ÄØ‹®°/
+Q
+java:S6212O"/Declare this local variable with "var" instead.(ë¸Óƒşÿÿÿÿ8˜´‹®°/

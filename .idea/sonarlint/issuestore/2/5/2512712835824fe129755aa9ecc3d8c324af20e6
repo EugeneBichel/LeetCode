@@ -1,0 +1,19 @@
+
+i
+java:S3824e"NReplace this "Map.get()" and condition with a call to "Map.computeIfAbsent()".(›Üòìûÿÿÿÿ
+k
+java:S1149]"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ê¾’Ôúÿÿÿÿ
+E
+java:S6212""/Declare this local variable with "var" instead.(‚ß¤›
+J
+java:S6212$"/Declare this local variable with "var" instead.(Œá€—þÿÿÿÿ
+J
+java:S6212("/Declare this local variable with "var" instead.(µÂôçÿÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+E
+java:S6212*"/Declare this local variable with "var" instead.(™ìÆ’
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(ÒÁêî
+J
+java:S6212u"/Declare this local variable with "var" instead.(Æ×¡±ÿÿÿÿÿ
+K
+java:S6212…"/Declare this local variable with "var" instead.(ôÈ«öùÿÿÿÿ
