@@ -1,15 +1,0 @@
-
-T
-java:S1854"7Remove this useless assignment to local variable "ans".(ç¢Âª8»¾¸Äµ/
-E
-java:S6212"/Declare this local variable with "var" instead.(¼¡Í§
-E
-java:S6212"/Declare this local variable with "var" instead.(¯Äâ
-E
-java:S6212"/Declare this local variable with "var" instead.(¾§À³
-E
-java:S6212%"/Declare this local variable with "var" instead.(–Ä×…
-E
-java:S6212+"/Declare this local variable with "var" instead.(–Ä×…
-E
-java:S1481"(Remove this unused "ans" local variable.(ç¢Âª8È¾¸Äµ/

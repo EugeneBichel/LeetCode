@@ -1,8 +1,0 @@
-
-S
-java:S1153A"1Directly append the argument of String.valueOf().(Ëº¥üøÿÿÿÿ8Ëû—¢µ/
-W	java:S125"<This block of commented-out lines of code should be removed.(¤Ùç,8âª“¡µ/
-L
-java:S6212!"/Declare this local variable with "var" instead.(õŸÛ”8ßû—¢µ/
-L
-java:S62125"/Declare this local variable with "var" instead.(æ¬ÛĞ8æû—¢µ/

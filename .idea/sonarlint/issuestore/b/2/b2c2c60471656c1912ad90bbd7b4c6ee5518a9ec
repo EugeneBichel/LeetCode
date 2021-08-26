@@ -1,23 +1,0 @@
-
-L
-java:S3740r"/Provide the parametrized type for this generic.(ğåÊ‡8Ø„ÉÆ®/
-u	java:S135%"YReduce the total number of break and continue statements in this loop to use at most one.(ÿ±š8°Œ¿Æ®/
-u	java:S135M"YReduce the total number of break and continue statements in this loop to use at most one.(ÿ±š8±Œ¿Æ®/
-T
-java:S25892"7Remove this expression which always evaluates to "true"(üüÊ¢8´Œ¿Æ®/
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ğë¡ˆşÿÿÿÿ8¿Œ¿Æ®/
-L
-java:S6212"/Declare this local variable with "var" instead.(…òşğ8ÃŒ¿Æ®/
-Q
-java:S6212""/Declare this local variable with "var" instead.(ı¼œ°ùÿÿÿÿ8ÅŒ¿Æ®/
-Q
-java:S6212G"/Declare this local variable with "var" instead.(ØÕ—©ıÿÿÿÿ8ÊŒ¿Æ®/
-Q
-java:S6212J"/Declare this local variable with "var" instead.(ı¼œ°ùÿÿÿÿ8ËŒ¿Æ®/
-9
-java:S1116N"Remove this empty statement.(ÒÁœÛ8¬ö½Æ®/
->
-java:S1116O"Remove this empty statement.(¶¥Æûÿÿÿÿ8ÍŒ¿Æ®/
-Q
-java:S6212f"/Declare this local variable with "var" instead.(¯ø…¶ûÿÿÿÿ8Ë÷ÉÆ®/

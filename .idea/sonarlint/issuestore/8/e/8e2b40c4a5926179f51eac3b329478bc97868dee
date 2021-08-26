@@ -1,19 +1,0 @@
-
-t
-java:S3008"WRename this field "HALF_INT_MIN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(∙С█Ї8Э╢ким/
-S	java:S106	"9Replace this use of System.out or System.err by a logger.(╕Ъё┘№    
-X	java:S125"<This block of commented-out lines of code should be removed.(∙С█Ї8я╢ким/
-Q
-java:S6212"/Declare this local variable with "var" instead.(√┬╓Т¤    8°╢ким/
-E
-java:S62122"/Declare this local variable with "var" instead.(з╕вЇ
-E
-java:S6212H"/Declare this local variable with "var" instead.(з╕вЇ
-E
-java:S6212K"/Declare this local variable with "var" instead.(м°ду
-L
-java:S6212a"/Declare this local variable with "var" instead.(з╕вЇ8Ф╖ким/
-E
-java:S6212b"/Declare this local variable with "var" instead.(┐Э╒Ш
-S
-java:S1144G"=Remove this unused private "divideUsingMultipleByTwo" method.(╖є┬Ё

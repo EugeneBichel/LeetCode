@@ -1,14 +1,0 @@
-
-r
-java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ8‰¼àÕµ/
-W	java:S125"<This block of commented-out lines of code should be removed.(¹åÅY8á•àÕµ/
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(“ŽæÀüÿÿÿÿ8’¼àÕµ/
-Q
-java:S6212"/Declare this local variable with "var" instead.(ŽÚšïüÿÿÿÿ8•¼àÕµ/
-K
-java:S6212("/Declare this local variable with "var" instead.(ßâ÷&8Þ±ÜÕµ/
-L
-java:S6212)"/Declare this local variable with "var" instead.(¢³¯¯8œ¼àÕµ/
-L
-java:S6212="/Declare this local variable with "var" instead.(¹æ˜Û8©¼àÕµ/

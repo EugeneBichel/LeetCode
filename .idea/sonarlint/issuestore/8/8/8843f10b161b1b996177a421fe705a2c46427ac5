@@ -1,5 +1,0 @@
-
-t	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(¯ÀÚè8¸ã†Þ±/
-t	java:S127("XRefactor the code in order to not assign to this loop counter from within the loop body.(¯ÀÚè8¸ã†Þ±/
-K
-java:S6212"/Declare this local variable with "var" instead.(Ñ»¾x8¼ã†Þ±/

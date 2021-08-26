@@ -1,14 +1,0 @@
-
-t	java:S127%"XRefactor the code in order to not assign to this loop counter from within the loop body.(²ÇË˜8Îû§øª/
-\
-java:S1118":Add a private constructor to hide the implicit public one.(¶äã£ûÿÿÿÿ8”°±Ëµ/
-E
-java:S6212 "/Declare this local variable with "var" instead.(ºƒãÛ
-J
-java:S62125"/Declare this local variable with "var" instead.(Ó´•’üÿÿÿÿ
-D
-java:S62127"/Declare this local variable with "var" instead.(ÊM
-P
-java:S1144".Remove this unused private "betterSol" method.(ÒÌ®…ûÿÿÿÿ8Î°±Ëµ/
-X
-java:S1144/"=Remove this unused private "lengthOfLongestSubstring" method.(ğúöãşÿÿÿÿ

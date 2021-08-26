@@ -1,18 +1,0 @@
-
-E
-java:S6212"/Declare this local variable with "var" instead.(ª’‰Ú
-V	java:S125"<This block of commented-out lines of code should be removed.(Ø¢äáüÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(þø÷úÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(Ç‘Šÿÿÿÿÿ
-P	java:S125"<This block of commented-out lines of code should be removed.(ïïëM
-?
-java:S1659$"$Declare "second" on a separate line.(«ð™¼üÿÿÿÿ
-m
-java:S3776,"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(‹üÒçþÿÿÿÿ
-S
-java:S1197,"8Move the array designator from the variable to the type.(‹üÒçþÿÿÿÿ
-E
-java:S62123"/Declare this local variable with "var" instead.(…Ïœš
-E
-java:S6212A"/Declare this local variable with "var" instead.(…Ïœš

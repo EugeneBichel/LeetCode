@@ -1,22 +1,0 @@
-
-L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8Šï£¢µ/
-P
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8‹ï£¢µ/
-P	java:S125"<This block of commented-out lines of code should be removed.(¤Ùç,
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(úª¨Æþÿÿÿÿ8¬‘¤¢µ/
-A
-java:S1659"Declare "k" on a separate line.(óîœ—ÿÿÿÿÿ8­‘¤¢µ/
-J
-java:S1659"(Declare "prevMinInd" on a separate line.(ÔØÅ–úÿÿÿÿ8­‘¤¢µ/
-J
-java:S1659"(Declare "prevSecMin" on a separate line.(ÔØÅ–úÿÿÿÿ8®‘¤¢µ/
-L
-java:S6212"/Declare this local variable with "var" instead.(»³½‹8µ‘¤¢µ/
-A
-java:S1659"$Declare "minInd" on a separate line.(‡ÿñ¯8¶‘¤¢µ/
-A
-java:S1659"$Declare "secMin" on a separate line.(‡ÿñ¯8·‘¤¢µ/
-K
-java:S6212"/Declare this local variable with "var" instead.(âäR8¸‘¤¢µ/

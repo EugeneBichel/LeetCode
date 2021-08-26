@@ -1,8 +1,0 @@
-
-g
-java:S1104
-"QMake tNode a static final constant or non-public and provide accessors if needed.(€ÊµÃ
-i
-java:S1104"NMake sb a static final constant or non-public and provide accessors if needed.(ûéÌáùÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(€ê±Õúÿÿÿÿ

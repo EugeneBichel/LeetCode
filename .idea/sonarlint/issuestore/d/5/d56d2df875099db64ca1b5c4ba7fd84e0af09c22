@@ -1,19 +1,0 @@
-
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Â¨´˜ùÿÿÿÿ
-R
-java:S1854"7Remove this useless assignment to local variable "val".(ëû†úÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(ÖŞÇ³úÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(„Ìûÿÿÿÿ
-V	java:S125"<This block of commented-out lines of code should be removed.(ªÆô¿ùÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(£ùï˜ùÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(ı¼œ°ùÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(¿½Ì»ÿÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(–‡§Óÿÿÿÿÿ
-C
-java:S1481"(Remove this unused "val" local variable.(ëû†úÿÿÿÿ

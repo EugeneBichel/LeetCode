@@ -1,12 +1,0 @@
-
-M
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ
-D
-java:S6212
-"/Declare this local variable with "var" instead.(´•à
-
-E
-java:S6212"/Declare this local variable with "var" instead.(÷¹Ò
-S	java:S106"9Replace this use of System.out or System.err by a logger.(„¶‹Ùıÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(…Ğ˜¶úÿÿÿÿ

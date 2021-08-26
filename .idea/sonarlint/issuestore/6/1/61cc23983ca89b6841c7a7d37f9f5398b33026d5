@@ -1,28 +1,0 @@
-
-D
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
-R
-java:S1854 "7Remove this useless assignment to local variable "str".(í Çàþÿÿÿÿ
-O
-java:S1854"9Remove this useless assignment to local variable "order".(ˆÍù‹
-M
-java:S1854"7Remove this useless assignment to local variable "str".(Œ§šÎ
-T
-java:S1854"9Remove this useless assignment to local variable "order".(žˆ‡ýøÿÿÿÿ
-J
-java:S6212"/Declare this local variable with "var" instead.(žˆ‡ýøÿÿÿÿ
-E
-java:S6212"/Declare this local variable with "var" instead.(Œ§šÎ
-J
-java:S6212%"/Declare this local variable with "var" instead.(¡—°Áüÿÿÿÿ
-N	java:S106&"9Replace this use of System.out or System.err by a logger.(žíðŠ
-m
-java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(žš÷Ïÿÿÿÿÿ
-E
-java:S6212*"/Declare this local variable with "var" instead.(²¾®à
-J
-java:S62123"/Declare this local variable with "var" instead.(èïž­þÿÿÿÿ
-E
-java:S6212="/Declare this local variable with "var" instead.(‚‚¨ú
-J
-java:S6212?"/Declare this local variable with "var" instead.(òùµ¨ÿÿÿÿÿ
