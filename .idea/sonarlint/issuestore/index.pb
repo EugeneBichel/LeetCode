@@ -45,3 +45,7 @@ p
 Zsrc/main/java/com/bichel/leetcode/bfs_dfs/MinimumMovestoMoveaBoxtoTheirTargetLocation.java,1/c/1c4be903c6718ce1fdde5c1e62c78f547fb16544
 }
 Msrc/main/java/com/bichel/leetcode/search/FindMinimumInRotatedSortedArray.java,8/a/8a86f40acce30fcdc6a753f18c457b23740433c8
+r
+Bsrc/main/java/com/bichel/leetcode/graph/MaximumAverageSubtree.java,1/c/1c31a8866918a8611626897a10dccb585dd29352
+j
+:src/main/java/com/bichel/leetcode/arrays/ArrayNesting.java,4/f/4fd1857c7897ff5d188ae01854323ac18dabf36c
