@@ -4,14 +4,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LRUCacheUsingMapAndDoubleLinkedList {
-
     class DLinkedNode {
         int key;
         int value;
         DLinkedNode prev;
         DLinkedNode next;
     }
-
     private void addNode(DLinkedNode node) {
         /**
          * Always add the new node right after head.
@@ -22,7 +20,6 @@ public class LRUCacheUsingMapAndDoubleLinkedList {
         head.next.prev = node;
         head.next = node;
     }
-
     private void removeNode(DLinkedNode node) {
         /**
          * Remove an existing node from the linked list.
@@ -33,7 +30,6 @@ public class LRUCacheUsingMapAndDoubleLinkedList {
         prev.next = next;
         next.prev = prev;
     }
-
     private void moveToHead(DLinkedNode node) {
         /**
          * Move certain node in between to the head.
@@ -79,7 +75,6 @@ public class LRUCacheUsingMapAndDoubleLinkedList {
 
         return node.value;
     }
-
     public void put(int key, int value) {
         DLinkedNode node = cache.get(key);
 

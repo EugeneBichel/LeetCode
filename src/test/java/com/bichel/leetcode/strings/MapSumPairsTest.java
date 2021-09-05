@@ -6,6 +6,9 @@ public class MapSumPairsTest {
 
     @Test
     public void testTestCase1() {
+
+        StringBuilder sb= new StringBuilder();
+
         MapSumPairs pr = new MapSumPairs();
         pr.insert("apple", 3);
         pr.sum("ap");
