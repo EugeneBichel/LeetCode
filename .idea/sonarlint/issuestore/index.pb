@@ -53,3 +53,5 @@ q
 Asrc/main/java/com/bichel/leetcode/dp/UniqueBinarySearchTrees.java,e/f/ef1f5eefd852172deec4e8fd1702326f3deef3d9
 v
 Fsrc/main/java/com/bichel/leetcode/graph/UniqueBinarySearchTreesII.java,6/c/6c12d9a4d3362a470bf986214e73261e71daa3b7
+n
+>src/test/java/com/bichel/leetcode/strings/MapSumPairsTest.java,f/d/fd1a23d9d7c2b8f46b26e4b116308d4f6035c702

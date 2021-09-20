@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class AllPossibleCombOfRElementsInArray {
     public Set<int[]> combinations(int n) {
-        Set<int[]> combinations = new HashSet<>();
+        Set<int[]> combs = new HashSet<>();
 
         int[] a = new int[n];
         for (int k = 0; k < n; k++) {
@@ -18,11 +18,11 @@ public class AllPossibleCombOfRElementsInArray {
                 a[j] = a[k];
                 a[k] = temp;
 
-                if (!combinations.contains(a))
-                    combinations.add(a);
+                if (!combs.contains(a))
+                    combs.add(a);
             }
         }
 
-        return combinations;
+        return combs;
     }
 }
