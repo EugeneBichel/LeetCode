@@ -1,4 +1,4 @@
-package com.bichel.leetcode;
+package com.bichel.leetcode.arrays;
 
 public class ProductExceptSelf {
     public static void main(String[] args) {
