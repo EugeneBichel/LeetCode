@@ -1,4 +1,4 @@
-package com.bichel.leetcode.combinations;
+package com.bichel.leetcode.combinations_permutations;
 
 /*
 Given an integer array nums that may contain duplicates,

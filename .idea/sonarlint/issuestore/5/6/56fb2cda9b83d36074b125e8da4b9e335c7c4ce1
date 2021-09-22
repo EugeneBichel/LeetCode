@@ -1,0 +1,8 @@
+
+=
+java:S16595""Declare "tail" on a separate line.(†°¸Æüÿÿÿÿ
+V	java:S125<"<This block of commented-out lines of code should be removed.(ŒèÐßúÿÿÿÿ
+V	java:S125?"<This block of commented-out lines of code should be removed.(þ¤ò®üÿÿÿÿ
+P	java:S125I"<This block of commented-out lines of code should be removed.(…Õ¨b
+S
+java:S1117]"8Rename "tail" which hides the field declared at line 53.(»€„®ûÿÿÿÿ

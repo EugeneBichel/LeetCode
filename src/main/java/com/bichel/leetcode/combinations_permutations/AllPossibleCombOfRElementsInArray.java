@@ -1,4 +1,4 @@
-package com.bichel.leetcode.combinations;
+package com.bichel.leetcode.combinations_permutations;
 
 import java.util.HashSet;
 import java.util.Set;
