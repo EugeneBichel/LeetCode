@@ -12,6 +12,24 @@ public class SetMatrixZeroes {
             this.r = r;
             this.c = c;
         }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof Pair)) return false;
+
+            Pair pair = (Pair) o;
+
+            if (r != pair.r) return false;
+            return c == pair.c;
+        }
+
+        @Override
+        public int hashCode() {
+            int result = r;
+            result = 31 * result + c;
+            return result;
+        }
     }
 
     public void setZeroes(int[][] matrix) {
