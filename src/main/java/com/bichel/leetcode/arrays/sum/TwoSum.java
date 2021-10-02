@@ -4,16 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    public static void main(String[] args) {
-        int[] nums = {3,2,4};
-        int target = 6;
-
-        int[] indices = betterSolution(nums, target);
-
-        System.out.println(indices[0] + "; " + indices[1]);
-    }
-
-    static int[] betterSolution(int[] nums, int target) {
+    public int[] getIndices(int[] nums, int target) {
         // x + y = target
         // y = target - x
 

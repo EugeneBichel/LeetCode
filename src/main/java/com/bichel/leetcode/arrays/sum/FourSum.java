@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 
 /*
-Given an array nums of n integers, return an array of all t
-he unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+Given an array nums of n integers, return an array of all
+the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
 
 0 <= a, b, c, d < n
 a, b, c, and d are distinct.
@@ -20,19 +20,7 @@ Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
  */
 
 public class FourSum {
-    public static void main(String[] args) {
-        //int[] a = {1,0,-1,0,-2,2};
-        int target = 0;
-        //int[] a = { 10, 20, 30, 40, 1, 2 };
-        int[] a = {-4,-3,-2,-1,0,0,1,2,3,4};
-        //target = 91;
-        target = 0;
-
-        // Function call
-        findFourElements(a, target);
-    }
-
-    static class Pair {
+    public class Pair {
         int first, second;
 
         public Pair(int first, int second) {
@@ -41,7 +29,7 @@ public class FourSum {
         }
     }
 
-    static List<List<Integer>> findFourElements(int arr[], int target) {
+    public List<List<Integer>> findFourElements(int arr[], int target) {
 
         List<List<Integer>> sets = new ArrayList<>();
         int n = arr.length;
