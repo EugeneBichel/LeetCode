@@ -8,8 +8,8 @@ class SparseVector {
 
     SparseVector(int[] nums) {
         map = new HashMap<>();
-        for(int i=0; i<nums.length; i++)
-            if(nums[i] != 0)
+        for (int i = 0; i < nums.length; i++)
+            if (nums[i] != 0)
                 map.put(i, nums[i]);
     }
 
@@ -18,8 +18,8 @@ class SparseVector {
 
         int product = 0;
 
-        for(Map.Entry<Integer, Integer> entry: map.entrySet()) {
-            if(vec.containsIndex(entry.getKey()))
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (vec.containsIndex(entry.getKey()))
                 product += entry.getValue() * vec.getValue(entry.getKey());
         }
 
