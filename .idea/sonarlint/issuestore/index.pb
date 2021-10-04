@@ -109,3 +109,13 @@ n
 Lsrc/main/java/com/bichel/leetcode/sliding_window/MinimumWindowSubstring.java,7/b/7becc9f77a6920e92c87d3cd4c93c816cf94cd30
 j
 :src/main/java/com/bichel/leetcode/arrays/sum/FourSum2.java,0/8/08dd054e008c0e0782c128dc8bea41c259781516
+l
+<src/main/java/com/bichel/leetcode/arrays/BeautifulArray.java,8/4/84aa29944d550a7d68b704c1936d2ede25310094
+j
+:src/main/java/com/bichel/leetcode/arrays/SparseVector.java,a/9/a91805abd45dae0c2f91b48fae25276932b5f810
+z
+Jsrc/main/java/com/bichel/leetcode/arrays/sum/ThreeSumSmallerBetterSol.java,c/c/cc60e5efe93a3bb34ede83fc59b40c69c02dd537
+q
+Asrc/main/java/com/bichel/leetcode/arrays/sum/TwoSumLessThanK.java,b/e/bed39eae981220650746e7c9f15867e4917ed285
+o
+?src/main/java/com/bichel/leetcode/dp/MinCostClimbingStairs.java,6/6/6620f3f45c65184b2a58b42214b5e8b190dc58da
