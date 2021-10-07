@@ -8,31 +8,12 @@ package com.bichel.leetcode.stacks;
  */
 
 public class MinStack {
-    public static void main(String[] args) {
-        MinStack st = new MinStack();
-        st.push(2147483646);
-        st.push(2147483646);
-        st.push(2147483647);
-        st.top(); //2147483647
-        st.pop();
-        st.getMin(); //2147483646
-        st.pop();
-        st.getMin(); //2147483646
-        st.pop();
-        st.push(2147483647);
-        st.top();
-        st.getMin();
-        st.pop();
-        st.getMin();
-    }
+    private int capacity = 16;
+    private int topInd = -1;
+    private int bottomInd = 0;
+    private int min = Integer.MAX_VALUE;
+    private int[] data;
 
-    int capacity = 16;
-    int topInd = -1;
-    int bottomInd = 0;
-    int min = Integer.MAX_VALUE;
-    int[] data;
-
-    /** initialize your data structure here. */
     public MinStack() {
         data = new int[capacity];
     }
