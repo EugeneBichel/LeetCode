@@ -1,4 +1,4 @@
-package com.bichel.leetcode;
+package com.bichel.leetcode.dp;
 
 /*
 You are given an array prices where prices[i]
@@ -27,15 +27,16 @@ public class BestTimeToBuyAndSellStockII {
         int min = prices[0];
         int maxProfit = 0;
 
-        for(int i = 1; i < prices.length; i++) {
-            if(prices[i] < min) {
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] < min) {
                 min = prices[i];
                 continue;
             }
 
-            if(prices[i] - min > 0) {
+            if (prices[i] - min > 0) {
                 maxProfit += prices[i] - min;
-                min = prices[i]; }
+                min = prices[i];
+            }
         }
 
         return maxProfit;
