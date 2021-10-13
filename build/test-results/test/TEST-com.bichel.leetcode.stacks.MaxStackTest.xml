@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bichel.leetcode.stacks.MaxStackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-07T09:22:30" hostname="Yauhens-MacBook-Pro.local" time="0.024">
-  <properties/>
-  <testcase name="testTestCase2()" classname="com.bichel.leetcode.stacks.MaxStackTest" time="0.024"/>
-  <system-out><![CDATA[5
-1
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

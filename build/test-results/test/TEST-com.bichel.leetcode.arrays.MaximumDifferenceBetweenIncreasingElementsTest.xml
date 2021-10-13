@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bichel.leetcode.arrays.MaximumDifferenceBetweenIncreasingElementsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-13T15:58:24" hostname="Yauhens-MBP" time="30.935">
+  <properties/>
+  <testcase name="testTestCase1()" classname="com.bichel.leetcode.arrays.MaximumDifferenceBetweenIncreasingElementsTest" time="30.935"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -36,5 +36,7 @@ public class SortArrayByIncreasingFrequency {
         for(Map.Entry<Integer, Integer> entry: map.entrySet()) {
             
         }
+
+        return new int[2];
     }
 }
