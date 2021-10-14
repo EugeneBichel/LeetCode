@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bichel.leetcode.math.IsPowerOfTwoTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-10-14T08:46:16" hostname="Yauhens-MBP" time="48.479">
+  <properties/>
+  <testcase name="testTestCase1()" classname="com.bichel.leetcode.math.IsPowerOfTwoTest" time="48.479">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

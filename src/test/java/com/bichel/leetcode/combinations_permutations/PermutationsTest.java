@@ -1,3 +1,5 @@
+package com.bichel.leetcode.combinations_permutations;
+
 import org.junit.jupiter.api.Test;
 
 import javax.swing.*;
