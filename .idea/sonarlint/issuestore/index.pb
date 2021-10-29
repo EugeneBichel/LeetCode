@@ -185,3 +185,5 @@ h
 8src/main/java/com/bichel/leetcode/math/IsPowerOfTwo.java,d/b/db8e1446eb7474ff89a6e9cff94f5a51b4e7140c
 l
 <src/test/java/com/bichel/leetcode/math/IsPowerOfTwoTest.java,d/e/de25b65da8cdf9b9739fc3cb678de1a49dc757b3
+˜
+hsrc/main/java/com/bichel/leetcode/disjoint_set_union/NumberOfConnectedComponentsInAnUndirectedGraph.java,b/7/b778ac30983ce80c0fd63764e40875207d4236f0
