@@ -4,14 +4,11 @@ import java.util.Arrays;
 
 public class kSmallest {
     public static void main(String[] args) {
-        kSmallest program = new kSmallest();
-
+        //kSmallest program = new kSmallest();
         //[[1,5,9],[10,11,13],[12,13,15]]
-        //8
         //int[][] a = {{1,5,9},{10,11,13},{12,13,15}};
         int[][] a = {{1,2},{1,3}};
-
-        int val = program.kthSmallest(a, 1);
+        //int val = program.kthSmallest(a, 1);
     }
 
     public int kthSmallest(int[][] matrix, int k) {

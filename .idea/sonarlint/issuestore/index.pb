@@ -187,3 +187,17 @@ l
 <src/test/java/com/bichel/leetcode/math/IsPowerOfTwoTest.java,d/e/de25b65da8cdf9b9739fc3cb678de1a49dc757b3
 ˜
 hsrc/main/java/com/bichel/leetcode/disjoint_set_union/NumberOfConnectedComponentsInAnUndirectedGraph.java,b/7/b778ac30983ce80c0fd63764e40875207d4236f0
+j
+:src/main/java/com/bichel/leetcode/amazon/others/script.sql,a/8/a8cf2a786625aeda25b84b2746f2f71d1f8a319d
+t
+Dsrc/main/java/com/bichel/leetcode/amazon/others/PartitionLabels.java,6/c/6c7a012eace4c6242110956db3ab7973122b55ed
+z
+Jsrc/main/java/com/bichel/leetcode/amazon/others/PrisonCellsAfterNDays.java,2/f/2f86314c0b576d8a012024b73d0a043261503a14
+s
+Csrc/main/java/com/bichel/leetcode/amazon/others/ReverseInteger.java,9/0/903b931b51a04347fb186a90fee50815e0c5043e
+z
+Jsrc/main/java/com/bichel/leetcode/amazon/design/MaximumFrequencyStack.java,d/7/d745af240433d0197c1845e988d287f6293bb84d
+t
+Dsrc/main/java/com/bichel/leetcode/amazon/design/DesignTicTacToe.java,6/2/62ceb30b11bf58dd61766fe6b9fae6469610953a
+k
+;src/main/java/com/bichel/leetcode/amazon/dp/CoinChange.java,3/a/3a78a8d3df02a2afd87b51adb439d1b7ac1f7fbd
