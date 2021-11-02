@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bloomberg.strings.StringCompressionTests" tests="1" skipped="1" failures="0" errors="0" timestamp="2021-11-02T09:42:59" hostname="Yauhens-MBP" time="164.385">
+  <properties/>
+  <testcase name="testTestCase4()" classname="bloomberg.strings.StringCompressionTests" time="164.385">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
