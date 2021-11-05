@@ -1,0 +1,9 @@
+
+k	java:S116"ORename this field "ROWS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥Œ€Ú8šê­©Î/
+j	java:S116"ORename this field "COLS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç¤E8ç°´©Î/
+C
+java:S1659D"!Declare "col" on a separate line.(ÏÄ«ÿÿÿÿÿ8ú°´©Î/
+s
+java:S1104"QMake first a static final constant or non-public and provide accessors if needed.(Á¼˜ˆÿÿÿÿÿ8ôİ®©Î/
+t
+java:S1104"RMake second a static final constant or non-public and provide accessors if needed.(†ÔÆæúÿÿÿÿ8€±´©Î/

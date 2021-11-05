@@ -1,0 +1,8 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(äì”ê8¿ý¡­Î/
+{
+java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(ú‘×¥úÿÿÿÿ8Â•¾®Î/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“âëÕýÿÿÿÿ8€þ¡­Î/
+`
+java:S11550">Use isEmpty() to check whether the collection is empty or not.(«Â¾žùÿÿÿÿ8Ïù¾®Î/
