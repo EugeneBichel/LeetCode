@@ -241,3 +241,12 @@ r
 Bsrc/main/java/com/bichel/leetcode/dp/LongestCommonSubsequence.java,c/9/c9d81718c15b006c6323e488acc19f1768126260
 k
 ;src/main/java/com/bichel/leetcode/backtracking/Subsets.java,d/d/dd08abb6d74f43087508d7375bb6d5f371f8d330
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
+€
+Psrc/main/java/com/bichel/leetcode/sliding_window/MinimumSwapsToGroupAllOnes.java,8/f/8f668cf9dc667dd82fcb510a81a1ae8ee30fb0c9
+t
+Dsrc/main/java/com/bichel/leetcode/backtracking/WildcardMatching.java,2/6/2624466200b99ff6651536f86106178c15c3ce94
+q
+Asrc/main/java/com/bichel/leetcode/strings/ShortestPalindrome.java,4/9/49a64959e6c3ee47d2acfa732a47ea688013902e
