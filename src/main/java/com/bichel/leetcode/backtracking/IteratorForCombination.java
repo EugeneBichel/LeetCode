@@ -12,7 +12,7 @@ hasNext() Returns true if and only if there exists a next combination.
  */
 
 public class IteratorForCombination {
-    private Deque<String> combinations = new ArrayDeque<String>();
+    private Deque<String> combinations = new ArrayDeque<>();
     private String characters;
     private int n, k;
 
