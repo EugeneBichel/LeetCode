@@ -30,12 +30,12 @@ public class AccountsMerge {
                 String accountEmail = account.get(j);
 
                 if (!adjacent.containsKey(accountFirstEmail)) {
-                    adjacent.put(accountFirstEmail, new ArrayList<String>());
+                    adjacent.put(accountFirstEmail, new ArrayList<>());
                 }
                 adjacent.get(accountFirstEmail).add(accountEmail);
 
                 if (!adjacent.containsKey(accountEmail)) {
-                    adjacent.put(accountEmail, new ArrayList<String>());
+                    adjacent.put(accountEmail, new ArrayList<>());
                 }
                 adjacent.get(accountEmail).add(accountFirstEmail);
             }
@@ -64,7 +64,7 @@ public class AccountsMerge {
     }
 
     Set<String> visited = new HashSet<>();
-    Map<String, List<String>> adjacent = new HashMap<String, List<String>>();
+    Map<String, List<String>> adjacent = new HashMap<>();
 
     private void DFS(List<String> mergedAccount, String email) {
         visited.add(email);
