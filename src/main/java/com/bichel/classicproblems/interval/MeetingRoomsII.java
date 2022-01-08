@@ -19,7 +19,7 @@ public class MeetingRoomsII {
 
         Arrays.sort(intervals, (int[] l, int[] r) -> Integer.compare(l[0], r[0]));
 
-        PriorityQueue<Integer> allocator = new PriorityQueue<Integer>(intervals.length, (o1, o2) -> o1 - o2);
+        PriorityQueue<Integer> allocator = new PriorityQueue<>(intervals.length, (o1, o2) -> o1 - o2);
 
         allocator.add(intervals[0][1]);
 
