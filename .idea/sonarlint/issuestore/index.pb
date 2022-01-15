@@ -366,3 +366,7 @@ Usrc/main/java/com/bichel/classicproblems/prefixsum/MaximumSizeSubarraySumEquals
 [src/main/java/com/bichel/classicproblems/slidingwindow/MinimumSwapsToGroupAll1Together.java,9/a/9a6813cc9f4d0fa8a166d0486bd03de290806b0c
 Ü
 Vsrc/main/java/com/bichel/classicproblems/binarysearch/MissingElementInSortedArray.java,b/9/b9f7ddd37151c6e4d434a77c465057166a6b7849
+z
+Jsrc/main/java/com/bichel/classicproblems/hashmap/FirstMissingPositive.java,0/c/0c9533c16f46e2095d94b19f40a62b3539ac5de4
+Å
+Qsrc/main/java/com/bichel/classicproblems/hashmap/MissingElementInSortedArray.java,7/e/7e517a943001d904deb10f84db31877b15b901b9
