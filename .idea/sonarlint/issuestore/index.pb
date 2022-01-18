@@ -284,8 +284,6 @@ x
 Hsrc/main/java/com/bichel/leetcode/graph/DeleteLeavesWithaGivenValue.java,1/b/1bc9b3e22a4344d37565147e7e943e90785b9663
 l
 <src/main/java/com/bichel/leetcode/bfs_dfs/AccountsMerge.java,8/1/81dfea3f508f25c500d207fe531716fbddf568bd
-á
-Wsrc/main/java/com/bichel/leetcode/bfs_dfs/NumberofOperationsToMakeNetworkConnected.java,1/f/1fed445f81a995797f59c5c5ec9bd2088dec6e0d
 n
 >src/main/java/com/bichel/leetcode/strings/PalindromePairs.java,5/0/50cb21bf8aa8fbf4c2f92e17135ad9b5949cdb59
 v
@@ -370,3 +368,15 @@ z
 Jsrc/main/java/com/bichel/classicproblems/hashmap/FirstMissingPositive.java,0/c/0c9533c16f46e2095d94b19f40a62b3539ac5de4
 Å
 Qsrc/main/java/com/bichel/classicproblems/hashmap/MissingElementInSortedArray.java,7/e/7e517a943001d904deb10f84db31877b15b901b9
+i
+9src/main/java/com/bichel/leetcode/bfs_dfs/JumpGameIV.java,7/2/72634eab86546c8e94688d2f8f0ff24c985b8107
+d
+4src/main/java/com/bichel/scaler/MinimumDistance.java,6/7/67f418f4455ece0a32034777a569ed2df626b2b1
+c
+3src/main/java/com/bichel/scaler/PrefixMatching.java,9/7/97d80ef9f1850e514261123a50d3bebe506815d7
+p
+@src/main/java/com/bichel/classicproblems/tree/InsertIntoBST.java,9/9/99771778f98ab08d36a819688034bc77b864726a
+á
+Wsrc/main/java/com/bichel/leetcode/bfs_dfs/NumberofOperationsToMakeNetworkConnected.java,1/f/1fed445f81a995797f59c5c5ec9bd2088dec6e0d
+Z
+*src/test/java/com/bichel/common/Test1.java,a/7/a77011c0786379e3d2f1ce714008100b120c36c6

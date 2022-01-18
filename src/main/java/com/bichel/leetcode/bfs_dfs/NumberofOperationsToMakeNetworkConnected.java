@@ -15,7 +15,7 @@ public class NumberofOperationsToMakeNetworkConnected {
     public int makeConnected(int n, int[][] connections) {
         if (connections.length < n - 1) return -1; // To connect all nodes need at least n-1 edges
 
-        List<Integer>[] graph = new List<Integer>[n];
+        List<Integer>[] graph = new ArrayList[n];
         for (int i = 0; i < n; i++) graph[i] = new ArrayList<>();
 
         for (int[] c : connections) {
