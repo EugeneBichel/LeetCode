@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bichel.fbrecruiting.level1.RotationalCipherTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-20T23:33:28" hostname="Yauhens-MBP" time="0.016">
+  <properties/>
+  <testcase name="test1()" classname="com.bichel.fbrecruiting.level1.RotationalCipherTest" time="0.016"/>
+  <system-out><![CDATA[65
+69
+90
+w
+W
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
