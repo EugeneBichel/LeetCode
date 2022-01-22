@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.leetcode.design.cache;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-public class MineLRUCacheWIthQuestions {
+public class MineLRUCacheWIthPriorityQueue {
 
     private int capacity;
     private Map<Integer, Integer> cache;
@@ -17,7 +17,7 @@ public class MineLRUCacheWIthQuestions {
         public long used;
     }
 
-    public MineLRUCacheWIthQuestions(int capacity) {
+    public MineLRUCacheWIthPriorityQueue(int capacity) {
         this.capacity = capacity;
         cache = new HashMap<>(capacity);
         minHeap = new PriorityQueue<>((a, b) -> Long.compare(a.used, b.used));

@@ -51,16 +51,8 @@ s
 Csrc/main/java/com/bichel/leetcode/strings/ReverseWordsInString.java,7/a/7a646f21507319b106bcdfe6ba64e469ad8ecc01
 t
 Dsrc/main/java/com/bichel/leetcode/strings/ReverseWordsinaString.java,c/d/cd3281366b617c33d27cf1cce4d476166ac0fc1a
-f
-6src/main/java/com/bichel/leetcode/design/LFUCache.java,8/6/86004425f5c838e643f71deee9d61955c9bb56e2
-w
-Gsrc/main/java/com/bichel/leetcode/design/MineLRUCacheWIthQuestions.java,e/7/e7b34ae32571e49483364d64856dba68b863e4c6
 o
 ?src/main/java/com/bichel/leetcode/arrays/SortArrayByParity.java,c/6/c6f5719e1c97ead347cd3a12ea40c0fe94cec63e
-y
-Isrc/main/java/com/bichel/leetcode/design/LRUCacheBasedOnLinedHashMap.java,e/b/eb1224597878fd3e044cd8d9287c3858c32470cc
-Å
-Qsrc/main/java/com/bichel/leetcode/design/LRUCacheUsingMapAndDoubleLinkedList.java,5/6/56fb2cda9b83d36074b125e8da4b9e335c7c4ce1
 x
 Hsrc/main/java/com/bichel/leetcode/combinations_permutations/Subsets.java,9/c/9c45b602a4ff7f85daeea8a38da8d04dda304f07
 ~

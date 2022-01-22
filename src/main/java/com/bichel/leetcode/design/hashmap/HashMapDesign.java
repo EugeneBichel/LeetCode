@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.leetcode.design.hashmap;
 
 import java.util.Arrays;
 

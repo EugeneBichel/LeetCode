@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.leetcode.design.hashset;
 
 import java.util.LinkedList;
 

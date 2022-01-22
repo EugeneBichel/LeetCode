@@ -27,28 +27,32 @@ public class StringIterator {
     }
 
     public char next() {
-        if(times > 0) {
+        if (times > 0) {
             times--;
             return letter;
         } else {
 
-            if(ind > arr.length - 1) return ' ';
+            if (ind > arr.length - 1) return ' ';
 
-            if(hasNext()) {
+            if (hasNext()) {
                 letter = arr[ind];
-                int l = ind+1;
+                int l = ind + 1;
                 int r = l;
-                while(r < arr.length && Character.isDigit(arr[r])) r++;
+
+                while (r < arr.length && Character.isDigit(arr[r]))
+                    r++;
+
                 times = Integer.parseInt(source.substring(l, r));
                 times--;
                 ind = r; // char + integer
+
                 return letter;
             } else return ' ';
         }
     }
 
     public boolean hasNext() {
-        if(ind + 1 < arr.length || times > 0) return true;
+        if (ind + 1 < arr.length || times > 0) return true;
         else return false;
     }
 }
