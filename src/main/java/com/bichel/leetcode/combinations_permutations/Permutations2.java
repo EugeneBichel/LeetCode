@@ -7,7 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
-Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.
+Given a collection of numbers, nums, that might contain duplicates,
+return all possible unique permutations in any order.
  */
 public class Permutations2 {
     public List<List<Integer>> permuteUnique(int[] nums) {
@@ -26,7 +27,9 @@ public class Permutations2 {
 
         for(int i=first; i<n; i++) {
             Collections.swap(origin, first, i);
+
             backtrack(n, origin, res, first+1);
+
             Collections.swap(origin, first, i);
         }
     }

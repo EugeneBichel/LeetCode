@@ -55,8 +55,6 @@ o
 ?src/main/java/com/bichel/leetcode/arrays/SortArrayByParity.java,c/6/c6f5719e1c97ead347cd3a12ea40c0fe94cec63e
 x
 Hsrc/main/java/com/bichel/leetcode/combinations_permutations/Subsets.java,9/c/9c45b602a4ff7f85daeea8a38da8d04dda304f07
-~
-Nsrc/main/java/com/bichel/leetcode/combinations_permutations/Permutations2.java,0/b/0bb8f63fc909dbdf0b616efd81d6c58343ca1684
 o
 ?src/main/java/com/bichel/leetcode/arrays/ProductExceptSelf.java,0/5/05cbf733fdc6a7631e5607c6a359b674bfdc7f49
 m
@@ -137,16 +135,12 @@ v
 Fsrc/main/java/com/bichel/leetcode/dp/BestTimeToBuyAndSellStockIII.java,5/5/55fb1b0f9c294259784105666f74fa2702241650
 u
 Esrc/main/java/com/bichel/leetcode/dp/BestTimeToBuyAndSellStockIV.java,2/a/2a1ac1ffdc6f43bbe805ba4f3b75682c45be8f84
-€
-Psrc/main/java/com/bichel/leetcode/combinations_permutations/NextPermutation.java,7/7/77f5d9a9d80b447f52ef16c87f4cc7a4ff79484d
 e
 5src/main/java/com/bichel/leetcode/dp/WordBreakII.java,8/4/84be0b8dd3965c1de642e3c0258b94578466d43b
 c
 3src/main/java/com/bichel/leetcode/dp/WordBreak.java,7/7/772214b1c68d4ab10ccc439b27c0670cba5ad825
 }
 Msrc/main/java/com/bichel/leetcode/combinations_permutations/Combinations.java,d/5/d5a4130d588700581f63cdf7dbc83a8671173749
-ƒ
-Ssrc/main/java/com/bichel/leetcode/combinations_permutations/LetterCombinations.java,e/1/e14c12e62f7fe384349a4578268f40d1fc1158f3
 †
 Vsrc/main/java/com/bichel/leetcode/combinations_permutations/LetterCasePermutation.java,3/5/352e5f67714470d3754d319ca2a3575e18e5dc29
 

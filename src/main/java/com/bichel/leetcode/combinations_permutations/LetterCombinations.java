@@ -40,16 +40,18 @@ public class LetterCombinations {
         // If the path is the same length as digits, we have a complete combination
         if (path.length() == phoneDigits.length()) {
             combinations.add(path.toString());
-            return; // Backtrack
+            return;
         }
 
         // Get the letters that the current digit maps to, and loop through them
         String possibleLetters = letters.get(phoneDigits.charAt(index));
-        for (char letter: possibleLetters.toCharArray()) {
+        for (char letter : possibleLetters.toCharArray()) {
             // Add the letter to our current path
             path.append(letter);
+
             // Move on to the next digit
             backtrack(index + 1, path);
+
             // Backtrack by removing the letter before moving onto the next
             path.deleteCharAt(path.length() - 1);
         }

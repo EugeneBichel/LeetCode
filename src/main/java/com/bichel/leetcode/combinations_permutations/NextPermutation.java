@@ -22,8 +22,10 @@ public class NextPermutation {
             while (nums[j] <= nums[i]) {
                 j--;
             }
+
             swap(nums, i, j);
         }
+
         reverse(nums, i + 1);
     }
 
