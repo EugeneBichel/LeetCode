@@ -221,8 +221,6 @@ l
 <src/main/java/com/bichel/leetcode/math/MaxPointsOnALine.java,3/6/36291273a48c5b3da7d788c4c7b2fbaff5b00514
 r
 Bsrc/main/java/com/bichel/leetcode/dp/LongestCommonSubsequence.java,c/9/c9d81718c15b006c6323e488acc19f1768126260
-k
-;src/main/java/com/bichel/leetcode/backtracking/Subsets.java,d/d/dd08abb6d74f43087508d7375bb6d5f371f8d330
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -336,8 +334,6 @@ k
 ;src/main/java/com/bichel/classicproblems/bit/AddBinary.java,c/f/cfcc98c57beab4719d65f9229b2072117b5b1d96
 e
 5src/main/java/com/bichel/leetcode/graph/TreeNode.java,6/3/639a41de8482959e1828b08b82994b1c33f9d9b9
-€
-Psrc/main/java/com/bichel/classicproblems/graph/SumOfRootToLeafBinaryNumbers.java,c/c/cccccff0b7ad1148f6393ecc43222f2e1679a741
 p
 @src/main/java/com/bichel/classicproblems/dp/FibonacciNumber.java,b/f/bf82080b30e4b160eaa07e9468c3a50d44b13d6a
 …
@@ -426,3 +422,23 @@ m
 =src/main/java/com/bichel/leetcode/design/cache/CacheDesign.md,3/c/3cec939e85a20ebdc3aab1d2b69058159425b76c
 f
 6src/main/java/com/bichel/interviewbit/DesignCache.java,8/5/85ac777e2c38d442c4105eee46622da1674c2e61
+v
+Fsrc/main/java/com/bichel/leetcode/design/database/ShardingADatabase.md,b/b/bbf77b1c7ab15696da5f09718315c08d63ee278a
+|
+Lsrc/main/java/com/bichel/leetcode/design/database/HighlyAvailableDatabase.md,5/0/508bd39d154ba8b0d89708f44e0d9be7f3e72609
+}
+Msrc/main/java/com/bichel/leetcode/design/database/HighlyConsistentDatabase.md,8/4/8470a4f29ea004cf7fd8faa3110b66f09a482bfe
+n
+>src/main/java/com/bichel/leetcode/design/DesignURLShortener.md,6/8/68bfa40ac11f0088f407fb8e6389f83da0246667
+}
+Msrc/main/java/com/bichel/leetcode/combinations_permutations/Permutations.java,6/c/6c854c964f506a9afbd136f0ade1519fb9afe9e4
+€
+Psrc/main/java/com/bichel/leetcode/combinations_permutations/NextPermutation.java,7/7/77f5d9a9d80b447f52ef16c87f4cc7a4ff79484d
+~
+Nsrc/main/java/com/bichel/leetcode/combinations_permutations/Permutations2.java,0/b/0bb8f63fc909dbdf0b616efd81d6c58343ca1684
+ƒ
+Ssrc/main/java/com/bichel/leetcode/combinations_permutations/LetterCombinations.java,e/1/e14c12e62f7fe384349a4578268f40d1fc1158f3
+k
+;src/main/java/com/bichel/leetcode/design/DesignMessenger.md,0/3/03aff89c033b1c853576117821a5c6c49901e5b9
+q
+Asrc/main/java/com/bichel/leetcode/design/DesignSearchTypeahead.md,e/9/e93a0018497d3fe6046301d08252c7121091e41b
