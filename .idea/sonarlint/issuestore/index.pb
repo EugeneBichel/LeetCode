@@ -300,8 +300,6 @@ Csrc/main/java/com/bichel/classicproblems/design/WordDictionary.java,2/f/2fb4be
 Vsrc/main/java/com/bichel/classicproblems/design/SerializeAndDeserializeBinaryTree.java,0/9/09d06defabe872b9922e439df260528f6f632e28
 m
 =src/main/java/com/bichel/classicproblems/design/LRUCache.java,6/c/6c71dbc25e168fd9d2dc485d581978bd47d5daa9
-|
-Lsrc/main/java/com/bichel/classicproblems/dp/LongestPalindromicSubstring.java,4/1/41f228f4014364eaf5350bd8e4613cfef984c946
 s
 Csrc/main/java/com/bichel/classicproblems/sql/CustomerNeverOrder.sql,7/4/74c96785268a1deed05248edd3ec8e7e910c0e86
 t
