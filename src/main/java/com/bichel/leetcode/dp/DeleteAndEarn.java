@@ -27,7 +27,9 @@ public class DeleteAndEarn {
             count[x]++;
         }
 
-        int avoid = 0, using = 0, prev = -1;
+        int avoid = 0;
+        int using = 0;
+        int prev = -1;
 
         for (int k = 0; k < count.length; ++k) {
             if (count[k] > 0) {

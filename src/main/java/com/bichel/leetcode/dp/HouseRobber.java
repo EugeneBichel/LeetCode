@@ -13,7 +13,7 @@ public class HouseRobber {
         maxRobbedAmount[N] = 0;
         maxRobbedAmount[N - 1] = nums[N - 1];
 
-        for (int i = N - 2; i >= 0; --i) {
+        for (int i = N - 2; i >= 0; i--) {
             maxRobbedAmount[i] = Math.max(maxRobbedAmount[i + 1], maxRobbedAmount[i + 2] + nums[i]);
         }
 

@@ -15,12 +15,12 @@ Explanation: Cheapest is: start on cost[1], pay that cost, and go to the top.
 
 public class MinCostClimbingStairs {
     public int minCostClimbingStairs(int[] cost) {
-        int[] minCost = new int[cost.length+1];
+        int[] minCost = new int[cost.length + 1];
         minCost[0] = minCost[1] = 0;
 
-        for(int i=2; i<minCost.length; i++) {
-            int oneStep = minCost[i-1]+cost[i-1];
-            int twoStep = minCost[i-2]+cost[i-2];
+        for(int i = 2; i < minCost.length; i++) {
+            int oneStep = minCost[i-1] + cost[i-1];
+            int twoStep = minCost[i-2] + cost[i-2];
 
             minCost[i] = Math.min(oneStep, twoStep);
         }
