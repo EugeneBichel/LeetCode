@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 /*
-iven the root of a binary tree, calculate the vertical order traversal of the binary tree.
+Given the root of a binary tree, calculate the vertical order traversal of the binary tree.
 
 For each node at position (row, col), its left and right children will be at positions (row + 1, col - 1) and (row + 1, col + 1) respectively. The root of the tree is at (0, 0).
 
@@ -68,17 +68,5 @@ public class VerticalOrderTraversalOfABinaryTree {
         output.add(currColumn);
 
         return output;
-    }
-}
-
-class Triplet<F, S, T> {
-    public final F first;
-    public final S second;
-    public final T third;
-
-    public Triplet(F first, S second, T third) {
-        this.first = first;
-        this.second = second;
-        this.third = third;
     }
 }

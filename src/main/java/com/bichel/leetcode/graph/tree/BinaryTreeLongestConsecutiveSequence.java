@@ -1,4 +1,6 @@
-package com.bichel.leetcode.graph;
+package com.bichel.leetcode.graph.tree;
+
+import com.bichel.leetcode.graph.TreeNode;
 
 public class BinaryTreeLongestConsecutiveSequence {
     private int maxLen = 0;
@@ -10,7 +12,10 @@ public class BinaryTreeLongestConsecutiveSequence {
 
     private void dfs(TreeNode node, TreeNode parent, int length) {
         if(node == null) return;
-        length = parent != null && node.val == parent.val + 1 ? length+1: 1;
+        length = parent != null &&
+                node.val == parent.val + 1 ?
+                length + 1 : 1;
+
         maxLen = Math.max(maxLen, length);
 
         dfs(node.left, node, length);

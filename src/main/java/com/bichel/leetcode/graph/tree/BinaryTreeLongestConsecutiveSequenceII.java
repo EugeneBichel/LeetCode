@@ -1,4 +1,6 @@
-package com.bichel.leetcode.graph;
+package com.bichel.leetcode.graph.tree;
+
+import com.bichel.leetcode.graph.TreeNode;
 
 public class BinaryTreeLongestConsecutiveSequenceII {
     private int maxLen = 0;

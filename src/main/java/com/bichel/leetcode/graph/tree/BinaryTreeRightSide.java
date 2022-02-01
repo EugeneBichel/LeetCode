@@ -1,4 +1,4 @@
-package com.bichel.leetcode.graph;
+package com.bichel.leetcode.graph.tree;
 
 /*
 Given the root of a binary tree,
@@ -10,15 +10,13 @@ Input: root = [1,2,3,null,5,null,4]
 Output: [1,3,4]
  */
 
+import com.bichel.leetcode.graph.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeRightSide {
-    public static void main(String[] args) {
-
-    }
-
     public List<Integer> rightSide(TreeNode root) {
         List<Integer> items = new ArrayList<>();
         if(root == null) return items;
@@ -27,6 +25,7 @@ public class BinaryTreeRightSide {
 
         return items;
     }
+
     private void traverse(TreeNode root, List<Integer> items, int level) {
         if(level == items.size()) items.add(root.val);
 

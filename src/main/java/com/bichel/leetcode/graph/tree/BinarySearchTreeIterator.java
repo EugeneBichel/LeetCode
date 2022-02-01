@@ -1,4 +1,4 @@
-package com.bichel.leetcode.graph;
+package com.bichel.leetcode.graph.tree;
 
 /*
 Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST):
@@ -10,6 +10,8 @@ Notice that by initializing the pointer to a non-existent smallest number, the f
 
 You may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.
  */
+
+import com.bichel.leetcode.graph.TreeNode;
 
 import java.util.List;
 import java.util.ArrayList;
