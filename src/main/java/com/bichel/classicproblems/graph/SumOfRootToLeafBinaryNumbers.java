@@ -21,7 +21,7 @@ You start from curr_number = 1,
 then shift one register to the left and add the next digit: curr_number = (1 << 1) | 1 = 3.
  */
 
-import com.bichel.leetcode.graph.TreeNode;
+import com.bichel.leetcode.tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

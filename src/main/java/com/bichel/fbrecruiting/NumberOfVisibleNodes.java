@@ -1,6 +1,6 @@
 package com.bichel.fbrecruiting;
 
-import com.bichel.leetcode.graph.TreeNode;
+import com.bichel.leetcode.tree.TreeNode;
 
 import java.util.List;
 import java.util.ArrayList;

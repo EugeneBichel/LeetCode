@@ -1,6 +1,6 @@
 package com.bichel.classicproblems.design;
 
-import com.bichel.leetcode.graph.TreeNode;
+import com.bichel.leetcode.tree.TreeNode;
 
 import java.util.Stack;
 

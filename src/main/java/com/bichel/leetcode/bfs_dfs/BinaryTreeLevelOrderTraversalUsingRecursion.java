@@ -1,6 +1,6 @@
 package com.bichel.leetcode.bfs_dfs;
 
-import com.bichel.leetcode.graph.TreeNode;
+import com.bichel.leetcode.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

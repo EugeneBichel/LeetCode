@@ -1,6 +1,6 @@
 package com.bichel.leetcode.bfs_dfs;
 
-import com.bichel.leetcode.graph.TreeNode;
+import com.bichel.leetcode.tree.TreeNode;
 
 public class FindDistanceInaBinaryTree {
     public int findDistance(TreeNode root, int p, int q) {
