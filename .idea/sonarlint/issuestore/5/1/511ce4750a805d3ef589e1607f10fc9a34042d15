@@ -1,7 +1,0 @@
-
-m	java:S116"LRename this field "N" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±¢ÓÛüÿÿÿÿ8‡Ä˜«»/
-E
-java:S1659"#Declare "count" on a separate line.(ÙÂ°¾øÿÿÿÿ8¶Ä˜«»/
-v
-java:S2293!"YReplace the type specification in this constructor call with the diamond operator ("<>").(ã½Ì‘8çŠš«»/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬èÀéüÿÿÿÿ8£Ø˜«»/
