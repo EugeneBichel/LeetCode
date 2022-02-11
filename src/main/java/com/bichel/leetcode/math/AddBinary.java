@@ -4,18 +4,6 @@ package com.bichel.leetcode.math;
 //Input: a = "11", b = "1"
 //Output: "100"
 public class AddBinary {
-    public static void main(String[] args) {
-        AddBinary pr = new AddBinary();
-
-        String a = "11";
-        String b = "1";
-
-        //String res =Integer.toBinaryString(Integer.parseInt(a, 2) +Integer.parseInt(b, 2));
-
-        String res = pr.addBinary(a, b);
-        System.out.println(res);
-    }
-
     public String addBinary2(String a, String b) {
         int n = a.length(), m = b.length();
         if (n < m) return addBinary2(b, a);
