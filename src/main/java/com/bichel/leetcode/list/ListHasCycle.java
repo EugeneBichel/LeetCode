@@ -4,10 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class ListHasCycle {
-    public static void main(String[] args) {
-
-    }
-
     public boolean usingFloydCycleFindingAlgorithm(ListNode head) {
         if (head == null) {
             return false;
@@ -29,12 +25,13 @@ public class ListHasCycle {
         Set<ListNode> set = new HashSet<>();
 
         while(true) {
-            if(head == null) return false;
+            if (head == null)
+                return false;
 
-            if(set.contains(head)) return true;
-            else {
+            if (set.contains(head))
+                return true;
+            else
                 set.add(head);
-            }
 
             head = head.next;
         }

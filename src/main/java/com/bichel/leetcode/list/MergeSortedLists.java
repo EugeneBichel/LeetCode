@@ -1,10 +1,6 @@
 package com.bichel.leetcode.list;
 
 public class MergeSortedLists {
-    public static void main(String[] args) {
-
-    }
-
     private ListNode mergeWithoutRecursion(ListNode l1, ListNode l2) {
         // maintain an unchanging reference to node ahead of the return node.
         ListNode prehead = new ListNode(-1);

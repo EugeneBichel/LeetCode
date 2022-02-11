@@ -2,7 +2,8 @@ package com.bichel.leetcode.two_pointers;
 
 /*
 This question is about implementing a basic elimination algorithm for Candy Crush.
-Given an m x n integer array board representing the grid of candy where board[i][j] represents the type of candy.
+Given an m x n integer array board representing the grid of candy
+where board[i][j] represents the type of candy.
 A value of board[i][j] == 0 represents that the cell is empty.
  */
 
@@ -14,7 +15,9 @@ public class CandyCrush {
         for (int r = 0; r < R; ++r) {
             for (int c = 0; c + 2 < C; ++c) {
                 int v = Math.abs(board[r][c]);
-                if (v != 0 && v == Math.abs(board[r][c + 1]) && v == Math.abs(board[r][c + 2])) {
+
+                if (v != 0 && v == Math.abs(board[r][c + 1]) &&
+                        v == Math.abs(board[r][c + 2])) {
                     board[r][c] = board[r][c + 1] = board[r][c + 2] = -v;
                     todo = true;
                 }
@@ -24,7 +27,8 @@ public class CandyCrush {
         for (int r = 0; r + 2 < R; ++r) {
             for (int c = 0; c < C; ++c) {
                 int v = Math.abs(board[r][c]);
-                if (v != 0 && v == Math.abs(board[r + 1][c]) && v == Math.abs(board[r + 2][c])) {
+                if (v != 0 && v == Math.abs(board[r + 1][c]) &&
+                        v == Math.abs(board[r + 2][c])) {
                     board[r][c] = board[r + 1][c] = board[r + 2][c] = -v;
                     todo = true;
                 }

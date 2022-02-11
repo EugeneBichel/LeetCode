@@ -14,21 +14,27 @@ public class FindBottomLeftTreeValue {
     public int findBottomLeftValue(TreeNode root) {
         int ans = 0;
 
-        if(root == null) return ans;
+        if (root == null) return ans;
 
         Queue<TreeNode> q = new LinkedList<>();
         q.add(root);
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
 
             int size = q.size();
 
-            for(int i=0; i<size; i++) {
-                TreeNode n = q.poll();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = q.poll();
 
-                if(i == 0) ans = n.val;
-                if(n.left != null) q.add(n.left);
-                if(n.right != null) q.add(n.right);
+                //left most node
+                if (i == 0)
+                    ans = node.val;
+
+                if (node.left != null)
+                    q.add(node.left);
+
+                if (node.right != null)
+                    q.add(node.right);
             }
         }
 

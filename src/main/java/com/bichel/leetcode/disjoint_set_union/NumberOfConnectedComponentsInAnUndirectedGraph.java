@@ -1,7 +1,9 @@
 package com.bichel.leetcode.disjoint_set_union;
 
 /*
-You have a graph of n nodes. You are given an integer n and an array edges where edges[i] = [ai, bi] indicates that there is an edge between ai and bi in the graph.
+You have a graph of n nodes.
+You are given an integer n and an array edges where edges[i] = [ai, bi]
+indicates that there is an edge between ai and bi in the graph.
 
 Return the number of connected components in the graph.
 */
@@ -29,7 +31,9 @@ public class NumberOfConnectedComponentsInAnUndirectedGraph {
             return vertex;
         }
 
-        return representative[vertex] = find(representative, representative[vertex]);
+        representative[vertex] = find(representative, representative[vertex]);
+
+        return representative[vertex];
     }
 
     private int combine(int[] representative, int[] size, int vertex1, int vertex2) {

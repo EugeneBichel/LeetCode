@@ -26,10 +26,14 @@ public class Trie {
 
     private void insert(String word, TrieNode node) {
         for (int i = 0; i < word.length(); i++) {
-            if(!node.children.containsKey(word.charAt(i))) {
-                node.children.put(word.charAt(i), new TrieNode());
+
+            char newLetter = word.charAt(i);
+
+            if(!node.children.containsKey(newLetter)) {
+                node.children.put(newLetter, new TrieNode());
             }
-            node = node.children.get(word.charAt(i));
+
+            node = node.children.get(newLetter);
         }
 
         node.end = true;
