@@ -58,7 +58,6 @@ public class WordLadder {
 
         return 0;
     }
-
     private List<String> neighbors(String curWord) {
         char[] chars = curWord.toCharArray();
         List<String> result = new ArrayList<>();
