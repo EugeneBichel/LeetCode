@@ -20,16 +20,14 @@ import java.util.LinkedList;
 
 public class Permutations {
     public List<List<Integer>> permute(int[] nums) {
-        // init output list
-        List<List<Integer>> output = new LinkedList();
+        List<List<Integer>> output = new LinkedList<>();
 
-        // convert nums into list since the output is a list of lists
-        ArrayList<Integer> nums_lst = new ArrayList<Integer>();
+        ArrayList<Integer> numsList = new ArrayList<>();
         for (int num : nums)
-            nums_lst.add(num);
+            numsList.add(num);
 
         int n = nums.length;
-        backtrack(n, nums_lst, output, 0);
+        backtrack(n, numsList, output, 0);
         return output;
     }
 
@@ -39,7 +37,8 @@ public class Permutations {
                            int first) {
         // if all integers are used up
         if (first == n)
-            output.add(new ArrayList<Integer>(nums));
+            output.add(new ArrayList<>(nums));
+
         for (int i = first; i < n; i++) {
             // place i-th integer first
             // in the current permutation
