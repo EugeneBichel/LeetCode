@@ -17,7 +17,7 @@ Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
 
 public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
-        final int n = nums.length;
+        int n = nums.length;
         List<List<Integer>> res = new ArrayList<>();
 
         for (int size = 0; size < n + 1; size++) {
@@ -28,17 +28,16 @@ public class Subsets {
     }
 
     private void backtrack(int first, int size, ArrayList<Integer> curr, int[] nums, List<List<Integer>> res) {
-        // if the combination is done
         if (curr.size() == size) {
-            res.add(new ArrayList(curr));
+            res.add(new ArrayList<>(curr));
             return;
         }
 
         for (int i = first; i < nums.length; i++) {
-            // add i into the current combination
             curr.add(nums[i]);
-            // use next integers to complete the combination
+
             backtrack(i + 1, size, curr, nums, res);
+
             // backtrack
             curr.remove(curr.size() - 1);
         }

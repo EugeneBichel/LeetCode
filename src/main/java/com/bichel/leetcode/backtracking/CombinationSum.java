@@ -5,6 +5,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CombinationSum {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> results = new ArrayList<>();
+        LinkedList<Integer> comb = new LinkedList<>();
+
+        this.backtrack(target, comb, 0, candidates, results);
+        return results;
+    }
+
     private void backtrack(int remain, LinkedList<Integer> comb, int start, int[] candidates, List<List<Integer>> results) {
 
         if (remain == 0) {
@@ -23,13 +31,5 @@ public class CombinationSum {
             // backtrack, remove the number from the combination
             comb.removeLast();
         }
-    }
-
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> results = new ArrayList<List<Integer>>();
-        LinkedList<Integer> comb = new LinkedList<Integer>();
-
-        this.backtrack(target, comb, 0, candidates, results);
-        return results;
     }
 }

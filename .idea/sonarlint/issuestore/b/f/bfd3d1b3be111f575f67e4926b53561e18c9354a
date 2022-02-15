@@ -1,7 +1,0 @@
-
-N
-java:S1602",Remove useless curly braces around statement(ÖÆ™¤úÿÿÿÿ8½®ëûÎ/
-{
-java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(öÒÓÇùÿÿÿÿ8¦˜îûÎ/
-D
-java:S16590""Declare "freq" on a separate line.(‡Ãñ²ùÿÿÿÿ8î®ëûÎ/

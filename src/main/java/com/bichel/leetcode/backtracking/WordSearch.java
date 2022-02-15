@@ -17,7 +17,7 @@ public class WordSearch {
         return false;
     }
 
-    protected boolean backtrack(int row, int col, String word, int index) {
+    private boolean backtrack(int row, int col, String word, int index) {
         /* Step 1). check the bottom case. */
         if (index >= word.length())
             return true;

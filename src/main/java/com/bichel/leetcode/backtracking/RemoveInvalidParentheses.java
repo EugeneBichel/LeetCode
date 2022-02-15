@@ -22,7 +22,7 @@ Output: ["(a())()","(a)()()"]
  */
 
 public class RemoveInvalidParentheses {
-    private Set<String> validExpressions = new HashSet<String>();
+    private Set<String> validExpressions = new HashSet<>();
     private int minimumRemoved;
 
     private void reset() {

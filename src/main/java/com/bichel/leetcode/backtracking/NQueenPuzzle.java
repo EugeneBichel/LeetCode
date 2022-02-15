@@ -19,7 +19,7 @@ import java.util.List;
 
 public class NQueenPuzzle {
     private int size;
-    private List<List<String>> solutions = new ArrayList<List<String>>();
+    private List<List<String>> solutions = new ArrayList<>();
 
     public List<List<String>> solveNQueens(int n) {
         size = n;
