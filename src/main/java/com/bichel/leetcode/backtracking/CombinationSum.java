@@ -17,7 +17,7 @@ public class CombinationSum {
 
         if (remain == 0) {
             // make a deep copy of the current combination
-            results.add(new ArrayList<Integer>(comb));
+            results.add(new ArrayList<>(comb));
             return;
         } else if (remain < 0) {
             // exceed the scope, stop exploration.
@@ -28,6 +28,7 @@ public class CombinationSum {
             // add the number into the combination
             comb.add(candidates[i]);
             this.backtrack(remain - candidates[i], comb, i, candidates, results);
+
             // backtrack, remove the number from the combination
             comb.removeLast();
         }

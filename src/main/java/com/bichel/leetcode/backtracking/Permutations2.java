@@ -16,7 +16,6 @@ Output:
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
@@ -33,8 +32,8 @@ public class Permutations2 {
         return new ArrayList<>(output);
     }
 
-    private void backtrack(int n,
-                           ArrayList<Integer> nums, Set<List<Integer>> output, int first) {
+    private void backtrack(int n, ArrayList<Integer> nums,
+                           Set<List<Integer>> output, int first) {
         // if all integers are used up
         if (first == n)
             output.add(new ArrayList<>(nums));
