@@ -12,13 +12,9 @@ be changed.
  */
 
 public class ReverseNodeInKGroups {
-    public static void main(String[] args) {
-
-    }
-
     public ListNode reverseKGroup(ListNode head, int k) {
 
-        if(head == null)
+        if (head == null)
             return null;
 
         ListNode prev = null;
@@ -28,14 +24,16 @@ public class ReverseNodeInKGroups {
 
         int size = 0;
         ListNode inc = cur;
-        while(inc != null) {
+        while (inc != null) {
             inc = inc.next;
             size++;
         }
 
-        if(size < k) {prev = cur; newCur = cur.next;}
-        else {
-            while(counter < k && cur != null) {
+        if (size < k) {
+            prev = cur;
+            newCur = cur.next;
+        } else {
+            while (counter < k && cur != null) {
 
                 counter++;
 
@@ -46,9 +44,9 @@ public class ReverseNodeInKGroups {
                 cur = newCur;
             }
         }
+
         if (newCur != null)
             head.next = reverseKGroup(newCur, k);
-
 
         return prev;
     }
