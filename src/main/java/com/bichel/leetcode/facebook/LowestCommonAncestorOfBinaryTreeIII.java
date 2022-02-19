@@ -1,4 +1,4 @@
-package com.bichel.leetcode.tree;
+package com.bichel.leetcode.facebook;
 
 import com.bichel.leetcode.graph.ParentNode;
 

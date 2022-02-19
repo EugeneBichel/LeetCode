@@ -1,4 +1,6 @@
-package com.bichel.leetcode.tree;
+package com.bichel.leetcode.facebook;
+
+import com.bichel.leetcode.tree.TreeNode;
 
 public class LowestCommonAncestor {
 
