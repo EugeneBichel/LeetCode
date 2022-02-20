@@ -1,4 +1,4 @@
-package com.bichel.leetcode.dp;
+package com.bichel.leetcode.facebook;
 
 /*
 A robot is located at the top-left corner of a m x n grid
