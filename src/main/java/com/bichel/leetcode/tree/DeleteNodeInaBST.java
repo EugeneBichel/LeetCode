@@ -1,26 +1,21 @@
 package com.bichel.leetcode.tree;
 
-import com.bichel.leetcode.tree.TreeNode;
-
 public class DeleteNodeInaBST {
     public TreeNode deleteNode(TreeNode root, int key) {
-        if (root == null) return null;
+        if (root == null)
+            return null;
 
-        // delete from the right subtree
-        if (key > root.val) root.right = deleteNode(root.right, key);
-            // delete from the left subtree
-        else if (key < root.val) root.left = deleteNode(root.left, key);
-            // delete the current node
+        if (key > root.val)
+            root.right = deleteNode(root.right, key);
+        else if (key < root.val)
+            root.left = deleteNode(root.left, key);
         else {
-            // the node is a leaf
-            if (root.left == null && root.right == null) root = null;
-                // the node is not a leaf and has a right child
+            if (root.left == null && root.right == null)
+                root = null;
             else if (root.right != null) {
                 root.val = successor(root);
                 root.right = deleteNode(root.right, root.val);
-            }
-            // the node is not a leaf, has no right child, and has a left child
-            else {
+            } else {
                 root.val = predecessor(root);
                 root.left = deleteNode(root.left, root.val);
             }
@@ -28,21 +23,23 @@ public class DeleteNodeInaBST {
         return root;
     }
 
-    /*
-  One step right and then always left
-  */
+    // One step right and then always left
     private int successor(TreeNode root) {
         root = root.right;
-        while (root.left != null) root = root.left;
+
+        while (root.left != null)
+            root = root.left;
+
         return root.val;
     }
 
-    /*
-  One step left and then always right
-  */
+    // One step left and then always right
     private int predecessor(TreeNode root) {
         root = root.left;
-        while (root.right != null) root = root.right;
+
+        while (root.right != null)
+            root = root.right;
+
         return root.val;
     }
 }

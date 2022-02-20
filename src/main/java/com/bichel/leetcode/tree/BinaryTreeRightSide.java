@@ -12,12 +12,14 @@ Output: [1,3,4]
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.List;
 
 public class BinaryTreeRightSide {
     public List<Integer> rightSide(TreeNode root) {
         List<Integer> items = new ArrayList<>();
-        if(root == null) return items;
+        if (root == null)
+            return items;
 
         traverse(root, items, 0);
 
@@ -25,7 +27,8 @@ public class BinaryTreeRightSide {
     }
 
     private void traverse(TreeNode root, List<Integer> items, int level) {
-        if(level == items.size()) items.add(root.val);
+        if(level == items.size())
+            items.add(root.val);
 
         if(root.right != null)
             traverse(root.right, items, level+1);
@@ -37,8 +40,8 @@ public class BinaryTreeRightSide {
         if (root == null) return new ArrayList<>();
 
         ArrayDeque<TreeNode> nextLevel = new ArrayDeque<>() {{ offer(root); }};
-        ArrayDeque<TreeNode> currLevel = new ArrayDeque<>();
-        List<Integer> rightside = new ArrayList();
+        Deque<TreeNode> currLevel = new ArrayDeque<>();
+        List<Integer> rightside = new ArrayList<>();
 
         TreeNode node = null;
         while (!nextLevel.isEmpty()) {

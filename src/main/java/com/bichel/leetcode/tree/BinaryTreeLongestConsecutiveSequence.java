@@ -9,10 +9,12 @@ public class BinaryTreeLongestConsecutiveSequence {
     }
 
     private void dfs(TreeNode node, TreeNode parent, int length) {
-        if(node == null) return;
-        length = parent != null &&
-                node.val == parent.val + 1 ?
-                length + 1 : 1;
+        if(node == null)
+            return;
+
+        length = parent != null && node.val == parent.val + 1 ?
+                length + 1 :
+                1;
 
         maxLen = Math.max(maxLen, length);
 

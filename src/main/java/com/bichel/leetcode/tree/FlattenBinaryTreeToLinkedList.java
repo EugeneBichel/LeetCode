@@ -1,7 +1,5 @@
 package com.bichel.leetcode.tree;
 
-import com.bichel.leetcode.tree.TreeNode;
-
 public class FlattenBinaryTreeToLinkedList {
     public void flatten(TreeNode root) {
         flattenTree(root);

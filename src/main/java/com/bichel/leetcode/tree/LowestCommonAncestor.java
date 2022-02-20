@@ -11,7 +11,9 @@ public class LowestCommonAncestor {
     }
 
     private TreeNode findLca(TreeNode root, TreeNode p, TreeNode q) {
-        if(root == null) return null;
+        if(root == null)
+            return null;
+
         TreeNode leftLca = findLca(root.left, p, q);
         TreeNode rightLca = findLca(root.right, p, q);
 

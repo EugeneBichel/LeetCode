@@ -15,10 +15,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class BinarySearchTreeIterator {
-    public static void main(String[] args) {
-
-    }
-
     private TreeNode root;
     private List<TreeNode> list;
     private TreeNode[] arr;

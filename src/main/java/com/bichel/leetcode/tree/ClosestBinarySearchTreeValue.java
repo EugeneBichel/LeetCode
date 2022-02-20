@@ -1,7 +1,5 @@
 package com.bichel.leetcode.tree;
 
-import com.bichel.leetcode.tree.TreeNode;
-
 public class ClosestBinarySearchTreeValue {
     private int val = 0;
     private double diff = Double.MAX_VALUE;

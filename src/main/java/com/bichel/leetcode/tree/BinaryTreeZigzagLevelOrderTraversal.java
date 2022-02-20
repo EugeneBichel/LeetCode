@@ -3,10 +3,9 @@ package com.bichel.leetcode.tree;
 /*
 Given the root of a binary tree,
 return the zigzag level order traversal of its nodes' values.
-(i.e., from left to right, then right to left for the next level and alternate between).
+(i.e., from left to right,
+then right to left for the next level and alternate between).
  */
-
-import com.bichel.leetcode.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,22 +28,22 @@ public class BinaryTreeZigzagLevelOrderTraversal {
         boolean isOrderLeft = true;
 
         while (!nodeQueue.isEmpty()) {
-            TreeNode curr_node = nodeQueue.pollFirst();
+            TreeNode currNode = nodeQueue.pollFirst();
 
-            if (curr_node != null) {
+            if (currNode != null) {
                 if (isOrderLeft)
-                    levelList.addLast(curr_node.val);
+                    levelList.addLast(currNode.val);
                 else
-                    levelList.addFirst(curr_node.val);
+                    levelList.addFirst(currNode.val);
 
-                if (curr_node.left != null)
-                    nodeQueue.addLast(curr_node.left);
-                if (curr_node.right != null)
-                    nodeQueue.addLast(curr_node.right);
+                if (currNode.left != null)
+                    nodeQueue.addLast(currNode.left);
+                if (currNode.right != null)
+                    nodeQueue.addLast(currNode.right);
             } else {
                 // we finish the scan of one level
                 results.add(levelList);
-                levelList = new LinkedList<Integer>();
+                levelList = new LinkedList<>();
 
                 // prepare for the next level
                 if (nodeQueue.size() > 0)

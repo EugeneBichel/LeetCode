@@ -13,9 +13,13 @@ and the right pointer should point to its successor.
 You should return the pointer to the smallest element of the linked list.
  */
 
-import com.bichel.leetcode.tree.TreeNode;
-
 public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
+
+    // the smallest (first)
+    TreeNode first = null;
+    //the largest (last) nodes
+    TreeNode last = null;
+
     public TreeNode treeToDoublyList(TreeNode root) {
         if (root == null) return null;
 
@@ -26,27 +30,18 @@ public class ConvertBinarySearchTreeToSortedDoublyLinkedList {
         return first;
     }
 
-    // the smallest (first) and the largest (last) nodes
-    TreeNode first = null;
-    TreeNode last = null;
-
-    public void helper(TreeNode node) {
+    private void helper(TreeNode node) {
         if (node != null) {
-            // left
             helper(node.left);
-            // node
+
             if (last != null) {
-                // link the previous node (last)
-                // with the current one (node)
                 last.right = node;
                 node.left = last;
             } else {
-                // keep the smallest node
-                // to close DLL later on
                 first = node;
             }
             last = node;
-            // right
+
             helper(node.right);
         }
     }

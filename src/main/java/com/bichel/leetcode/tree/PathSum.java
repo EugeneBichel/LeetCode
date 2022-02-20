@@ -7,8 +7,6 @@ that adding up all the values along the path equals targetSum.
 A leaf is a node with no children.
  */
 
-import com.bichel.leetcode.tree.TreeNode;
-
 public class PathSum {
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root == null)
