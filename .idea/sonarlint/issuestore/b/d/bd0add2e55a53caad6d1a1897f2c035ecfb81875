@@ -1,10 +1,0 @@
-
-W
-java:S1854
-"5Remove this useless assignment to local variable "a".(„Ìûÿÿÿÿ8ùôöîÌ/
-]	java:S125"<This block of commented-out lines of code should be removed.(šñôÚúÿÿÿÿ8¶¥öîÌ/
-H
-java:S1481
-"&Remove this unused "a" local variable.(„Ìûÿÿÿÿ8‚õöîÌ/
-]	java:S125"<This block of commented-out lines of code should be removed.(™—Ÿ¸ûÿÿÿÿ8„õöîÌ/
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Â¨´˜ùÿÿÿÿ
