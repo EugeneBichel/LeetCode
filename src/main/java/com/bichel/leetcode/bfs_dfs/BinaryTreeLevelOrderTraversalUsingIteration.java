@@ -8,30 +8,26 @@ import java.util.List;
 import java.util.Queue;
 
 public class BinaryTreeLevelOrderTraversalUsingIteration {
-    public static void main(String[] args) {
-
-    }
-
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> levels = new ArrayList<>();
 
-        if(root == null) return levels;
+        if (root == null) return levels;
 
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
 
             List<Integer> level = new ArrayList<>();
             int lenLevel = queue.size();
 
-            for(int i=0; i<lenLevel; i++) {
+            for (int i = 0; i < lenLevel; i++) {
                 TreeNode node = queue.remove();
                 level.add(node.val);
 
-                if(node.left != null)
+                if (node.left != null)
                     queue.add(node.left);
-                if(node.right != null)
+                if (node.right != null)
                     queue.add(node.right);
             }
 
@@ -40,5 +36,4 @@ public class BinaryTreeLevelOrderTraversalUsingIteration {
 
         return levels;
     }
-
 }
