@@ -1,18 +1,12 @@
 package com.bichel.leetcode.dp;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class SubarraySum {
-    public static void main(String[] args) {
-        SubarraySum program = new SubarraySum();
-        int[] arr = {-1,-1,1};
-
-        int num = program.subarraySum4(arr, 0);
-    }
-
     public int subarraySum4(int[] nums, int k) {
         int count = 0, sum = 0;
-        HashMap<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);
 
         for (int i = 0; i < nums.length; i++) {
@@ -28,9 +22,9 @@ public class SubarraySum {
     public int subarraySum3(int[] nums, int k) {
         int count = 0;
         for (int start = 0; start < nums.length; start++) {
-            int sum=0;
+            int sum = 0;
             for (int end = start; end < nums.length; end++) {
-                sum+=nums[end];
+                sum += nums[end];
                 if (sum == k)
                     count++;
             }
