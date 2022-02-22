@@ -34,17 +34,6 @@ Constraints
  */
 
 public class CountVowelsPermutation {
-    public static void main(String[] args) {
-        // Use dynamic programming.
-        //Let dp[i][j] be the number of strings of length i that ends with the j-th vowel.
-
-        int wordLength = 144;
-        //int amountPermutations = doCountVowelsPermutation(wordLength);
-        int amountPermutations = solution1(wordLength);
-
-        System.out.println(amountPermutations);
-    }
-
     static int solution1(int n) {
 
         //each letter has n permutations

@@ -24,21 +24,17 @@ Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are 
 
 public class BestTimeToBuyAndSellStockII {
     public int maxProfit(int[] prices) {
+        int maxprofit = 0;
         int min = prices[0];
-        int maxProfit = 0;
 
-        for (int i = 1; i < prices.length; i++) {
-            if (prices[i] < min) {
-                min = prices[i];
-                continue;
+        for(int i=1; i<prices.length; i++) {
+            if(prices[i] > min) {
+                maxprofit += prices[i] - min;
             }
 
-            if (prices[i] - min > 0) {
-                maxProfit += prices[i] - min;
-                min = prices[i];
-            }
+            min = prices[i];
         }
 
-        return maxProfit;
+        return maxprofit;
     }
 }

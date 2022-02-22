@@ -1,7 +1,7 @@
 package com.bichel.leetcode.dp;
 
 public class BestTimeToBuyAndSellStock {
-    public int maxProfit(int prices[]) {
+    public int maxProfit(int[] prices) {
         int minPrice = Integer.MAX_VALUE;
         int maxProfit = 0;
 

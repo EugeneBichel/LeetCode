@@ -17,17 +17,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class MaximumLengthOfRepeatedSubarray {
-    public static void main(String[] args) {
-        MaximumLengthOfRepeatedSubarray pr = new MaximumLengthOfRepeatedSubarray();
-
-        int[] a1= {1,2,3,2,1};
-        int[] a2={3,2,1,4,7};
-
-        int maxL = pr.dpUsingMemo(a1, a2);
-
-        System.out.println(maxL);
-    }
-
     private int maxLen = 0;
 
     private int dpUsingMemo(int[] nums1, int[] nums2) {
