@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 /*
 You are given an integer array ribbons, where ribbons[i] represents

@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 public class ValidPalindrome2 {
     private boolean isPalindrome(String s, int l, int r) {

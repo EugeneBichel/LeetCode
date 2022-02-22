@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 /*
 Design and implement a data structure for a Least Frequently Used (LFU) cache.

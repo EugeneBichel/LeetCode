@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 /*
 A conveyor belt has packages that must be shipped

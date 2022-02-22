@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 /*
 You are given an array of positive integers w where w[i]

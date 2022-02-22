@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 /*
 Implement next permutation, which rearranges numbers into

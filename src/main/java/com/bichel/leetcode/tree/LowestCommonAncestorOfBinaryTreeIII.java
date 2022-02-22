@@ -15,7 +15,7 @@ public class LowestCommonAncestorOfBinaryTreeIII {
 
         ParentNode lca = findLca(root, p, q);
 
-        return hasP == true && hasQ == true ? lca : null;
+        return hasP && hasQ ? lca : null;
     }
 
     private ParentNode findLca(ParentNode root, ParentNode p, ParentNode q) {
@@ -24,10 +24,10 @@ public class LowestCommonAncestorOfBinaryTreeIII {
         ParentNode leftLca = findLca(root.left, p, q);
         ParentNode rightLca = findLca(root.right, p, q);
 
-        if(hasP == false && root.val == p.val) {
+        if(!hasP && root.val == p.val) {
             hasP = true;
         }
-        if(hasQ == false && root.val == p.val) {
+        if(!hasQ && root.val == p.val) {
             hasQ = true;
         }
 

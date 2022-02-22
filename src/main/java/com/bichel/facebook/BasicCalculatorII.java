@@ -1,4 +1,4 @@
-package com.bichel.leetcode.facebook;
+package com.bichel.facebook;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
