@@ -382,8 +382,6 @@ o
 ?src/main/java/com/bichel/leetcode/tree/MergeTwoBinaryTrees.java,c/c/cc40353d3ca720199ed44b522806c7a7d0b2526c
 q
 Asrc/main/java/com/bichel/leetcode/tree/MaximumAverageSubtree.java,4/8/486502c59365d4fa71bebc0effc29b989a8a791f
-t
-Dsrc/main/java/com/bichel/leetcode/tree/MaximumDepthOfBinaryTree.java,9/b/9b1fbf4eb0dd287376504e17c7e1053a543df389
 p
 @src/test/java/com/bichel/leetcode/graph/NumberOfIslandsTest.java,a/d/ad3a27c842e053e33c6cbe15609857ca14e274c8
 n
@@ -638,10 +636,6 @@ s
 Csrc/main/java/com/bichel/leetcode/tree/KthSmallestElementInBST.java,5/8/588d162fc160144d539c6b644ad7c2473093accb
 c
 3src/main/java/com/bichel/leetcode/tree/PathSum.java,4/0/40bb0e89305765b31f97cd3489828d60b0507fc2
-t
-Dsrc/main/java/com/bichel/leetcode/tree/ValidateBinarySearchTree.java,6/e/6e819383ffaad99847ed3b452e24d4730f80d0b8
-t
-Dsrc/main/java/com/bichel/leetcode/tree/MinimumDepthOfBinaryTree.java,c/a/ca214d5192b9e98297d326e6d499c1dde3be63c9
 o
 ?src/test/java/com/bichel/leetcode/tree/MorrisTraversalTest.java,3/4/34e063c6d6e857240ce68a7ece31961c05ffc1c1
 k

@@ -4,6 +4,22 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/*
+Time Complexity:
+        O(N + M),
+            where N is a number of nodes (vertices)
+            and M is a number of edges.
+Space Complexity:
+        O(N),
+            this space is occupied by the visited hash map and in addition to that,
+            space would also be occupied by the recursion stack since we are adopting
+            a recursive approach here.
+            The space occupied by the recursion stack would be equal
+            to O(H) where H is the height of the graph. Overall,
+            the space complexity would be O(N).
+ */
+
+
 public class CloneGraph {
 
     class Node {
@@ -35,7 +51,7 @@ public class CloneGraph {
             return visited.get(node);
         }
 
-        Node cloneNode = new Node(node.val, new ArrayList<Node>());
+        Node cloneNode = new Node(node.val, new ArrayList<>());
         visited.put(node, cloneNode);
 
         for (Node neighbor: node.neighbors) {

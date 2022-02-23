@@ -1,4 +1,6 @@
-package com.bichel.leetcode.tree;
+package com.bichel.fbrecruiting;
+
+import com.bichel.leetcode.tree.TreeNode;
 
 public class MaximumDepthOfBinaryTree {
 
