@@ -4,15 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class IsIsomorphic {
-    public static void main(String[] args) {
-
-        String s = "badc";
-        String t = "baba";
-
-        System.out.println(isIsomorphic(s, t));
-    }
-
-    private static boolean isIsomorphic(String s1, String s2) {
+    public boolean isIsomorphic(String s1, String s2) {
 
         Map<Character, Character> map = new HashMap<>();
         //Arrays.f

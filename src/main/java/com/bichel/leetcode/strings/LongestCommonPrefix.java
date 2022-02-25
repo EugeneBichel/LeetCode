@@ -1,13 +1,7 @@
 package com.bichel.leetcode.strings;
 
 public class LongestCommonPrefix {
-    public static void main(String[] args) {
-        String[] a = {"cir","car"};
-
-        String prefix = longestCommonPrefix(a);
-    }
-
-    private static String longestCommonPrefix(String[] strs) {
+    public String longestCommonPrefix(String[] strs) {
 
         if(strs.length == 0) return "";
 

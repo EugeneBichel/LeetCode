@@ -22,17 +22,6 @@ public class AlphabetOrder {
         public char getCh() {return this.ch;}
     }
 
-    public static void main(String[] args) {
-        String[] words = new String[]{"hello","leetcode"};
-        String order = "hlabcdefgijkmnopqrstuvwxyz";
-
-        AlphabetOrder program = new AlphabetOrder();
-
-        boolean result = program.isAlienSorted(words, order);
-
-        System.out.println(result);
-    }
-
     boolean isAlienSorted(String[] words, String order) {
         List<Character> letters = new ArrayList<>();
 

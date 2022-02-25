@@ -1,15 +1,6 @@
 package com.bichel.leetcode.strings;
 
 public class ImplementStrstr {
-    public static void main(String[] args) {
-        String s = "mississippi";
-        String a = "issi";
-        //s = "a";
-        //a = "a";
-
-        int start = strStr(s, a);
-    }
-
     private static int strStr(String str1, String str2) {
         if(str1.length() == 0 && str2.length() == 0) return 0;
         if(str2.length() == 0) return 0;

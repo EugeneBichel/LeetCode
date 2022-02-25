@@ -8,10 +8,6 @@ Output: "One Hundred Twenty Three"
  */
 
 public class IntegerToEnglishWords {
-    public static void main(String[] args) {
-
-    }
-
     public String one(int num) {
         switch(num) {
             case 1: return "One";

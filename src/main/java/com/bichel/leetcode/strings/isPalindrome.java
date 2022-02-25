@@ -1,10 +1,6 @@
 package com.bichel.leetcode.strings;
 
 public class isPalindrome {
-    public static void main(String[] args) {
-
-    }
-
     public boolean isPalindrome(String s) {
         int l = 0;
         int r = s.length()-1;

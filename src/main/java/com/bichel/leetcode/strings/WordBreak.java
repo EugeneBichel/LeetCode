@@ -17,24 +17,6 @@ Explanation: Return true because "leetcode" can be segmented as "leet code".
  */
 
 public class WordBreak {
-    public static void main(String[] args) {
-        WordBreak pr = new WordBreak();
-
-        String s = "leetcode";
-        List<String> dict = List.of("leet", "code");
-
-        s = "applepenapple";
-        dict = List.of("apple", "pen");
-
-        s = "catsandog";
-        dict = List.of("cats", "dog", "sand", "and", "cat");
-
-        s = "a";
-        dict = List.of("b");
-
-        boolean res = pr.wordBreak(s, dict);
-    }
-
     public boolean wordBreak(String s, List<String> wordDict) {
         //return wordBreakMemo(s, new HashSet<>(wordDict), 0, new Boolean[s.length()]);
         return useBreadthFirstSearch(s, wordDict);
