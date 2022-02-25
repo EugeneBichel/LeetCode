@@ -1,5 +1,7 @@
 package com.bichel.leetcode.strings;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,8 +20,7 @@ Explanation: Return true because "leetcode" can be segmented as "leet code".
 
 public class WordBreak {
     public boolean wordBreak(String s, List<String> wordDict) {
-        //return wordBreakMemo(s, new HashSet<>(wordDict), 0, new Boolean[s.length()]);
-        return useBreadthFirstSearch(s, wordDict);
+        return bfs(s, wordDict);
     }
 
     private boolean useDynamicProgramming(String s, List<String> wordDict) {
@@ -37,26 +38,32 @@ public class WordBreak {
         return dp[s.length()];
     }
 
-    private boolean useBreadthFirstSearch(String s, List<String> wordDict) {
+    private boolean bfs(String s, List<String> wordDict) {
         Set<String> wordDictSet = new HashSet<>(wordDict);
-        Queue<Integer> queue = new LinkedList<>();
+
+        Deque<Integer> queue = new ArrayDeque<>();
         boolean[] visited = new boolean[s.length()];
         queue.add(0);
+
         while (!queue.isEmpty()) {
             int start = queue.remove();
             if (visited[start]) {
                 continue;
             }
+
             for (int end = start + 1; end <= s.length(); end++) {
                 if (wordDictSet.contains(s.substring(start, end))) {
                     queue.add(end);
+
                     if (end == s.length()) {
                         return true;
                     }
                 }
             }
+
             visited[start] = true;
         }
+
         return false;
     }
 
@@ -72,18 +79,22 @@ public class WordBreak {
     tree is pruned and thus it reduces the time complexity by a large factor.
      */
     private boolean wordBreakMemo(String s, Set<String> wordDict, int start, Boolean[] memo) {
-        if (start == s.length()) {
+        if (start == s.length())
             return true;
-        }
-        if (memo[start] != null) {
+
+        if (memo[start] != null)
             return memo[start];
-        }
+
         for (int end = start + 1; end <= s.length(); end++) {
-            if (wordDict.contains(s.substring(start, end)) && wordBreakMemo(s, wordDict, end, memo)) {
-                return memo[start] = true;
+            if (wordDict.contains(s.substring(start, end)) &&
+                    wordBreakMemo(s, wordDict, end, memo)) {
+                memo[start] = true;
+                return memo[start];
             }
         }
-        return memo[start] = false;
+
+        memo[start] = false;
+        return memo[start];
     }
 
     /*
@@ -95,14 +106,16 @@ public class WordBreak {
     then it will return true.
      */
     private boolean wordBreakRecur(String s, Set<String> wordDict, int start) {
-        if (start == s.length()) {
+        if (start == s.length())
             return true;
-        }
+
         for (int end = start + 1; end <= s.length(); end++) {
-            if (wordDict.contains(s.substring(start, end)) && wordBreakRecur(s, wordDict, end)) {
+            if (wordDict.contains(s.substring(start, end)) &&
+                    wordBreakRecur(s, wordDict, end)) {
                 return true;
             }
         }
+
         return false;
     }
 }
