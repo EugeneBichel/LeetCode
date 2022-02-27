@@ -18,6 +18,7 @@ public class CountAndSay {
         StringBuilder prev;
         int count;
         char say;
+
         for (int i = 1; i < n; i++) {
             prev = curr;
             curr = new StringBuilder();
