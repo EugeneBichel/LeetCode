@@ -21,15 +21,15 @@ public class RotateArrayUsingKSteps {
 
         int[] kary = new int[k];
 
-        for(int i=0; i<k; i++) {
-            kary[i] = nums[N-k+i];
+        for (int i = 0; i < k; i++) {
+            kary[i] = nums[N - k + i];
         }
 
-        for(int i=N-k-1; i>=0; i--) {
-            nums[i+k] = nums[i];
+        for (int i = N - k - 1; i >= 0; i--) {
+            nums[i + k] = nums[i];
         }
 
-        for(int i=0; i<k; i++) {
+        for (int i = 0; i < k; i++) {
             nums[i] = kary[i];
         }
     }
