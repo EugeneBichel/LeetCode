@@ -23,13 +23,25 @@ Explanation: The input binary string 00000000000000000000000000001011
 has a total of three '1' bits.
  */
 
+/*
+The run time depends on the number of bits in n.
+ Because nn in this piece of code is a 32-bit integer, the time complexity is O(1).
+
+The space complexity is O(1), since no additional space is allocated.
+ */
+
 public class NumberOf1Bits {
+    /*
+    The solution is straight-forward.
+    We check each of the 32 bits of the number.
+    If the bit is 1, we add one to the number of 1-bits.
+     */
     public int hammingWeight(int n) {
         int bits = 0;
 
         int mask = 1;
-        for(int i=0; i<32; i++) {
-            if((n & mask) != 0) {
+        for (int i = 0; i < 32; i++) {
+            if ((n & mask) != 0) {
                 bits++;
             }
 
@@ -37,5 +49,15 @@ public class NumberOf1Bits {
         }
 
         return bits;
+    }
+
+    public int hammingWeight2(int n) {
+        int num = 0;
+        while (n != 0) {
+            num++;
+            n &= n - 1;
+        }
+
+        return num;
     }
 }

@@ -832,3 +832,9 @@ k
 ;src/main/java/com/bichel/interviewbit/ReverseTheString.java,e/0/e0596c3cf74d34449a4ac4f1a26eac3397bb8b40
 m
 =src/main/java/com/bichel/leetcode/strings/RomanToInteger.java,1/4/141362e2ff6f35614ba0d5887c2a194c44dd6424
+g
+7src/main/java/com/bichel/interviewbit/RotatedArray.java,2/d/2d5b63d3642d7247b2d7c1eae34f596cd435dabd
+t
+Dsrc/main/java/com/bichel/leetcode/arrays/RotateArrayUsingKSteps.java,b/1/b17ae2f96c792b4cc55646740d7fa8bc45f47791
+n
+>src/main/java/com/bichel/interviewbit/SquareRootOfInteger.java,5/1/518b7ef4336cfa81d8c64614732e687443068ccd
