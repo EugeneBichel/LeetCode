@@ -838,3 +838,17 @@ t
 Dsrc/main/java/com/bichel/leetcode/arrays/RotateArrayUsingKSteps.java,b/1/b17ae2f96c792b4cc55646740d7fa8bc45f47791
 n
 >src/main/java/com/bichel/interviewbit/SquareRootOfInteger.java,5/1/518b7ef4336cfa81d8c64614732e687443068ccd
+d
+4src/main/java/com/bichel/facebook/SummaryRanges.java,0/f/0f4cb771f6d4536227c6f8829657f2cc3f151f89
+p
+@src/test/java/com/bichel/leetcode/bits/SumOfTwoIntegersTest.java,2/d/2d3e78202b634e79c39f977b5f52f55d0894feb8
+h
+8src/main/java/com/bichel/leetcode/bit/NumberOf1Bits.java,1/b/1be5ae7f97a617c764300ce8642e5ac3e850d6bf
+g
+7src/main/java/com/bichel/leetcode/bit/CountingBits.java,8/a/8ae3acc2c4702fdcabdc6a81e7987a3f4f3b989f
+r
+Bsrc/main/java/com/bichel/facebook/PartitionToKEqualSumSubsets.java,5/7/5760292407a20c97248ee3f1e58747b655103015
+
+Osrc/main/java/com/bichel/leetcode/backtracking/PartitionToKEqualSumSubsets.java,2/f/2fe74db699d81608c7e1d7f6f95b5636230a9aaa
+k
+;src/main/java/com/bichel/leetcode/bit/SumOfTwoIntegers.java,2/3/23e0945c4fee83109b4fe57aab0856ef7402e196
