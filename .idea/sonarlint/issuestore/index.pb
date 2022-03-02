@@ -222,8 +222,6 @@ z
 Jsrc/main/java/com/bichel/classicproblems/other/ExpressionAndOperators.java,e/7/e766b31d7421f23e7067e755d12254e9cb08a7e2
 k
 ;src/main/java/com/bichel/classicproblems/bit/AddBinary.java,c/f/cfcc98c57beab4719d65f9229b2072117b5b1d96
-p
-@src/main/java/com/bichel/classicproblems/dp/FibonacciNumber.java,b/f/bf82080b30e4b160eaa07e9468c3a50d44b13d6a
 …
 Usrc/main/java/com/bichel/classicproblems/prefixsum/MaximumSizeSubarraySumEqualsK.java,3/5/353d0f137046174b90bea594c0fc00a10d66f1c2
 ‹
@@ -412,8 +410,6 @@ m
 =src/main/java/com/bichel/interviewbit/DesignURLShortener.java,b/d/bd58f863d9f1de38fbbcc5bff5651e2ca5294792
 i
 9src/main/java/com/bichel/interviewbit/RearrangeArray.java,9/8/98c12b0da69c4e578c05282036772956b961fd0e
-k
-;src/main/java/com/bichel/interviewbit/FindNthFibonacci.java,2/8/2849f8662b9665e0d64990235914249b0782f4ee
 s
 Csrc/main/java/com/bichel/interviewbit/RotatedSortedArraySearch.java,8/b/8b5202a2138fc9e96c43d82652522d3aae5f3856
 v
@@ -676,8 +672,6 @@ u
 Esrc/main/java/com/bichel/leetcode/dp/BestTimeToBuyAndSellStockII.java,8/3/835d1630808f4f4c14f05c634bc787558b708ca4
 v
 Fsrc/main/java/com/bichel/leetcode/dp/BestTimeToBuyAndSellStockIII.java,5/5/55fb1b0f9c294259784105666f74fa2702241650
-p
-@src/main/java/com/bichel/leetcode/dp/CountVowelsPermutation.java,6/0/6010f8f45fc81233a91c3fc58deaef56446c63b5
 l
 <src/main/java/com/bichel/leetcode/design/StringIterator.java,9/5/9506794edf8c8a40fef7697c6c5d866bfc9b0cae
 t
