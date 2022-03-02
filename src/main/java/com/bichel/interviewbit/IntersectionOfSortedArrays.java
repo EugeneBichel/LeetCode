@@ -26,11 +26,9 @@ public class IntersectionOfSortedArrays {
         List<Integer> ans = new LinkedList<>();
 
         for (int i = 0; i < A.size(); i++) {
-            if (map.containsKey(A.get(i))) {
-                if (map.get(A.get(i)) > 0) {
-                    map.put(A.get(i), map.getOrDefault(A.get(i), 0) - 1);
-                    ans.add(A.get(i));
-                }
+            if (map.containsKey(A.get(i)) && map.get(A.get(i)) > 0) {
+                map.put(A.get(i), map.getOrDefault(A.get(i), 0) - 1);
+                ans.add(A.get(i));
             }
         }
 

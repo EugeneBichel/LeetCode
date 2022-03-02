@@ -10,12 +10,15 @@ such that the container contains the most water.
 
 Notice that you may not slant the container.
 
-
+Time complexity : O(n). Single pass.
+Space complexity : O(1). Constant space is used.
  */
 
 public class ContainerWithMostWater {
     public int maxArea(int[] height) {
-        int maxArea = 0, l = 0, r = height.length - 1;
+        int maxArea = 0;
+        int l = 0;
+        int r = height.length - 1;
 
         while (l < r) {
             maxArea = Math.max(maxArea, Math.min(height[l], height[r]) * (r - l));
