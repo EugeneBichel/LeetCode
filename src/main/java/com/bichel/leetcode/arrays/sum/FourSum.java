@@ -21,7 +21,8 @@ Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
 
 public class FourSum {
     public class Pair {
-        int first, second;
+        int first;
+        int second;
 
         public Pair(int first, int second) {
             this.first = first;
@@ -34,8 +35,8 @@ public class FourSum {
         List<List<Integer>> sets = new ArrayList<>();
         int n = arr.length;
 
-        // Store sums of all pairs in a hash table
         HashMap<Integer, List<Pair>> map = new HashMap<>();
+
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 if(map.containsKey(arr[i] + arr[j])) {
