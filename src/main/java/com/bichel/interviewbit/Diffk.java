@@ -25,14 +25,13 @@ public class Diffk {
     public int diffPossible(ArrayList<Integer> a, int b) {
         Map<Integer, Integer> m = new HashMap<>();
 
-        for(int i=0; i<a.size(); i++)
+        for (int i = 0; i < a.size(); i++)
             m.put(a.get(i), i);
 
-        for(int i=0; i<a.size(); i++) {
-            if(m.containsKey(b+a.get(i)) && m.get(b+a.get(i)) != i) return 1;
+        for (int i = 0; i < a.size(); i++) {
+            if (m.containsKey(b + a.get(i)) && m.get(b + a.get(i)) != i) return 1;
         }
 
         return 0;
-
     }
 }
