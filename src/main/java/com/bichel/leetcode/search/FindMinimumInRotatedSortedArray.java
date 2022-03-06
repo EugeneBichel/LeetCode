@@ -19,22 +19,27 @@ You must write an algorithm that runs in O(log n) time.
 public class FindMinimumInRotatedSortedArray {
     public int findMin(int[] nums) {
         int N = nums.length;
-        int l=0;
-        int r=N-1;
+        int l = 0;
+        int r = N - 1;
 
-        if(N == 1) return nums[0];
-        if(nums[l] <= nums[r]) return nums[l];
+        if (N == 1)
+            return nums[0];
+        if (nums[l] <= nums[r])
+            return nums[l];
 
-        while(l <= r) {
+        while (l <= r) {
 
-            int pivot = l + (r-l)/2;
-            if(nums[pivot] > nums[pivot+1]) return nums[pivot+1];
-            else if(nums[pivot-1] > nums[pivot]) return nums[pivot];
+            int pivot = l + (r - l) / 2;
 
-            if( nums[pivot] > nums[0] ) {
-                l = pivot+1;
+            if (nums[pivot] > nums[pivot + 1])
+                return nums[pivot + 1];
+            else if (nums[pivot - 1] > nums[pivot])
+                return nums[pivot];
+
+            if (nums[pivot] > nums[0]) {
+                l = pivot + 1;
             } else {
-                r = pivot-1;
+                r = pivot - 1;
             }
         }
 

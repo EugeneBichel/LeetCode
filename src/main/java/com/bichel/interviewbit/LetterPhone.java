@@ -1,46 +1,42 @@
-package com.bichel.leetcode.backtracking;
+package com.bichel.interviewbit;
 
 /*
-Given a string containing digits from 2-9 inclusive,
-return all possible letter combinations that the number could represent.
-Return the answer in any order.
+Given a digit string, return all possible letter combinations that the number could represent.
 
-A mapping of digit to letters (just like on the telephone buttons)
-is given below. Note that 1 does not map to any letters.
-
-Example 1:
-Input: digits = "23"
-Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
-
-Example 2:
-Input: digits = ""
-Output: []
-
-Example 3:
-Input: digits = "2"
-Output: ["a","b","c"]
-*/
+A mapping of digit to letters (just like on the telephone buttons) is given below.
+ */
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
-import java.util.List;
 
-public class LetterCombinationsOfaPhoneNumber {
-    private List<String> combinations = new ArrayList<>();
-    private Map<Character, String> letters = Map.of(
-            '2', "abc", '3', "def", '4', "ghi", '5', "jkl",
-            '6', "mno", '7', "pqrs", '8', "tuv", '9', "wxyz");
+public class LetterPhone {
+
+    private ArrayList<String> combinations = new ArrayList<>();
+    private Map<Character, String> letters;
     private String phoneDigits;
 
-    public List<String> letterCombinations(String digits) {
+    public ArrayList<String> letterCombinations(String digits) {
         // If the input is empty, immediately return an empty answer array
         if (digits.length() == 0) {
             return combinations;
         }
 
+        letters = new HashMap<>();
+        letters.put('2', "abc");
+        letters.put('3', "def");
+        letters.put('4', "ghi");
+        letters.put('5', "jkl");
+        letters.put('6', "mno");
+        letters.put('7', "pqrs");
+        letters.put('8', "tuv");
+        letters.put('9', "wxyz");
+
         // Initiate backtracking with an empty path and starting index of 0
-        phoneDigits = digits;
+        this.phoneDigits = digits;
+
         backtrack(0, new StringBuilder());
+
         return combinations;
     }
 
@@ -53,7 +49,7 @@ public class LetterCombinationsOfaPhoneNumber {
 
         // Get the letters that the current digit maps to, and loop through them
         String possibleLetters = letters.get(phoneDigits.charAt(index));
-        for (char letter : possibleLetters.toCharArray()) {
+        for (char letter: possibleLetters.toCharArray()) {
             // Add the letter to our current path
             path.append(letter);
             // Move on to the next digit
