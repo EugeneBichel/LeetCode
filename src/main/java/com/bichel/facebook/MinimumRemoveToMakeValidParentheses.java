@@ -1,45 +1,51 @@
 package com.bichel.facebook;
 
 import java.util.ArrayDeque;
-import java.util.ArrayList;
 import java.util.Deque;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
+
+/*
+Given a string s of '(' , ')' and lowercase English characters.
+
+Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string.
+
+Formally, a parentheses string is valid if and only if:
+
+It is the empty string, contains only lowercase characters, or
+It can be written as AB (A concatenated with B), where A and B are valid strings, or
+It can be written as (A), where A is a valid string.
+
+
+ */
 
 public class MinimumRemoveToMakeValidParentheses {
-    class Pair {
-        int index;
-        char ch;
-
-        public Pair(int index, char ch) {
-            this.index = index;
-            this.ch = ch;
-        }
-    }
-
     public String minRemoveToMakeValid(String s) {
-        List<Character> out = new ArrayList<>();
-        Deque<Pair> st = new ArrayDeque<>();
+        Deque<Integer> stack = new ArrayDeque<>();
+        Set<Integer> indToRemove = new HashSet<>();
 
-        for (char c : s.toCharArray()) {
-            if (c == '(') {
-                out.add(c);
-                st.push(new Pair(out.size() - 1, c));
-            } else if (c == ')') {
-                if (!st.isEmpty()) {
-                    out.add(c);
-                    st.pop();
+        for(int i=0; i<s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if(ch == '(') {
+                stack.push(i);
+            } else if(ch == ')') {
+                if( !stack.isEmpty()) {
+                    stack.pop();
+                } else {
+                    indToRemove.add(i);
                 }
-            } else {
-                out.add(c);
             }
         }
 
-        while (!st.isEmpty()) {
-            out.remove(st.pop().index);
+        while(!stack.isEmpty()) {
+            indToRemove.add(stack.pop());
         }
 
         StringBuilder sb = new StringBuilder();
-        out.forEach(sb::append);
+        for(int i=0; i<s.length(); i++) {
+            if(!indToRemove.contains(i)) sb.append(s.charAt(i));
+        }
 
         return sb.toString();
     }

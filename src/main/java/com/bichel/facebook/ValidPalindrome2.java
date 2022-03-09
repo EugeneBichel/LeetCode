@@ -1,5 +1,10 @@
 package com.bichel.facebook;
 
+/*
+Given a string s, return true if the s can be palindrome
+after deleting at most one character from it.
+ */
+
 public class ValidPalindrome2 {
     private boolean isPalindrome(String s, int l, int r) {
 

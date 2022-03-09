@@ -510,16 +510,8 @@ r
 Bsrc/main/java/com/bichel/fbrecruiting/MinimumLengthSubstrings.java,8/1/81ddc80f0a6c34a5dc8b19f3b8aeef6197399873
 t
 Dsrc/main/java/com/bichel/leetcode/heap/MinimizeDeviationInArray.java,d/e/deab21442c382b941a3e554ced60c13df30c8a2b
-u
-Esrc/main/java/com/bichel/classicproblems/interval/MergeIntervals.java,3/9/396679efc9dde4afb9393ad67ce95bab0d6e4228
-‚
-Rsrc/main/java/com/bichel/leetcode/strings/MinimumRemoveToMakeValidParentheses.java,6/8/681a81d71a2792fd27dba6ea337a2823bd01b324
-€
-Psrc/main/java/com/bichel/leetcode/combinations_permutations/NextPermutation.java,7/7/77f5d9a9d80b447f52ef16c87f4cc7a4ff79484d
 s
 Csrc/test/java/com/bichel/leetcode/strings/ValidPalindrome2Test.java,6/9/69642ca455102f7baecd031c5c636372b1cf6130
-v
-Fsrc/main/java/com/bichel/leetcode/prefix_sum/RandomPickWithWeight.java,f/b/fbb8b293cf38be40dc73172e5ec71d0c20c14442
 t
 Dsrc/test/java/com/bichel/leetcode/tree/LowestCommonAncestorTest.java,1/e/1e9b8beefd0e85c412c6adcc5af205ed4f312536
 ~
@@ -700,8 +692,6 @@ m
 =src/main/java/com/bichel/leetcode/list/ReverseLinkListII.java,8/f/8f91ee9dfc4a3a2fb563024b56516516f96ec47b
 t
 Dsrc/main/java/com/bichel/leetcode/strings/PalindromePermutation.java,4/4/442265c77d46dcf68fd549b26dbe2a0239815bc7
-f
-6src/main/java/com/bichel/facebook/NextPermutation.java,e/9/e9421a0ac6afff425aab3694ffe8478e60554880
 p
 @src/test/java/com/bichel/leetcode/strings/AlphabetOrderTest.java,5/4/545e5fa38681eb57f59e7b478027e62af43f8592
 l

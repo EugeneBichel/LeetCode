@@ -4,54 +4,35 @@ package com.bichel.facebook;
 Implement next permutation, which rearranges numbers into
 the lexicographically next greater permutation of numbers.
 
-[1,2,3] -> [1,2,3], [1,3,2], [3,1,2], [3,2,1]
-
 If such an arrangement is not possible, it must rearrange it
 as the lowest possible order (i.e., sorted in ascending order).
 
 The replacement must be in place and use only constant extra memory.
 
-Lexicographically means next number is greater than the prev.
-[3,2,1] - means we can't form a number greater than the current number from
-        all the possible permutations
- */
-
-/*
-Permutation means rearranging a set of given objects in all the possible orders.
-The number of possible permutations is n! = 1*2*3*(n-2)*(n-1)*n
-
-There are many ways to systematically generate all permutations of a given sequence.
-One classic algorithm is based upon finding the next permutation in lexicographical/
-dictionary/alphabetical order
-
-Steps:
-1 move from right end and try to find the 1st decreasing element
-2
-
+Complexity Analysis
+Time complexity : O(n). In worst case, only two scans of the whole array are needed.
+Space complexity : O(1). No extra space is used. In place replacements are done.
  */
 
 public class NextPermutation {
     public void nextPermutation(int[] nums) {
+        int indIncr = nums.length - 2;
 
-        //find first decreasing element from right end
-        int i = nums.length - 2;
-        while (i >= 0 && nums[i + 1] <= nums[i]) {
-            i--;
+        //first ind with increasing of values
+        while (indIncr >= 0 && nums[indIncr + 1] <= nums[indIncr]) {
+            indIncr--;
         }
 
-        //if the element exists
-        if (i >= 0) {
-            //find first element from right end, which is greater than nums[i]
+        if (indIncr >= 0) {
             int j = nums.length - 1;
-            while (nums[j] <= nums[i]) {
+            while (nums[j] <= nums[indIncr]) {
                 j--;
             }
 
-            //swap items
-            swap(nums, i, j);
+            swap(nums, indIncr, j);
         }
 
-        reverse(nums, i + 1);
+        reverse(nums, indIncr + 1);
     }
 
     private void reverse(int[] nums, int start) {
@@ -64,6 +45,7 @@ public class NextPermutation {
             j--;
         }
     }
+
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
