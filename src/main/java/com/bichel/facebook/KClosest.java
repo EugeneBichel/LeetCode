@@ -1,4 +1,4 @@
-package com.bichel.leetcode.math;
+package com.bichel.facebook;
 
 import java.util.Arrays;
 

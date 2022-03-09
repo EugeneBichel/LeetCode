@@ -16,33 +16,32 @@ Space complexity : O(1). No extra space is used. In place replacements are done.
 
 public class NextPermutation {
     public void nextPermutation(int[] nums) {
-        int indIncr = nums.length - 2;
-
-        //first ind with increasing of values
-        while (indIncr >= 0 && nums[indIncr + 1] <= nums[indIncr]) {
-            indIncr--;
+        int indUpToDown = nums.length - 2;
+        while (indUpToDown >= 0 && nums[indUpToDown] >= nums[indUpToDown + 1] ) {
+            indUpToDown--;
         }
 
-        if (indIncr >= 0) {
-            int j = nums.length - 1;
-            while (nums[j] <= nums[indIncr]) {
-                j--;
+        if (indUpToDown >= 0) {
+            int indNumLargerThanUpToDown = nums.length - 1;
+            while (indNumLargerThanUpToDown >= 0 &&
+                    nums[indNumLargerThanUpToDown] <= nums[indUpToDown]) {
+                indNumLargerThanUpToDown--;
             }
 
-            swap(nums, indIncr, j);
+            swap(nums, indUpToDown, indNumLargerThanUpToDown);
         }
 
-        reverse(nums, indIncr + 1);
+        reverse(nums, indUpToDown + 1);
     }
 
     private void reverse(int[] nums, int start) {
-        int i = start;
-        int j = nums.length - 1;
+        int l = start;
+        int r = nums.length - 1;
 
-        while (i < j) {
-            swap(nums, i, j);
-            i++;
-            j--;
+        while(l < r) {
+            swap(nums, l, r);
+            l++;
+            r--;
         }
     }
 

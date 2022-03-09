@@ -27,32 +27,44 @@ Note, here we consider the prefix sums that it operates on, as the input of the 
 
  */
 
+import java.util.Random;
+
 public class RandomPickWithWeight {
     private int[] prefixSums;
-    private int totalSum;
+    private Random random;
 
     public RandomPickWithWeight(int[] w) {
-        this.prefixSums = new int[w.length];
+        random = new Random();
+        calcPrefixSums(w);
+    }
 
+    private void calcPrefixSums(int[] w) {
+        prefixSums = new int[w.length];
         int prefixSum = 0;
-        for (int i = 0; i < w.length; ++i) {
+
+        for (int i = 0; i < w.length; i++) {
             prefixSum += w[i];
-            this.prefixSums[i] = prefixSum;
+            prefixSums[i] = prefixSum;
         }
 
-        this.totalSum = prefixSum;
     }
 
     public int pickIndex() {
-        double target = this.totalSum * Math.random();
+        int len = prefixSums.length;
+        int idx = random.nextInt(prefixSums[len-1]) + 1;
+        int left = 0, right = len - 1;
 
-        // run a linear search to find the target zone
-        for (int i = 0; i < this.prefixSums.length; i++) {
-            if (target < this.prefixSums[i])
-                return i;
+        while(left < right){
+            int mid = left + (right-left) / 2;
+
+            if(prefixSums[mid] == idx)
+                return mid;
+            else if(prefixSums[mid] < idx)
+                left = mid + 1;
+            else
+                right = mid;
         }
 
-        // to have a return statement, though this should never happen.
-        return -1;
+        return left;
     }
 }
