@@ -30,9 +30,9 @@ public class EvaluateDivision {
             double quotient = values[i];
 
             if (!graph.containsKey(dividend))
-                graph.put(dividend, new HashMap<String, Double>());
+                graph.put(dividend, new HashMap<>());
             if (!graph.containsKey(divisor))
-                graph.put(divisor, new HashMap<String, Double>());
+                graph.put(divisor, new HashMap<>());
 
             graph.get(dividend).put(divisor, quotient);
             graph.get(divisor).put(dividend, 1 / quotient);

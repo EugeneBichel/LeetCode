@@ -46,7 +46,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
                 levelList = new LinkedList<>();
 
                 // prepare for the next level
-                if (nodeQueue.size() > 0)
+                if (!nodeQueue.isEmpty())
                     nodeQueue.addLast(null);
 
                 isOrderLeft = !isOrderLeft;

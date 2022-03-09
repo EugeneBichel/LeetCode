@@ -20,17 +20,17 @@ public class RangeSumOfBST {
         List<Integer> arr = new ArrayList<>();
         inorder(root, arr);
 
-        int sum=0;
-        for(Integer val: arr) {
-            if(val >= low) sum+=val;
-            if(val == high) break;
+        int sum = 0;
+        for (Integer val : arr) {
+            if (val >= low) sum += val;
+            if (val == high) break;
         }
 
         return sum;
     }
 
     private void inorder(TreeNode node, List<Integer> l) {
-        if(node == null) return;
+        if (node == null) return;
 
         inorder(node.left, l);
         l.add(node.val);
@@ -39,6 +39,7 @@ public class RangeSumOfBST {
     }
 
     int ans;
+
     public int rangeSumBST2(TreeNode root, int L, int R) {
         ans = 0;
         dfs(root, L, R);
