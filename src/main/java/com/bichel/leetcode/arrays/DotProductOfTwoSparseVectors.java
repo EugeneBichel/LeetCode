@@ -3,10 +3,10 @@ package com.bichel.leetcode.arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-class SparseVector {
+class DotProductOfTwoSparseVectors {
     private Map<Integer, Integer> map;
 
-    SparseVector(int[] nums) {
+    DotProductOfTwoSparseVectors(int[] nums) {
         map = new HashMap<>();
         for (int i = 0; i < nums.length; i++)
             if (nums[i] != 0)
@@ -14,7 +14,7 @@ class SparseVector {
     }
 
     // Return the dotProduct of two sparse vectors
-    public int dotProduct(SparseVector vec) {
+    public int dotProduct(DotProductOfTwoSparseVectors vec) {
 
         int product = 0;
 
