@@ -1,4 +1,4 @@
-package com.bichel.leetcode.graph.union;
+package com.bichel.leetcode.disjoint_set_union;
 
 /*
 There are n cities. Some of them are connected, while some are not.
