@@ -3,7 +3,6 @@ package com.bichel.facebook;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.List;
-import java.util.Stack;
 
 /*
 On a single-threaded CPU, we execute a program containing n functions.

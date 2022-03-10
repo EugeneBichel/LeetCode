@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.contiguous_subarray;
+package com.bichel.facebook;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,7 +47,7 @@ So if the same reminder than we found the sum
 
  */
 
-public class ContinuousSubarraySym {
+public class ContinuousSubarraySum {
     public boolean checkSubarraySum(int[] nums, int k) {
         // key is reminder, value is pos
         Map<Integer, Integer> reminderWithPosMap = new HashMap<>();

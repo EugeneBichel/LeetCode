@@ -1,18 +1,7 @@
 package com.bichel.leetcode.math;
 
 public class AddStrings {
-    public static void main(String[] args) {
-        //String val1 = "6913259244";
-        //String val2 = "71103343";
-
-        String val1 = "1";
-        String val2 = "9";
-
-        String res = sum(val1, val2);
-        System.out.println(res);
-    }
-
-    static String sum(String val1, String val2) {
+    public String sum(String val1, String val2) {
 
         char[] ch1 = val1.toCharArray();
         char[] ch2 = val2.toCharArray();
