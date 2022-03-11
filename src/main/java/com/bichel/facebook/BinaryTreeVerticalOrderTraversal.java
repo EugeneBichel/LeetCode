@@ -28,21 +28,22 @@ public class BinaryTreeVerticalOrderTraversal {
         Map<Integer, ArrayList> columnTable = new HashMap<>();
         Queue<Pair<TreeNode, Integer>> queue = new ArrayDeque<>();
         int column = 0;
-        queue.offer(new Pair(root, column));
+        queue.offer(new Pair<>(root, column));
 
         while (!queue.isEmpty()) {
             Pair<TreeNode, Integer> p = queue.poll();
-            root = p.key;
+            TreeNode node = p.key;
             column = p.value;
 
-            if (root != null) {
+            if (node != null) {
                 if (!columnTable.containsKey(column)) {
                     columnTable.put(column, new ArrayList<Integer>());
                 }
-                columnTable.get(column).add(root.val);
 
-                queue.offer(new Pair<>(root.left, column - 1));
-                queue.offer(new Pair<>(root.right, column + 1));
+                columnTable.get(column).add(node.val);
+
+                queue.add(new Pair<>(root.left, column - 1));
+                queue.add(new Pair<>(root.right, column + 1));
             }
         }
 

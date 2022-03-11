@@ -860,8 +860,6 @@ r
 Bsrc/main/java/com/bichel/leetcode/tree/FindLeavesOfBinaryTree.java,0/9/094c1399ff0b6441781b03a78b2b6be9dc19e9f7
 l
 <src/main/java/com/bichel/leetcode/tree/DeepestLeavesSum.java,f/8/f8878760d1cc2b64e0ddca4c3d17d1a510a15687
-w
-Gsrc/main/java/com/bichel/facebook/BinaryTreeVerticalOrderTraversal.java,1/3/132a97ac5b8668854ec4918891c8a49035c27cc3
 d
 4src/main/java/com/bichel/leetcode/graph/Triplet.java,6/2/62f8450ef1d41346c87162cffdd21d415d1b41f7
 
@@ -870,10 +868,6 @@ Osrc/main/java/com/bichel/leetcode/tree/VerticalOrderTraversalOfABinaryTree.java
 Osrc/main/java/com/bichel/leetcode/tree/BinaryTreeZigzagLevelOrderTraversal.java,0/6/061b3ad598b4e72deb1f3048630a8bdd059f9a00
 t
 Dsrc/main/java/com/bichel/leetcode/tree/BinaryTreeMaximumPathSum.java,6/f/6f3c2224c4d62280f136e2655036dc4afcb232cd
-x
-Hsrc/main/java/com/bichel/facebook/BinaryTreeVerticalOrderTraversal2.java,b/c/bca7409002d24eb0f29361fed2194970e74ec039
-x
-Hsrc/main/java/com/bichel/facebook/BinaryTreeVerticalOrderTraversal3.java,8/4/8470e872f0d826002c6a1c384bf6abd1dc43e943
 ‚
 Rsrc/main/java/com/bichel/leetcode/strings/MinimumRemoveToMakeValidParentheses.java,6/8/681a81d71a2792fd27dba6ea337a2823bd01b324
 u
@@ -886,8 +880,6 @@ e
 5src/main/java/com/bichel/facebook/MergeIntervals.java,a/6/a6de450336fead2a7b1ea3cf1f094b76a8cf09ff
 g
 7src/main/java/com/bichel/facebook/ValidPalindrome2.java,0/9/0926b6cd46fde3d814e4172e375db3eb2c3a8b9a
-z
-Jsrc/main/java/com/bichel/facebook/MinimumRemoveToMakeValidParentheses.java,e/a/eadbef34be3a14759d477c85f2793bb1552c70cc
 f
 6src/main/java/com/bichel/facebook/NextPermutation.java,e/9/e9421a0ac6afff425aab3694ffe8478e60554880
 k
