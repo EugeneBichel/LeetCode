@@ -22,26 +22,30 @@ public class CapacityToShipPackagesWithinDDays {
             allWeights += w;
         }
 
-        int left = maxWeight;
-        int right = allWeights;
+        int leftWeight = maxWeight;
+        int rightWeight = allWeights;
 
-        while (left < right) {
-            int mid = (left + right) / 2;
-            int need = 1;
-            int cur = 0;
+        while (leftWeight < rightWeight) {
+            int midWeight = (leftWeight + rightWeight) / 2;
+
+            int needDays = 1;
+            int curShipCapacity = 0;
 
             for (int w : weights) {
-                if (cur + w > mid) {
-                    need += 1;
-                    cur = 0;
+                if (midWeight < curShipCapacity + w) {
+                    needDays += 1;
+                    curShipCapacity = 0;
                 }
-                cur += w;
+
+                curShipCapacity += w;
             }
 
-            if (need > days) left = mid + 1;
-            else right = mid;
+            if (needDays > days)
+                leftWeight = midWeight + 1;
+            else
+                rightWeight = midWeight;
         }
 
-        return left;
+        return leftWeight;
     }
 }
