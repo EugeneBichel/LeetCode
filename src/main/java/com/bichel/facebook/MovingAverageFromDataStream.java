@@ -1,4 +1,4 @@
-package com.bichel.leetcode.math;
+package com.bichel.facebook;
 
 /*
 Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window.
@@ -32,37 +32,43 @@ public class MovingAverageFromDataStream {
     }
 
     public double next(int val) {
-        if(ind < size) arr[ind++] = val;
-        else {
-            for(int i=0; i<ind-1;i++) {
-                arr[i] = arr[i+1];
+        if(ind < size) {
+            arr[ind++] = val;
+        } else {
+            for (int i = 0; i < ind - 1; i++) {
+                arr[i] = arr[i + 1];
             }
-            arr[size-1] = val;
+            arr[size - 1] = val;
         }
 
         int sum = 0;
-
-        for(int i=0; i<ind;i++) {
+        for(int i = 0; i < ind; i++) {
             sum += arr[i];
         }
 
-        return (double) sum / ind;
+        return (double) sum / Math.min(sum, ind);
     }
 }
 
 class MovingAverage {
-    int size, windowSum = 0, count = 0;
-    Deque<Integer> queue = new ArrayDeque<>();
+    int size;
+    int windowSum;
+    int count;
+    Deque queue;
 
     public MovingAverage(int size) {
         this.size = size;
+        windowSum = 0;
+        count = 0;
+        queue = new ArrayDeque<Integer>();
     }
 
     public double next(int val) {
-        ++count;
+        count++;
+
         // calculate the new sum by shifting the window
         queue.add(val);
-        int tail = count > size ? queue.poll() : 0;
+        int tail = count > size ? (int)queue.poll() : 0;
 
         windowSum = windowSum - tail + val;
 

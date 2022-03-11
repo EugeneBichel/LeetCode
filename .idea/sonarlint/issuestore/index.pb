@@ -472,8 +472,6 @@ q
 Asrc/main/java/com/bichel/leetcode/backtracking/Permutations2.java,7/0/70cecc7b4b57f3a4876dc9e6db90b09bc3d7a6e9
 o
 ?src/main/java/com/bichel/interviewbit/AddTwoNumbersAsLists.java,b/5/b58258e9f7c7326bcfaf354ad1885247d4fa81d0
-w
-Gsrc/main/java/com/bichel/leetcode/math/MovingAverageFromDataStream.java,a/3/a309355cacc077f04998df54c31a434203b7d109
 h
 8src/main/java/com/bichel/fbrecruiting/QueueRemovals.java,8/9/898f21a3592af39e97967e95ac39d3f878ccd4b2
 r

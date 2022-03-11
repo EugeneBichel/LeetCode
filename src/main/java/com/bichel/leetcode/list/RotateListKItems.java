@@ -1,13 +1,19 @@
 package com.bichel.leetcode.list;
 
-import java.util.Stack;
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+/*
+Given the head of a linked list, rotate the list to the right by k places.
+ */
 
 public class RotateListKItems {
     public ListNode rotateRight(ListNode head, int k) {
-        if(head == null) return null;
+        if(head == null)
+            return null;
 
         ListNode tail = head;
-        Stack<ListNode> stack = new Stack<>();
+        Deque<ListNode> stack = new ArrayDeque<>();
 
         while(tail != null) {
             stack.push(tail);
@@ -17,9 +23,7 @@ public class RotateListKItems {
         k = k % stack.size();
 
         while(k > 0) {
-
             ListNode newHead = stack.pop();
-
             newHead.next = head;
             head = newHead;
 
@@ -27,7 +31,7 @@ public class RotateListKItems {
         }
 
         ListNode cur = head;
-        while(cur.next!= null && cur.next != head) {
+        while(cur.next != null && cur.next != head) {
             cur = cur.next;
         }
 
