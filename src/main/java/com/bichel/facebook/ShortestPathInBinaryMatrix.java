@@ -20,10 +20,16 @@ The length of a clear path is the number of visited cells of this path.
  */
 
 public class ShortestPathInBinaryMatrix {
+    /*
+    [ 1,-1] [ 1, 0] [ 1, 1]
+    [ 0,-1] [ 0, 0] [ 0, 1]
+    [-1,-1] [-1, 0] [-1, 1]
+    */
     private static final int[][] directions =
             new int[][]{
-                    {-1, -1}, {-1, 0}, {-1, 1}, {0, -1},
-                    {0, 1}, {1, -1}, {1, 0}, {1, 1}
+                    {-1, -1}, {-1, 0}, {-1, 1},
+                    { 0, -1},          { 0, 1},
+                    { 1, -1}, { 1, 0}, { 1, 1}
             };
 
     public int shortestPathBinaryMatrix(int[][] grid) {

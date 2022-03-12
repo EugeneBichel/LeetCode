@@ -23,6 +23,7 @@ public class KClosestPointsToOrigin {
         int left = 0;
         int right = points.length - 1;
         int pivotIndex = points.length;
+
         while (pivotIndex != k) {
             pivotIndex = partition(points, left, right);
             if (pivotIndex < k) {
@@ -36,10 +37,12 @@ public class KClosestPointsToOrigin {
     }
     private int partition(int[][] points, int left, int right) {
         int[] pivot = points[left + (right - left) / 2];
-        int pivotDist = pivot[0] * pivot[0] + pivot[1] * pivot[1];
+        int pivotDist = squaredDistance(pivot);
 
         while (left < right) {
-            if (squaredDistance(points[left]) >= pivotDist) {
+            int leftDist = squaredDistance(points[left]);
+
+            if ( leftDist >= pivotDist) {
                 int[] temp = points[left];
                 points[left] = points[right];
                 points[right] = temp;
@@ -53,6 +56,7 @@ public class KClosestPointsToOrigin {
         // the left range then return it as the new pivotIndex
         if (squaredDistance(points[left]) < pivotDist)
             left++;
+
         return left;
     }
     private int squaredDistance(int[] point) {
