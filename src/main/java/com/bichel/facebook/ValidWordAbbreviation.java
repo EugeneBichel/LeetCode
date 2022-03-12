@@ -9,7 +9,8 @@ For example, a string such as "substitution" could be abbreviated as (but not li
 
 public class ValidWordAbbreviation {
     public boolean validWordAbbreviation(String word, String abbr) {
-        int i = 0, j = 0;
+        int i = 0;
+        int j = 0;
 
         while (i < word.length() && j < abbr.length()) {
             if (word.charAt(i) == abbr.charAt(j)) {

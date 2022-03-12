@@ -14,8 +14,11 @@ Time complexity : O(N), where N is a string length.
 Space complexity : O(N−D) where D is a total length for all duplicates.
  */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 public class RemoveAllAdjacentDuplicatesInString {
-    public String removeDuplicates(String s) {
+    public String removeDuplicates2(String s) {
         StringBuilder sb = new StringBuilder();
         int sbLen = 0;
 
@@ -30,5 +33,23 @@ public class RemoveAllAdjacentDuplicatesInString {
         }
 
         return sb.toString();
+    }
+
+    public String removeDuplicates1(String s) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        for (int i = 0; i < s.length(); i++) {
+            if (!stack.isEmpty() && s.charAt(i) == s.charAt(stack.peek())) {
+                stack.pop();
+            } else {
+                stack.push(i);
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.append(s.charAt(stack.pop()));
+        }
+
+        return sb.reverse().toString();
     }
 }

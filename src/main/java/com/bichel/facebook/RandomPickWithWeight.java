@@ -52,7 +52,8 @@ public class RandomPickWithWeight {
     public int pickIndex() {
         int len = prefixSums.length;
         int idx = random.nextInt(prefixSums[len-1]) + 1;
-        int left = 0, right = len - 1;
+        int left = 0;
+        int right = len - 1;
 
         while(left < right){
             int mid = left + (right-left) / 2;

@@ -49,13 +49,13 @@ So if the same reminder than we found the sum
 
 public class ContinuousSubarraySum {
     public boolean checkSubarraySum(int[] nums, int k) {
-        // key is reminder, value is pos
+        // key is sum, value is pos
         Map<Integer, Integer> reminderWithPosMap = new HashMap<>();
-        reminderWithPosMap.put(0, nums[0] % k);
+        reminderWithPosMap.put(0, -1);
 
-        int sum = 0;
+        int sum = nums[0] % k;
 
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             sum += nums[i];
             sum %= k;
 
@@ -64,6 +64,33 @@ public class ContinuousSubarraySum {
                 return true;
             } else {
                 reminderWithPosMap.put(sum, i);
+            }
+        }
+
+        return false;
+    }
+
+    public boolean checkSubarraySum2(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int runningSum = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            runningSum += nums[i];
+
+            if (k != 0) {
+                runningSum %= k;
+            }
+
+            if(map.containsKey(runningSum)) {
+
+                //more than 1: at least 2 items in continuous subarray
+                if (i - map.get(runningSum) > 1) {
+                    return true;
+                }
+
+            } else {
+                map.put(runningSum, i);
             }
         }
 

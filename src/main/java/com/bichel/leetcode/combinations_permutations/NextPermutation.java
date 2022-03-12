@@ -12,21 +12,29 @@ The replacement must be in place and use only constant extra memory.
 
 public class NextPermutation {
     public void nextPermutation(int[] nums) {
-        int i = nums.length - 2;
-        while (i >= 0 && nums[i + 1] <= nums[i]) {
-            i--;
+        //find the 1st pair of 2 nums a[i] and a[i-1] from the right,
+        //which satisfy a[i] > a[i-1]
+        int indUpToDown = nums.length - 2;
+        while (indUpToDown >= 0 && nums[indUpToDown] >= nums[indUpToDown + 1] ) {
+            indUpToDown--;
         }
 
-        if (i >= 0) {
-            int j = nums.length - 1;
-            while (nums[j] <= nums[i]) {
-                j--;
+        //we want to create the permutation just larger that the current one
+        //find the num, which larger than a[indUpToDown]
+        if (indUpToDown >= 0) {
+            int indNumLargerThanUpToDown = nums.length - 1;
+            while (indNumLargerThanUpToDown >= 0 &&
+                    nums[indNumLargerThanUpToDown] <= nums[indUpToDown]) {
+                indNumLargerThanUpToDown--;
             }
 
-            swap(nums, i, j);
+            //switch them
+            swap(nums, indUpToDown, indNumLargerThanUpToDown);
         }
 
-        reverse(nums, i + 1);
+        //now they are in decreasing order
+        //set to increasing order
+        reverse(nums, indUpToDown + 1);
     }
 
     private void reverse(int[] nums, int start) {
