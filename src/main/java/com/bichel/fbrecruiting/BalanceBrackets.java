@@ -16,8 +16,6 @@ public class BalanceBrackets {
             else q.pop();
         }
 
-        if (!q.isEmpty()) return false;
-
-        return true;
+        return q.isEmpty();
     }
 }

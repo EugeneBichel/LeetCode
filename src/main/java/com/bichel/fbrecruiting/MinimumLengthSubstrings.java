@@ -20,12 +20,10 @@ output = 5
 
 public class MinimumLengthSubstrings {
     int minLengthSubstring(String s, String t) {
-        // Write your code here
         if (s.isEmpty() || t.isEmpty()) {
             return 0;
         }
 
-        // Dictionary which keeps a count of all the unique characters in t.
         Map<Character, Integer> dictT = new HashMap<>();
         for (int i = 0; i < t.length(); i++) {
             int count = dictT.getOrDefault(t.charAt(i), 0);

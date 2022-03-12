@@ -27,9 +27,9 @@ Day 6 is the first time that FB has >= $200 of total revenue.
  */
 
 public class RevenueMilestones {
-    int[] sum;
+    private int[] sum;
 
-    int[] getMilestoneDays(int[] revenues, int[] milestones) {
+    public int[] getMilestoneDays(int[] revenues, int[] milestones) {
 
         int[] result = new int[milestones.length];
 
@@ -63,6 +63,6 @@ public class RevenueMilestones {
             }
         }
 
-        return (left < sum.length ? left : -1); //check if found index is valid or going out of bounds
+        return left < sum.length ? left : -1; //check if found index is valid or going out of bounds
     }
 }

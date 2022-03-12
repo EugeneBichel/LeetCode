@@ -10,7 +10,7 @@ import static java.util.stream.IntStream.*;
 
 public class MinimizingPermutations {
 
-    int minOperations(int[] arr) {
+    public int minOperations(int[] arr) {
         int ret = 0;
 
         int[] target = rangeClosed(1, arr.length).toArray();

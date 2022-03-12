@@ -6,9 +6,10 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class NumberOfVisibleNodes {
-    int visibleNodes(TreeNode root) {
+    public int visibleNodes(TreeNode root) {
 
-        if (root == null) return 0;
+        if (root == null)
+            return 0;
 
         List<Integer> items = new ArrayList<>();
         traverse(root, items, 0);
@@ -18,7 +19,8 @@ public class NumberOfVisibleNodes {
 
     private void traverse(TreeNode root, List<Integer> items, int level) {
 
-        if (level == items.size()) items.add(root.val);
+        if (level == items.size())
+            items.add(root.val);
 
         if (root.left != null)
             traverse(root.left, items, level + 1);

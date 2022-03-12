@@ -3,15 +3,16 @@ package com.bichel.fbrecruiting;
 import java.util.Arrays;
 
 /*
-You're given a list of n integers arr[0..(n-1)]. You must compute a list output[0..(n-1)] such that, for each index i (between 0 and n-1, inclusive), output[i] is equal to the product of the three largest elements out of arr[0..i] (or equal to -1 if i < 2, as arr[0..i] then includes fewer than three elements).
-Note that the three largest elements used to form any product may have the same values as one another, but they must be at different indices in arr.
-Signature
-int[] findMaxProduct(int[] arr)
-Input
-n is in the range [1, 100,000].
-Each value arr[i] is in the range [1, 1,000].
-Output
+You're given a list of n integers arr[0..(n-1)].
+You must compute a list output[0..(n-1)] such that,
+for each index i (between 0 and n-1, inclusive),
+output[i] is equal to the product of the three largest elements out of arr[0..i]
+(or equal to -1 if i < 2, as arr[0..i] then includes fewer than three elements).
+Note that the three largest elements used to form any product
+may have the same values as one another, but they must be at different indices in arr.
+
 Return a list of n integers output[0..(n-1)], as described above.
+
 Example 1
 n = 5
 arr = [1, 2, 3, 4, 5]
@@ -24,7 +25,6 @@ public class LargestTripleProducts {
     int[] findMaxProduct(int[] arr) {
 
         int[] max = new int[3];
-
         int[] ans = new int[arr.length];
         ans[0] = -1;
         ans[1] = -1;

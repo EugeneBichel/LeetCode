@@ -20,15 +20,16 @@ public class QueueRemovals {
                         max = arr[start];
                         maxPos = start;
                     }
-
                     if (arr[start] > 0) {
                         arr[start] = arr[start] - 1;
                     }
                     readCount--;
                 }
+
                 start++;
                 start = start % arr.length;
             }
+
             arr[maxPos] = -1;
             result[i] = maxPos + 1;
         }

@@ -32,10 +32,8 @@ public class PairSums {
         }
     }
 
-    int numberOfWays(int[] arr, int k) {
-        //Arrays.sort(arr);
-
-        int pivot = 0;
+    private Set<Pair> s;
+    public int numberOfWays(int[] arr, int k) {
         int l = 0;
         int r = arr.length - 1;
         s = new HashSet<>();
@@ -45,15 +43,12 @@ public class PairSums {
         return s.size();
     }
 
-    private Set<Pair> s;
-
     private void trace(int[] arr, int k, int l, int r) {
         if (l >= r) return;
 
         if (s.contains(new Pair(l, r))) return;
 
         if (arr[l] + arr[r] == k) {
-            System.out.println(arr[l] + "l: " + l + ", " + arr[r] + "r: " + r + ": " + k);
             s.add(new Pair(l, r));
         }
 

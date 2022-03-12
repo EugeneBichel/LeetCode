@@ -55,12 +55,12 @@ public class EncryptedWords {
 
             if (pivot > 1)
                 q.add(str.substring(l, pivot));
-            else sb.append(str.substring(l, pivot));
+            else sb.append(str, l, pivot);
 
             if (pivot + 1 < r)
                 q.add(str.substring(pivot + 1, r + 1));
             else if (pivot + 1 <= r)
-                sb.append(str.substring(pivot + 1, r + 1));
+                sb.append(str, pivot + 1, r + 1);
         }
 
         return sb.toString();

@@ -12,8 +12,7 @@ An array arr containing N integers, denoting the numbers in the list.
  */
 
 public class SlowSums {
-
-    int getTotalTime(int[] arr) {
+    public int getTotalTime(int[] arr) {
 
         Arrays.sort(arr);
         int num = arr[arr.length - 1] + arr[arr.length - 2];
