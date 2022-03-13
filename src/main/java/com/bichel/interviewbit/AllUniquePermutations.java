@@ -6,10 +6,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
-Problem Description
-
-Given an array A of size N denoting collection of numbers that might contain duplicates, return all possible unique permutations.
-
+Given an array A of size N denoting collection of numbers that might contain duplicates,
+return all possible unique permutations.
 NOTE: No 2 entries in the permutation sequence should be the same.
  */
 
@@ -28,7 +26,7 @@ public class AllUniquePermutations {
                            int first) {
         // if all integers are used up
         if (first == n)
-            output.add(new ArrayList<Integer>(nums));
+            output.add(new ArrayList<>(nums));
 
         for (int i = first; i < n; i++) {
             // place i-th integer first

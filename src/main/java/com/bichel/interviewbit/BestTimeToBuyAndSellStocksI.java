@@ -15,10 +15,10 @@ public class BestTimeToBuyAndSellStocksI {
         int minPrice = Integer.MAX_VALUE;
         int maxProfit = 0;
 
-        for(int i=0; i<a.size(); i++) {
-            if(a.get(i) < minPrice)
+        for (int i = 0; i < a.size(); i++) {
+            if (a.get(i) < minPrice)
                 minPrice = a.get(i);
-            else if(a.get(i) - minPrice > maxProfit)
+            else if (a.get(i) - minPrice > maxProfit)
                 maxProfit = a.get(i) - minPrice;
         }
 

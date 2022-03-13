@@ -3,12 +3,10 @@ import java.util.List;
 
 /*
 Say you have an array, A, for which the ith element is the price of a given stock on day i.
-
 Design an algorithm to find the maximum profit. You may complete at most 2 transactions.
-
 Return the maximum possible profit.
-
-Note: You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+Note: You may not engage in multiple transactions at the same time
+(ie, you must sell the stock before you buy again).
  */
 
 public class BestTimeToBuyAndSellStocksIII {
