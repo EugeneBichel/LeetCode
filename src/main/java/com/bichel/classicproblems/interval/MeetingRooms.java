@@ -1,6 +1,7 @@
 package com.bichel.classicproblems.interval;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /*
 Given an array of meeting time intervals where intervals[i] = [starti, endi],
@@ -13,13 +14,14 @@ Output: false
 
 public class MeetingRooms {
     public boolean canAttendMeetings(int[][] intervals) {
-        if(intervals == null || intervals.length == 0) return true;
+        if (intervals == null || intervals.length == 0)
+            return true;
 
-        Arrays.sort(intervals, (int[] a, int[] b) -> Integer.compare(a[0], b[0]));
+        Arrays.sort(intervals, Comparator.comparingInt((int[] a) -> a[0]));
 
-        for(int i=1; i<intervals.length; i++) {
-            if(intervals[i][0] == intervals[i-1][0] ||
-                    intervals[i][0] < intervals[i-1][1])
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[i][0] == intervals[i - 1][0] ||
+                    intervals[i][0] < intervals[i - 1][1])
                 return false;
         }
 

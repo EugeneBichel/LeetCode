@@ -1,13 +1,4 @@
-package com.bichel.classicproblems.interval;
-
-/*
-Given an array of meeting time intervals where intervals[i] = [starti, endi],
-return the minimum number of conference rooms required.
-
-Example 1:
-Input: intervals = [[0,30],[5,10],[15,20]]
-Output: 2
- */
+package com.bichel.facebook;
 
 import java.util.Arrays;
 import java.util.Comparator;

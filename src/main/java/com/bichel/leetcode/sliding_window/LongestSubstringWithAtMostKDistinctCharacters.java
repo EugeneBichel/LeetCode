@@ -20,7 +20,7 @@ Explanation: The substring is "aa" with length 2.
 
 public class LongestSubstringWithAtMostKDistinctCharacters {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
-        if(s.length() < k+1) return s.length();
+        if (s.length() < k + 1) return s.length();
 
         Map<Character, Integer> map = new HashMap<>();
 
@@ -28,12 +28,12 @@ public class LongestSubstringWithAtMostKDistinctCharacters {
         int right = 0;
         int len = k;
 
-        while(right < s.length()) {
+        while (right < s.length()) {
 
             char ch = s.charAt(right);
             map.put(ch, right++);
 
-            if(map.size() == k+1) {
+            if (map.size() == k + 1) {
                 int ind = Collections.min(map.values());
                 map.remove(s.charAt(ind));
 
