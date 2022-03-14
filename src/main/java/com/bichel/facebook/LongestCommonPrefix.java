@@ -1,4 +1,4 @@
-package com.bichel.leetcode.strings;
+package com.bichel.facebook;
 
 public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {

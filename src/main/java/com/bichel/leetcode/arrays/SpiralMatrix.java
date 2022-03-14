@@ -49,9 +49,8 @@ public class SpiralMatrix {
 
         int fr = 0, er = Nr - 1;
         int fc = 0, ec = Nc - 1;
-        int nums = 0;
+
         while (fr <= er && fc <= ec) {
-            System.out.println(nums++);
             list.addAll(getLevel(matrix, fr, er, fc, ec));
             fr++;
             er--;

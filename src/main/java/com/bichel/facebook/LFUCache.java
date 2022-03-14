@@ -73,12 +73,14 @@ public class LFUCache {
         nodeMap = new HashMap<>();
         countMap = new HashMap<>();
     }
+
     public int get(int key) {
         Node node = nodeMap.get(key);
         if (node == null) return -1;
         update(node);
         return node.val;
     }
+
     public void put(int key, int value) {
         if (capacity == 0) return;
         Node node;

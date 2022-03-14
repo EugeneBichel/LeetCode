@@ -20,6 +20,7 @@ import java.util.List;
 public class PalindromePairs {
     private List<String> allValidPrefixes(String word) {
         List<String> validPrefixes = new ArrayList<>();
+
         for (int i = 0; i < word.length(); i++) {
             if (isPalindromeBetween(word, i, word.length() - 1)) {
                 validPrefixes.add(word.substring(0, i));
@@ -41,7 +42,9 @@ public class PalindromePairs {
     // Is the prefix ending at i a palindrome?
     private boolean isPalindromeBetween(String word, int front, int back) {
         while (front < back) {
-            if (word.charAt(front) != word.charAt(back)) return false;
+            if (word.charAt(front) != word.charAt(back))
+                return false;
+
             front++;
             back--;
         }

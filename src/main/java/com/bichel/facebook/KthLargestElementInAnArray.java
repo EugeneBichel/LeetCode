@@ -25,7 +25,6 @@ public class KthLargestElementInAnArray {
                 heap.poll();
         }
 
-        // output
         return heap.poll();
     }
 }
