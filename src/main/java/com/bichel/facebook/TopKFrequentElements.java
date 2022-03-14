@@ -33,7 +33,8 @@ public class TopKFrequentElements {
         //O(N log k)
         for (int n : mCounter.keySet()) {
             heap.add(n);
-            if (heap.size() > k) heap.poll();
+            if (heap.size() > k)
+                heap.poll();
         }
 
         int[] ans = new int[k];
