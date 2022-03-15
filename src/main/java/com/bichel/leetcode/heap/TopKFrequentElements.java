@@ -1,4 +1,4 @@
-package com.bichel.facebook;
+package com.bichel.leetcode.heap;
 
 /*
 Given an integer array nums and an integer k,
@@ -18,7 +18,7 @@ import java.util.Queue;
 public class TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
         //O(1) time
-        if (k == nums.length)
+        if (k >= nums.length)
             return nums;
 
         //O(N) time
@@ -34,6 +34,7 @@ public class TopKFrequentElements {
         //O(N log k)
         for (int n : mCounter.keySet()) {
             minHeap.add(n);
+
             if (minHeap.size() > k)
                 minHeap.poll();
         }
@@ -41,8 +42,8 @@ public class TopKFrequentElements {
         int[] ans = new int[k];
 
         //O(k log k)
-        for (int i = 0; i < k; i++) {
-            ans[k - 1 - i] = minHeap.poll();
+        for (int i = k-1; i >= 0; i--) {
+            ans[i] = minHeap.poll();
         }
 
         return ans;
