@@ -1,4 +1,4 @@
-package com.bichel.leetcode.bloomberg.dfs;
+package com.bichel.bloomberg.dfs;
 
 class Node {
     public int val;

@@ -1,4 +1,4 @@
-package com.bichel.leetcode.amazon.dp;
+package com.bichel.amazon.dp;
 
 /*
 You are given an integer array coins

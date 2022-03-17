@@ -1,9 +1,0 @@
-
-l
-java:S1104"OMake val a static final constant or non-public and provide accessors if needed.(Ô¸úÏ8‹ÿã¹Í/
-m
-java:S1104"PMake prev a static final constant or non-public and provide accessors if needed.(üÛ´8Œÿã¹Í/
-r
-java:S1104"PMake next a static final constant or non-public and provide accessors if needed.(±±èÃøÿÿÿÿ8ÿã¹Í/
-n
-java:S1104"QMake child a static final constant or non-public and provide accessors if needed.(ºÛ8ÿã¹Í/

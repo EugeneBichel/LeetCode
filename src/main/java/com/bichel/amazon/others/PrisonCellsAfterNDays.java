@@ -1,4 +1,4 @@
-package com.bichel.leetcode.amazon.others;
+package com.bichel.amazon.others;
 
 /*
 There are 8 prison cells in a row and each cell

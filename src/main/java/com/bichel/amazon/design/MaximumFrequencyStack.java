@@ -1,4 +1,4 @@
-package com.bichel.leetcode.amazon.design;
+package com.bichel.amazon.design;
 
 /*
 Design a stack-like data structure to push

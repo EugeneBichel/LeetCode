@@ -1,4 +1,4 @@
-package com.bichel.leetcode.amazon.design;
+package com.bichel.amazon.design;
 
 public class DesignTicTacToe {
     private int[][] board;

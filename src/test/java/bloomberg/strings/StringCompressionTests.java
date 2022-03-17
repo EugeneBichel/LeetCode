@@ -1,6 +1,6 @@
 package bloomberg.strings;
 
-import com.bichel.leetcode.bloomberg.strings.StringCompression;
+import com.bichel.bloomberg.strings.StringCompression;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 

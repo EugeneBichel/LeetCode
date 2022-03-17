@@ -1,4 +1,4 @@
-package com.bichel.leetcode.bloomberg.strings;
+package com.bichel.bloomberg.strings;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.bichel.leetcode.amazon.others;
+package com.bichel.amazon.others;
 
 /*
 You are given a string s.

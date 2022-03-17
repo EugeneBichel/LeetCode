@@ -1,4 +1,4 @@
-package com.bichel.leetcode.amazon.others;
+package com.bichel.amazon.others;
 
 public class ReverseInteger {
     public int reverse(int x) {
