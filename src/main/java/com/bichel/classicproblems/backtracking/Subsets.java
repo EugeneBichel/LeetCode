@@ -14,7 +14,6 @@ public class Subsets {
 
         return res;
     }
-
     private void backtrack(int first, int subsetSize, ArrayList<Integer> subset, int[] nums, List<List<Integer>> res) {
         if (subset.size() == subsetSize) {
             res.add(new ArrayList<>( subset));

@@ -8,7 +8,9 @@ public class MissingElementInSortedArray {
         if (k > missing(n - 1, nums))
             return nums[n - 1] + k - missing(n - 1, nums);
 
-        int left = 0, right = n - 1, pivot;
+        int left = 0;
+        int right = n - 1;
+        int pivot;
         // find left = right index such that
         // missing(left - 1) < k <= missing(left)
         while (left != right) {

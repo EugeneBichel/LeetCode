@@ -27,8 +27,6 @@ q
 Asrc/main/java/com/bichel/leetcode/dp/UniqueBinarySearchTrees.java,e/f/ef1f5eefd852172deec4e8fd1702326f3deef3d9
 n
 >src/test/java/com/bichel/leetcode/strings/MapSumPairsTest.java,f/d/fd1a23d9d7c2b8f46b26e4b116308d4f6035c702
-o
-?src/main/java/com/bichel/leetcode/arrays/SortArrayByParity.java,c/6/c6f5719e1c97ead347cd3a12ea40c0fe94cec63e
 x
 Hsrc/main/java/com/bichel/leetcode/combinations_permutations/Subsets.java,9/c/9c45b602a4ff7f85daeea8a38da8d04dda304f07
 m
@@ -174,8 +172,6 @@ Jsrc/main/java/com/bichel/classicproblems/other/ExpressionAndOperators.java,e/7
 Usrc/main/java/com/bichel/classicproblems/prefixsum/MaximumSizeSubarraySumEqualsK.java,3/5/353d0f137046174b90bea594c0fc00a10d66f1c2
 ‹
 [src/main/java/com/bichel/classicproblems/slidingwindow/MinimumSwapsToGroupAll1Together.java,9/a/9a6813cc9f4d0fa8a166d0486bd03de290806b0c
-†
-Vsrc/main/java/com/bichel/classicproblems/binarysearch/MissingElementInSortedArray.java,b/9/b9f7ddd37151c6e4d434a77c465057166a6b7849
 z
 Jsrc/main/java/com/bichel/classicproblems/hashmap/FirstMissingPositive.java,0/c/0c9533c16f46e2095d94b19f40a62b3539ac5de4
 
@@ -1006,8 +1002,6 @@ n
 >src/main/java/com/bichel/facebook/BinaryTreeRightSideView.java,5/1/51b6c8aadd24adc36cde5d8db6ca29b00f7abfe2
 k
 ;src/main/java/com/bichel/classicproblems/bit/AddBinary.java,c/f/cfcc98c57beab4719d65f9229b2072117b5b1d96
-r
-Bsrc/main/java/com/bichel/classicproblems/backtracking/Subsets.java,4/d/4dd2c66d1fad9103b736e08d11620a1011102a08
 d
 4src/main/java/com/bichel/facebook/NumberOfPaths.java,d/a/da3cd936b25a3c5896619896be326bf755a0b32c
 p
@@ -1050,3 +1044,15 @@ t
 Dsrc/main/java/com/bichel/facebook/ConstructBinaryTreeFromString.java,2/e/2ebb7a69dc5cc099212013fae63ee98bdc35b7b3
 l
 <src/main/java/com/bichel/facebook/StrobogrammaticNumber.java,8/c/8c6d36092f2ed8644696cf6dd0cfeccc07cda0e2
+p
+@src/main/java/com/bichel/leetcode/stacks/ScoreOfParentheses.java,2/e/2e9736eef672ca047a9655eef34577d799320da6
+v
+Fsrc/main/java/com/bichel/leetcode/heap/MinimumCostToConnectSticks.java,1/0/10edee76717c707d230ba65874a383cd7ab2eff8
+t
+Dsrc/main/java/com/bichel/leetcode/heap/FindMedianFromDataStream.java,4/7/47e1111ecdf2b71b56c6043780851ae268474eb2
+k
+;src/main/java/com/bichel/leetcode/heap/LastStoneWeight.java,b/3/b320a52df15aa356dba9a63c71ffda9e9e255f8a
+w
+Gsrc/main/java/com/bichel/leetcode/heap/FurthestBuildingYouCanReach.java,5/c/5c4cfad93e932128fab76f79064f17c8d78a56e1
+o
+?src/main/java/com/bichel/leetcode/arrays/SortArrayByParity.java,c/6/c6f5719e1c97ead347cd3a12ea40c0fe94cec63e
