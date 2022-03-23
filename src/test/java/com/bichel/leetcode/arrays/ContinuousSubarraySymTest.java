@@ -1,6 +1,5 @@
 package com.bichel.leetcode.arrays;
 
-import com.bichel.leetcode.arrays.contiguous_subarray.ContinuousSubarraySum;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

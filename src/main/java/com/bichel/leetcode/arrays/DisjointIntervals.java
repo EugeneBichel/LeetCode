@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.contiguous_subarray;
+package com.bichel.leetcode.arrays;
 
 /*
 Given an array nums, partition it into two (contiguous)

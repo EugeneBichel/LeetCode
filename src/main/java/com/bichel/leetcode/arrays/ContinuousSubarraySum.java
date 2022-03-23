@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.contiguous_subarray;
+package com.bichel.leetcode.arrays;
 
 import java.util.HashMap;
 import java.util.Map;

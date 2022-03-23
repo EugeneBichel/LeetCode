@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.prefix_sum;
+package com.bichel.leetcode.arrays;
 
 import java.util.HashMap;
 import java.util.Map;

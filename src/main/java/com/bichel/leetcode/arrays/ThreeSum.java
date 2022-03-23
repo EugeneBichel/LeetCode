@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.sum;
+package com.bichel.leetcode.arrays;
 
 /*
 Given an array nums of n integers and an integer target,

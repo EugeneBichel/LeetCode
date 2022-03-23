@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.prefix_sum;
+package com.bichel.leetcode.arrays;
 
 /*
 Given an array of positive integers nums

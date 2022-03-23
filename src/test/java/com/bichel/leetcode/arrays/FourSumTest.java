@@ -1,6 +1,5 @@
 package com.bichel.leetcode.arrays;
 
-import com.bichel.leetcode.arrays.sum.FourSum;
 import org.junit.jupiter.api.Test;
 
 public class FourSumTest {

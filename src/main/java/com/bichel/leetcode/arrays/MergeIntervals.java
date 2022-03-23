@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.merging;
+package com.bichel.leetcode.arrays;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -24,22 +24,7 @@ intervals[i].length == 2
 0 <= starti <= endi <= 104
  */
 
-public class MergeIntervalsSolBetter {
-    public static void main(String[] args) {
-        int[][] intervals = {{1, 3}, {2, 6}, {8, 10}, {15, 18}};
-
-        MergeIntervalsSolBetter program = new MergeIntervalsSolBetter();
-
-        int[][] merged = program.merge(intervals);
-
-        for (int i = 0; i < merged.length; i++) {
-            System.out.println();
-            for (int j = 0; j < merged[i].length; j++) {
-                System.out.print(merged[i][j] + " ");
-            }
-        }
-    }
-
+public class MergeIntervals {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
 

@@ -1,18 +1,7 @@
-package com.bichel.leetcode.arrays.merging;
+package com.bichel.leetcode.arrays;
 
 public class MergeSortedArrays {
-    public static void main(String[] args) {
-        int[] nums1 = {1, 2, 3, 0, 0, 0};
-        int[] nums2 = {2, 5, 6};
-
-        merge(nums1, nums2);
-
-        for (int x : nums1) {
-            System.out.print(x + " ");
-        }
-    }
-
-    private static void merge(int[] nums1, int[] nums2) {
+    public void merge(int[] nums1, int[] nums2) {
 
         int[] temp = new int[nums1.length];
         int i = 0, j = 0, k = 0;

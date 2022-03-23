@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays.merging;
+package com.bichel.leetcode.arrays;
 
 import java.util.List;
 import java.util.ArrayList;
