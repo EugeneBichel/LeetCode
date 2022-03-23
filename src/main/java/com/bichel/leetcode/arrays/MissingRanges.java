@@ -29,7 +29,7 @@ beyond fixed-sized constants that don't grow with the size of the input.
 
 However, output space that is simply used to return the output
 (and not to do any processing) is not counted for the purpose of space complexity analysis.
-For this reason, the overall space complexity is O(1)O(1).
+For this reason, the overall space complexity is O(1).
  */
 
 public class MissingRanges {
@@ -40,6 +40,15 @@ public class MissingRanges {
         for (int i = 0; i <= nums.length; i++) {
             int curr = i < nums.length ? nums[i] : upper + 1;
 
+            /*
+            nums[i] - nums[i-1] == 1 - there is no missing elements
+            nums[i] - nums[i-1] >  - there is a range of missing elements
+
+            Missing elements:
+            [ nums[i-1] + 1; nums[i] -1 ]
+            prev = nums[i-1]
+            cur = nums[i]
+            */
             if (prev + 1 <= curr - 1) {
                 result.add(formatRange(prev + 1, curr - 1));
             }

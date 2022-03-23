@@ -1,10 +1,6 @@
 package com.bichel.leetcode.list;
 
-public class IsPalindrome {
-    public static void main() {
-
-    }
-
+public class PalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {
         StringBuilder sb = new StringBuilder();
         while(head != null) {
