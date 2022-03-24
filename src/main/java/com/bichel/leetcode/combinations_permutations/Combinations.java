@@ -28,7 +28,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Combinations {
-    List<List<Integer>> output = new LinkedList();
+    List<List<Integer>> output = new LinkedList<>();
     int n;
     int k;
 
@@ -36,7 +36,7 @@ public class Combinations {
         this.n = n;
         this.k = k;
 
-        backtrack(1, new LinkedList<Integer>());
+        backtrack(1, new LinkedList<>());
 
         return output;
     }

@@ -8,10 +8,10 @@ public class ValidateBinarySearchTree {
     }
 
     private boolean isValid(TreeNode node, TreeNode l, TreeNode r) {
-        if(node == null) return true;
+        if (node == null) return true;
 
-        if(l!=null && l.val >= node.val) return false;
-        if(r!=null && r.val <= node.val) return false;
+        if (l != null && l.val >= node.val) return false;
+        if (r != null && r.val <= node.val) return false;
 
         return isValid(node.left, l, node) && isValid(node.right, node, r);
     }
