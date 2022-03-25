@@ -1,4 +1,4 @@
-package com.bichel.facebook;
+package com.bichel.leetcode.strings;
 
 /*
 Given a string num which represents an integer,
