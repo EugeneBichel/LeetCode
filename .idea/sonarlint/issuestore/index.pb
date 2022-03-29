@@ -1130,3 +1130,9 @@ m
 =src/main/java/com/bichel/leetcode/sort/TwoCityScheduling.java,3/e/3edb6ffbfe55adf3593f22dab434fcff857967ed
 t
 Dsrc/main/java/com/bichel/leetcode/strings/StrobogrammaticNumber.java,2/7/27687876937e1c72855ba2a2ad30cd5b261986f5
+x
+Hsrc/main/java/com/bichel/leetcode/strings/NumberOfSegmentsInAString.java,3/a/3ab6b6f36844a7f2c6cc26d7c30c57c0e4fdd1de
+v
+Fsrc/main/java/com/bichel/leetcode/search/TheKWeakestRowsInAMatrix.java,d/b/db8f5676ba5b344e614ede44d28999e813fdd756
+j
+:src/main/java/com/bichel/leetcode/search/BinarySearch.java,e/9/e9172ad9db1e70ca5056ff4b66f1b9fae83983da
