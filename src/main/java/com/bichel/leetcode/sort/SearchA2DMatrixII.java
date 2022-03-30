@@ -12,7 +12,44 @@ Space complexity : O(1)
  */
 
 public class SearchA2DMatrixII {
+
     public boolean searchMatrix(int[][] matrix, int target) {
+
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        int row = 0;
+        int col = 0;
+
+        int l = 0;
+        int r = rows - 1;
+
+        while (l <= r) {
+
+            int pivot = l + (r - l) / 2;
+
+            if (target >= matrix[pivot][0] && target <= matrix[pivot][cols - 1]) {
+                row = pivot;
+                break;
+            } else if (matrix[pivot][0] < target) l = pivot + 1;
+            else if (matrix[pivot][cols - 1] > target) r = pivot - 1;
+        }
+
+        l = 0;
+        r = cols - 1;
+
+        while (l <= r) {
+            int pivot = l + (r - l) / 2;
+
+            if (target == matrix[row][pivot]) return true;
+            else if (matrix[row][pivot] > target) r = pivot - 1;
+            else l = pivot + 1;
+        }
+
+        return false;
+    }
+
+    public boolean searchMatrix3(int[][] matrix, int target) {
         // start our "pointer" in the bottom-left
         int row = matrix.length - 1;
         int col = 0;
@@ -57,7 +94,6 @@ public class SearchA2DMatrixII {
 
         return searchRec(left, row, mid-1, down) || searchRec(mid+1, up, right, row-1);
     }
-
     public boolean searchMatrix2(int[][] mat, int targ) {
         // cache input values in object to avoid passing them unnecessarily
         // to `searchRec`
