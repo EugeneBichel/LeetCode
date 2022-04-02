@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting;
+package com.bichel.facebook.fbrecruiting;
 
 /*
 You are given a singly-linked list that contains N integers.

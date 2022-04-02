@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting;
+package com.bichel.facebook.fbrecruiting;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;

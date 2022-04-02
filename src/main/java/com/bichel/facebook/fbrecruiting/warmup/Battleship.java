@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting.warmup;
+package com.bichel.facebook.fbrecruiting.warmup;
 
 /*
 You're playing Battleship on a grid of cells with RR rows and CC columns. There are 00 or more battleships on the grid, each occupying a single distinct cell. The cell in the iith row from the top and jjth column from the left either contains a battleship (G_{i,j} = 1G

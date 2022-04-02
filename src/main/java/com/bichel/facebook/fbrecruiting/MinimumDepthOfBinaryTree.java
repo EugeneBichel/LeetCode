@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting;
+package com.bichel.facebook.fbrecruiting;
 
 import com.bichel.leetcode.tree.TreeNode;
 

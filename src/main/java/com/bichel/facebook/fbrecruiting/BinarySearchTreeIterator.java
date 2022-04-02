@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting;
+package com.bichel.facebook.fbrecruiting;
 
 /*
 Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST):

@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting;
+package com.bichel.facebook.fbrecruiting;
 
 public class RotationalCipher {
     String rotationalCipher(String input, int rotationFactor) {

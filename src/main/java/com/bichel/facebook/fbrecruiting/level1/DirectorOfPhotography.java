@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting.level1;
+package com.bichel.facebook.fbrecruiting.level1;
 
 /*
 https://www.facebookrecruiting.com/portal/coding_puzzles/?puzzle=870874083549040&source=career_site_login_panel_sign_up_button

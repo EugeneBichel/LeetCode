@@ -1,4 +1,4 @@
-package com.bichel.fbrecruiting;
+package com.bichel.facebook.fbrecruiting;
 
 public class QueueRemovals {
     public int[] findPositions(int[] arr, int x) {
