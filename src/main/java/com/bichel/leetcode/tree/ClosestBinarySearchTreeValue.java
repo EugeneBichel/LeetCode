@@ -1,5 +1,10 @@
 package com.bichel.leetcode.tree;
 
+/*
+Given the root of a binary search tree and a target value,
+return the value in the BST that is closest to the target.
+ */
+
 public class ClosestBinarySearchTreeValue {
     private int val = 0;
     private double diff = Double.MAX_VALUE;
