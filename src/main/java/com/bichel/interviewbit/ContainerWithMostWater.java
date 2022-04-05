@@ -16,9 +16,11 @@ Your program should return an integer which corresponds to the maximum area of w
 Note: You may not slant the container.
 
 Example :
-
 Input : [1, 5, 4, 3]
 Output : 6
+
+Time complexity : O(n). Single pass.
+Space complexity : O(1). Constant space is used.
  */
 
 public class ContainerWithMostWater {

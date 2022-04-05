@@ -1,4 +1,4 @@
-package com.bichel.leetcode.math;
+package com.bichel.leetcode.backtracking;
 
 //https://leetcode.com/explore/learn/card/recursion-ii/472/backtracking/2796/
 
@@ -12,6 +12,7 @@ Each of the digits 1-9 must occur exactly once in each column.
 Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
 The '.' character indicates empty cells
  */
+
 public class SudokuSolver {
     // box size
     int n = 3;
