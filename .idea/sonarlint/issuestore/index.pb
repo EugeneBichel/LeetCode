@@ -600,8 +600,6 @@ d
 4src/main/java/com/bichel/facebook/SummaryRanges.java,0/f/0f4cb771f6d4536227c6f8829657f2cc3f151f89
 p
 @src/test/java/com/bichel/leetcode/bits/SumOfTwoIntegersTest.java,2/d/2d3e78202b634e79c39f977b5f52f55d0894feb8
-h
-8src/main/java/com/bichel/leetcode/bit/NumberOf1Bits.java,1/b/1be5ae7f97a617c764300ce8642e5ac3e850d6bf
 g
 7src/main/java/com/bichel/leetcode/bit/CountingBits.java,8/a/8ae3acc2c4702fdcabdc6a81e7987a3f4f3b989f
 r
@@ -1114,3 +1112,11 @@ q
 Asrc/main/java/com/bichel/interviewbit/ContainerWithMostWater.java,1/4/14eed1d5f6ded6baf5b11b3a83aeceb491646e1d
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+t
+Dsrc/main/java/com/bichel/leetcode/backtracking/RobotRoomCleaner.java,2/e/2e9f65ddb6de1fa37830db8c7994d49077709bbc
+h
+8src/main/java/com/bichel/leetcode/math/SudokuSolver.java,8/e/8e35b0b079321c8ca14708a13e3b4a840f5c9095
+p
+@src/main/java/com/bichel/leetcode/backtracking/SudokuSolver.java,5/3/537be6d7e6cebcaaf642071f944f5189d0ef9975
+q
+Asrc/main/java/com/bichel/leetcode/backtracking/NQueen2Puzzle.java,f/7/f75040339d3d4ca806a0774c071da82fad54fdff

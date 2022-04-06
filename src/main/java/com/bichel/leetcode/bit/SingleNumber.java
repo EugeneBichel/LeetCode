@@ -13,10 +13,6 @@ Output: 1
  */
 
 public class SingleNumber {
-    public static void main(String[] args) {
-
-    }
-
     public int singleNumber(int[] nums) {
         if(nums.length == 1) return nums[0];
         int res = 0;
