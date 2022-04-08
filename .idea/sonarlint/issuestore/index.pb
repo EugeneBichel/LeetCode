@@ -7,8 +7,6 @@ m
 =src/test/java/com/bichel/leetcode/tries/ReplaceWordsTest.java,d/7/d75c872a5762ae83cd878f085dac8a1654b87495
 i
 9src/main/java/com/bichel/leetcode/tries/ReplaceWords.java,a/b/aba836f28a36ee60582fe05efe9d5ff5ca92590a
-g
-7src/main/java/com/bichel/leetcode/math/HappyNumber.java,b/e/bee487d2506fea99cd3ccf448d933330e7086689
 x
 Hsrc/main/java/com/bichel/leetcode/arrays/FindWinnerOnATicTacToeGame.java,b/0/b0ba83adbd9ef34a4a3ce2306114a7ef6a4f0542
 ~
@@ -1130,3 +1128,7 @@ g
 7src/main/java/com/bichel/leetcode/bit/SingleNumber.java,d/4/d4d0fa7f2cb57164d1d35e5b444ebcbe784c8432
 d
 4src/main/java/com/bichel/leetcode/bit/SumValues.java,3/b/3b279f378a45330cf3a811c613255175ef50d765
+b
+2src/main/java/com/bichel/leetcode/search/Sqrt.java,5/b/5beb1a7e1cc8efb082ec708261312b93c037457c
+p
+@src/main/java/com/bichel/leetcode/search/ValidPerfectSquare.java,2/2/22a932d172bcf8ac8d49d7d9772e0278114f0682
