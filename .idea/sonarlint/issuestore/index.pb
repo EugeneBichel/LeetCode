@@ -1132,3 +1132,11 @@ b
 2src/main/java/com/bichel/leetcode/search/Sqrt.java,5/b/5beb1a7e1cc8efb082ec708261312b93c037457c
 p
 @src/main/java/com/bichel/leetcode/search/ValidPerfectSquare.java,2/2/22a932d172bcf8ac8d49d7d9772e0278114f0682
+g
+7src/main/java/com/bichel/leetcode/math/HappyNumber.java,b/e/bee487d2506fea99cd3ccf448d933330e7086689
+†
+Vsrc/main/java/com/bichel/leetcode/strings/CheckIfOneStringSwapCanMakeStringsEqual.java,3/2/32382fb217cd65750833004aa4b72a5a9e2c8ce8
+t
+Dsrc/main/java/com/bichel/leetcode/math/LargestPerimeterTriangle.java,3/3/3359f2e2ab3a51824c7ac9fc14918d192afbb109
+ˆ
+Xsrc/main/java/com/bichel/leetcode/sort/SpecialArrayWithXElementsGreaterThanOrEqualX.java,e/d/edd44603ef54b4f958adad05799bd713fe342bee
