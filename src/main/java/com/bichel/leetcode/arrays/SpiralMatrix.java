@@ -10,107 +10,54 @@ Given an m x n matrix, return all elements of the matrix in spiral order.
 
 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
 Output: [1,2,3,6,9,8,7,4,5]
+
+-100 <= matrix[i][j] <= 100
+Note that elements in the matrix are constrained to -100 <= matrix[row][col] <= 100,
+therefore we can select a number that is out of this range to mark it.
+In this article, 101 is selected for marking purposes.
+
+
  */
 
 public class SpiralMatrix {
-    class Pair {
-        public int col;
-        public int row;
-
-        public Pair(int row, int col) {
-            this.row = row;
-            this.col = col;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (!(o instanceof Pair)) return false;
-
-            Pair pair = (Pair) o;
-
-            if (row != pair.row) return false;
-            return col == pair.col;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = row;
-            result = 31 * result + col;
-            return result;
-        }
-    }
-
     public List<Integer> spiralOrder(int[][] matrix) {
-        List<Integer> list = new ArrayList<>();
-
-        final int Nr = matrix.length;
-        final int Nc = matrix[0].length;
-
-        int fr = 0, er = Nr - 1;
-        int fc = 0, ec = Nc - 1;
-
-        while (fr <= er && fc <= ec) {
-            list.addAll(getLevel(matrix, fr, er, fc, ec));
-            fr++;
-            er--;
-            fc++;
-            ec--;
+        int VISITED = 101;
+        int rows = matrix.length;
+        int columns = matrix[0].length;
+        // Four directions that we will move: right, down, left, up.
+        int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        // Initial direction: moving right.
+        int currentDirection = 0;
+        // The number of times we change the direction.
+        int changeDirection = 0;
+        // Current place that we are at is (row, col).
+        // row is the row index; col is the column index.
+        int row = 0;
+        int col = 0;
+        // Store the first element and mark it as visited.
+        List<Integer> result = new ArrayList<>();
+        result.add(matrix[0][0]);
+        matrix[0][0] = VISITED;
+        while (changeDirection < 2) {
+            while (row + directions[currentDirection][0] >= 0 &&
+                    row + directions[currentDirection][0] < rows &&
+                    col + directions[currentDirection][1] >= 0 &&
+                    col + directions[currentDirection][1] < columns &&
+                    matrix[row + directions[currentDirection][0]]
+                            [col + directions[currentDirection][1]] != VISITED) {
+                // Reset this to 0 since we did not break and change the direction.
+                changeDirection = 0;
+                // Calculate the next place that we will move to.
+                row = row + directions[currentDirection][0];
+                col = col + directions[currentDirection][1];
+                result.add(matrix[row][col]);
+                matrix[row][col] = VISITED;
+            }
+            // Change our direction.
+            currentDirection = (currentDirection + 1) % 4;
+            // Increment change_direction because we changed our direction.
+            changeDirection++;
         }
-
-        return list;
-    }
-
-    private List<Integer> getLevel(int[][] matrix, int fr, int er, int fc, int ec) {
-
-        List<Integer> list = new ArrayList<>();
-
-        if (fr == er && fc == ec)
-            list.add(matrix[fr][fc]);
-        else {
-
-            Set<Pair> set = new HashSet<>();
-
-            for (int j = fc; j < ec; j++) {
-
-                Pair p = new Pair(fr, j);
-
-                if (!set.contains(p)) {
-                    list.add(matrix[fr][j]);
-                    set.add(p);
-                }
-            }
-
-            for (int i = fr; i < er; i++) {
-
-                Pair p = new Pair(i, ec);
-
-                if (!set.contains(p)) {
-                    list.add(matrix[i][ec]);
-                    set.add(p);
-                }
-            }
-
-            for (int j = ec; j > fc; j--) {
-
-                Pair p = new Pair(er, j);
-
-                if (!set.contains(p)) {
-                    list.add(matrix[er][j]);
-                    set.add(p);
-                }
-            }
-            for (int i = er; i > fr; i--) {
-
-                Pair p = new Pair(i, fc);
-
-                if (!set.contains(p)) {
-                    list.add(matrix[i][fc]);
-                    set.add(p);
-                }
-            }
-        }
-
-        return list;
+        return result;
     }
 }
