@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bichel.leetcode.list.AddTwoNumbersTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-17T12:11:45" hostname="Yauhens-MBP" time="0.035">
-  <properties/>
-  <testcase name="test1()" classname="com.bichel.leetcode.list.AddTwoNumbersTest" time="0.035"/>
-  <system-out><![CDATA[6 6 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

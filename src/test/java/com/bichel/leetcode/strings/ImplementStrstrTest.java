@@ -10,6 +10,6 @@ public class ImplementStrstrTest {
         //s = "a";
         //a = "a";
 
-        int start = strStr(s, a);
+        //int start = strStr(s, a);
     }
 }

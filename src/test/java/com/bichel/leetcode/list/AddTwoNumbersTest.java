@@ -82,11 +82,13 @@ Output: [8,9,9,9,0,0,0,1]
 
 
         AddTwoNumbers pr = new AddTwoNumbers();
-        ListNode res = pr.betterSolution(l1Head, l2Head);
-
+        //ListNode res = pr.betterSolution(l1Head, l2Head);
+/*
         while (res != null) {
             System.out.print(res.val + " ");
             res = res.next;
         }
+
+ */
     }
 }
