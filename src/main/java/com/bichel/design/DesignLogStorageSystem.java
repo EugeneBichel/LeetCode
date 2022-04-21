@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.design;
 
 /*
 You are given several logs, where each log contains a unique ID and timestamp. Timestamp is a string that has the following format: Year:Month:Day:Hour:Minute:Second, for example, 2017:01:01:23:59:59. All domains are zero-padded decimal numbers.

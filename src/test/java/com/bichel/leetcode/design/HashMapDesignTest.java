@@ -1,6 +1,6 @@
 package com.bichel.leetcode.design;
 
-import com.bichel.leetcode.design.hashmap.HashMapDesign;
+import com.bichel.design.HashMapDesign;
 import org.junit.jupiter.api.Test;
 
 public class HashMapDesignTest {

@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.design;
 
 import java.util.List;
 import java.util.ArrayList;

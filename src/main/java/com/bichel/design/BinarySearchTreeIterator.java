@@ -1,4 +1,4 @@
-package com.bichel.classicproblems.design;
+package com.bichel.design;
 
 import com.bichel.leetcode.tree.TreeNode;
 

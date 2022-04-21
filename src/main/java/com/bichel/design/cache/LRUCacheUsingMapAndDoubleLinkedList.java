@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design.cache;
+package com.bichel.design.cache;
 
 import java.util.HashMap;
 import java.util.Map;

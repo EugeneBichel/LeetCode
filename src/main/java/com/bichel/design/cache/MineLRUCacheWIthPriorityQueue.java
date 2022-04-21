@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design.cache;
+package com.bichel.design.cache;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;

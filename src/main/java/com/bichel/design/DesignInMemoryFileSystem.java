@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.design;
 
 /*
 Design a data structure that simulates an in-memory file system.

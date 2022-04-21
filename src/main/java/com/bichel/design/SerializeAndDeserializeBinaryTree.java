@@ -1,4 +1,4 @@
-package com.bichel.classicproblems.design;
+package com.bichel.design;
 
 import java.util.Arrays;
 import java.util.LinkedList;

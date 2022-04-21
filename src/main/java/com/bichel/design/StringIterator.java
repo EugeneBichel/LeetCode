@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design;
+package com.bichel.design;
 
 public class StringIterator {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design.hashmap;
+package com.bichel.design;
 
 import java.util.Arrays;
 
@@ -30,7 +30,7 @@ public class HashMapDesign {
     public void put(int key, int value) {
         size++;
 
-        if((float)size / (float)capacity > LOAD_FACTOR) {
+        if ((float) size / (float) capacity > LOAD_FACTOR) {
             increaseCapacity();
         }
 
@@ -48,12 +48,12 @@ public class HashMapDesign {
     private int getHash(int key) {
         int hash = key % capacity;
 
-        if(hash >= capacity || data[hash] == null) return -1;
+        if (hash >= capacity || data[hash] == null) return -1;
 
         while (hash < capacity && data[hash] != null && data[hash].key != key) {
             hash++;
 
-            if(hash >= capacity || data[hash] == null) return -1;
+            if (hash >= capacity || data[hash] == null) return -1;
         }
 
         return hash;
@@ -83,7 +83,7 @@ public class HashMapDesign {
 
     public int get(int key) {
         int hash = getHash(key);
-        if(hash != -1 && data[hash] != null)
+        if (hash != -1 && data[hash] != null)
             return data[hash].value;
 
         return -1;
@@ -91,7 +91,7 @@ public class HashMapDesign {
 
     public void remove(int key) {
         int hash = getHash(key);
-        if(hash >=0 && hash < data.length)
+        if (hash >= 0 && hash < data.length)
             data[hash] = null;
     }
 }
