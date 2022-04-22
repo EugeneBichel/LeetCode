@@ -1,17 +1,28 @@
 package com.bichel.design.cache;
 
 /*
-Design and implement a data structure for a Least Frequently Used (LFU) cache.
+Design and implement a data structure for
+a Least Frequently Used (LFU) cache.
 
 Implement the LFUCache class:
 
 LFUCache(int capacity) Initializes the object with the capacity of the data structure.
-int get(int key) Gets the value of the key if the key exists in the cache. Otherwise, returns -1.
-void put(int key, int value) Update the value of the key if present, or inserts the key if not already present. When the cache reaches its capacity, it should invalidate and remove the least frequently used key before inserting a new item. For this problem, when there is a tie (i.e., two or more keys with the same frequency), the least recently used key would be invalidated.
-To determine the least frequently used key, a use counter is maintained for each key in the cache. The key with the smallest use counter is the least frequently used key.
+int get(int key) Gets the value of the key if the key exists in the cache.
+Otherwise, returns -1.
+void put(int key, int value) Update the value of the key if present,
+or inserts the key if not already present.
+ When the cache reaches its capacity,
+ it should invalidate and remove the least frequently used key before inserting a new item.
+ For this problem, when there is a tie (i.e., two or more keys with the same frequency),
+ the least recently used key would be invalidated.
+To determine the least frequently used key,
+a use counter is maintained for each key in the cache.
+ The key with the smallest use counter is the least frequently used key.
 
-When a key is first inserted into the cache, its use counter is set to 1 (due to the put operation). The use counter for a key in the cache is incremented either a get or put operation is called on it.
-
+When a key is first inserted into the cache,
+its use counter is set to 1 (due to the put operation).
+ The use counter for a key in the cache is incremented either a get or
+ put operation is called on it.
 The functions get and put must each run in O(1) average time complexity.
  */
 
@@ -73,14 +84,21 @@ public class LFUCache {
         nodeMap = new HashMap<>();
         countMap = new HashMap<>();
     }
+
     public int get(int key) {
         Node node = nodeMap.get(key);
-        if (node == null) return -1;
+        if (node == null)
+            return -1;
+
         update(node);
+
         return node.val;
     }
+
     public void put(int key, int value) {
-        if (capacity == 0) return;
+        if (capacity == 0)
+            return;
+
         Node node;
         if (nodeMap.containsKey(key)) {
             node = nodeMap.get(key);
@@ -89,11 +107,13 @@ public class LFUCache {
         } else {
             node = new Node(key, value);
             nodeMap.put(key, node);
+
             if (size == capacity) {
                 DLList lastList = countMap.get(min);
                 nodeMap.remove(lastList.removeLast().key);
                 size--;
             }
+
             size++;
             min = 1;
             DLList newList = countMap.getOrDefault(node.cnt, new DLList());
@@ -105,7 +125,10 @@ public class LFUCache {
     private void update(Node node) {
         DLList oldList = countMap.get(node.cnt);
         oldList.remove(node);
-        if (node.cnt == min && oldList.size == 0) min++;
+
+        if (node.cnt == min && oldList.size == 0)
+            min++;
+
         node.cnt++;
         DLList newList = countMap.getOrDefault(node.cnt, new DLList());
         newList.add(node);

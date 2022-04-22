@@ -12,7 +12,6 @@ class LRUCache {
         DLinkedNode prev;
         DLinkedNode next;
     }
-
     private void addNode(DLinkedNode node) {
         /**
          * Always add the new node right after head.
@@ -23,7 +22,6 @@ class LRUCache {
         head.next.prev = node;
         head.next = node;
     }
-
     private void removeNode(DLinkedNode node) {
         /**
          * Remove an existing node from the linked list.
@@ -34,7 +32,6 @@ class LRUCache {
         prev.next = next;
         next.prev = prev;
     }
-
     private void moveToHead(DLinkedNode node) {
         /**
          * Move certain node in between to the head.
@@ -42,7 +39,6 @@ class LRUCache {
         removeNode(node);
         addNode(node);
     }
-
     private DLinkedNode popTail() {
         /**
          * Pop the current tail.
@@ -92,13 +88,13 @@ class LRUCache {
             cache.put(key, newNode);
             addNode(newNode);
 
-            ++size;
+            size++;
 
             if (size > capacity) {
                 // pop the tail
                 DLinkedNode tail = popTail();
                 cache.remove(tail.key);
-                --size;
+                size--;
             }
         } else {
             // update the value.
