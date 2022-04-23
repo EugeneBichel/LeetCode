@@ -21,12 +21,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.HashMap;
+import java.util.Map;
 
 public class DesignInMemoryFileSystem {
     public class FileSystem {
         class Dir {
-            HashMap<String, Dir> dirs = new HashMap<>();
-            HashMap<String, String> files = new HashMap<>();
+            Map<String, Dir> dirs = new HashMap<>();
+            Map<String, String> files = new HashMap<>();
         }
 
         Dir root;

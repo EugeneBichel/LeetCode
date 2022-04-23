@@ -1,6 +1,4 @@
-package com.bichel.other.Sorts;
-
-import com.bichel.other.Sorts.Utility;
+package com.bichel.leetcode.sort;
 
 public class Bubble {
     public static void sort(Comparable[] arr) {

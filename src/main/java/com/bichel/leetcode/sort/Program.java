@@ -1,7 +1,6 @@
-package com.bichel.other.Sorts;
+package com.bichel.leetcode.sort;
 
 import java.util.Scanner;
-import java.util.Stack;
 
 public class Program {
     public static void main(String[] args) {

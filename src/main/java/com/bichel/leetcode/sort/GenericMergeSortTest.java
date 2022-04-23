@@ -1,4 +1,4 @@
-package com.bichel.other.Sorts;
+package com.bichel.leetcode.sort;
 
 public class GenericMergeSortTest {
     public static void main(String[] args) {

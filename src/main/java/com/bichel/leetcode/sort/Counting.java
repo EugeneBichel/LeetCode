@@ -1,4 +1,4 @@
-package com.bichel.other.Sorts;
+package com.bichel.leetcode.sort;
 
 public class Counting {
     public static int[] sort(int[] arr, int range) {

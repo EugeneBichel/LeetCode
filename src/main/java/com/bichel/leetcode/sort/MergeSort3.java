@@ -1,6 +1,8 @@
-package com.bichel.other.Sorts;
+package com.bichel.leetcode.sort;
 
-public class MergeSort {
+import com.bichel.leetcode.sort.Utility;
+
+public class MergeSort3 {
     public static void sort(Comparable[] arr) {
 
         int N = arr.length;

@@ -1,6 +1,4 @@
-package com.bichel.other.Sorts;// a variation of Insertion Sort: allow exchange of far items.
-
-import com.bichel.other.Sorts.Utility;
+package com.bichel.leetcode.sort;// a variation of Insertion Sort: allow exchange of far items.
 
 public class Shell {
     public static void sort(Comparable[] arr) {

@@ -1,4 +1,4 @@
-package com.bichel.other.Sorts;
+package com.bichel.leetcode.sort;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package com.bichel.other.Sorts; /**
+package com.bichel.leetcode.sort; /**
  * Java inner class is defined inside the body of another class. Java inner class can be
  * declared private, public, protected, or with default access whereas
  * an outer class can have only public or default access.
