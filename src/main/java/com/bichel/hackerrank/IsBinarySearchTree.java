@@ -3,10 +3,6 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class IsBinarySearchTree {
-    public static void main(String[] args) {
-        int[] arr = {1,2,4,3,6,7};
-    }
-
     static boolean checkBST(Node root) {
         if(root == null) {
             return false;

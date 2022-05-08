@@ -75,8 +75,8 @@ Output: [[-1,-1,2],[-1,0,1]]
             int r=nums.length-1;
 
             while(l<r) {
-                if(i==l) {l++; continue;};
-                if(i==r) {r--; continue;};
+                if(i==l) {l++; continue;}
+                if(i==r) {r--; continue;}
 
                 int sum = a + nums[l] + nums[r];
 
@@ -99,6 +99,7 @@ Output: [[-1,-1,2],[-1,0,1]]
         Set<List<Integer>> res = new HashSet<>();
         Set<Integer> dups = new HashSet<>();
         Map<Integer, Integer> seen = new HashMap<>();
+
         for (int i = 0; i < nums.length; ++i)
             if (dups.add(nums[i])) {
                 for (int j = i + 1; j < nums.length; ++j) {
@@ -111,6 +112,6 @@ Output: [[-1,-1,2],[-1,0,1]]
                     seen.put(nums[j], i);
                 }
             }
-        return new ArrayList(res);
+        return new ArrayList<>(res);
     }
 }
