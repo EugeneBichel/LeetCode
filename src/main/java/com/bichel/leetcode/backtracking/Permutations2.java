@@ -23,20 +23,23 @@ public class Permutations2 {
     public List<List<Integer>> permuteUnique(int[] nums) {
         Set<List<Integer>> output = new HashSet<>();
 
-        ArrayList<Integer> numsList = new ArrayList<>();
-        for (int num : nums)
+        List<Integer> numsList = new ArrayList<>();
+        for (int num: nums) {
             numsList.add(num);
+        }
 
         int n = nums.length;
         backtrack(n, numsList, output, 0);
+
         return new ArrayList<>(output);
     }
 
-    private void backtrack(int n, ArrayList<Integer> nums,
+    private void backtrack(int n, List<Integer> nums,
                            Set<List<Integer>> output, int first) {
         // if all integers are used up
-        if (first == n)
+        if (first == n) {
             output.add(new ArrayList<>(nums));
+        }
 
         for (int i = first; i < n; i++) {
             Collections.swap(nums, first, i);

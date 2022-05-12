@@ -9,7 +9,9 @@ public class ToMakeValidParentheses {
         int index;
         char ch;
 
-        public Pair() {}
+        public Pair() {
+        }
+
         public Pair(int index, char ch) {
             this.index = index;
             this.ch = ch;
@@ -22,12 +24,12 @@ public class ToMakeValidParentheses {
 
         Stack<Pair> st = new Stack<>();
 
-        for(int i=0;i<a.length;i++) {
-            if(a[i] == '(') {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == '(') {
                 out.add(a[i]);
-                st.push(new Pair(out.size()-1, a[i]));
-            } else if(a[i] == ')') {
-                if(!st.isEmpty()) {
+                st.push(new Pair(out.size() - 1, a[i]));
+            } else if (a[i] == ')') {
+                if (!st.isEmpty()) {
                     out.add(a[i]);
                     st.pop();
                 }
@@ -36,7 +38,7 @@ public class ToMakeValidParentheses {
             }
         }
 
-        while(!st.isEmpty()) {
+        while (!st.isEmpty()) {
             out.remove(st.pop().index);
         }
 

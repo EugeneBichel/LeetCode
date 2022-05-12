@@ -1,4 +1,4 @@
-package com.bichel.other.technology;
+package com.bichel.other.Kafka;
 
 public class Kafka {
     /*
