@@ -1,4 +1,6 @@
-package com.bichel.leetcode.bit;
+package com.bichel.leetcode.bits;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * >> is arithmetic shift right, >>> is logical shift right.
@@ -16,7 +18,8 @@ package com.bichel.leetcode.bit;
  */
 
 public class ShiftRightAndLogicalShifting {
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         //Arrays.sort(new int[]{1, 2, 3, 4});
 
         int itemsNumber = 8;

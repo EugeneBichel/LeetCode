@@ -1,7 +1,10 @@
-package com.bichel.leetcode.bit;
+package com.bichel.leetcode.bits;
+
+import org.junit.jupiter.api.Test;
 
 public class BitManipulationsTest {
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         int i = 4;
 
         int a = i >> 1;

@@ -1,7 +1,10 @@
-package com.bichel.leetcode.bit;
+package com.bichel.leetcode.bits;
+
+import org.junit.jupiter.api.Test;
 
 public class isPowerOfTwo {
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         System.out.println(isPowerOfTwo(1));
         System.out.println(1 & 0);
         System.out.println(isPowerOfTwo(2));

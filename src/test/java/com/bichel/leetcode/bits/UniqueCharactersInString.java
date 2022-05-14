@@ -1,14 +1,17 @@
-package com.bichel.leetcode.bit;
+package com.bichel.leetcode.bits;
+
+import org.junit.jupiter.api.Test;
 
 public class UniqueCharactersInString {
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         //final String testStr = "qwerty";
         final String testStr = "qwq";
         boolean isUnique = isUniqueChars(testStr);
         System.out.println(isUnique);
     }
 
-    private static boolean isUniqueChars(final String str) {
+    private boolean isUniqueChars(final String str) {
         int checker = 0;
 
         for(int i = 0; i < str.length(); i++) {
