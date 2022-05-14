@@ -1,5 +1,14 @@
 package com.bichel.leetcode.backtracking;
 
+/*
+Given an m x n grid of characters board and a string word,
+ return true if word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cells,
+where adjacent cells are horizontally or vertically neighboring.
+The same letter cell may not be used more than once.
+ */
+
 public class WordSearch {
     private char[][] board;
     private int ROWS;
@@ -10,10 +19,14 @@ public class WordSearch {
         this.ROWS = board.length;
         this.COLS = board[0].length;
 
-        for (int row = 0; row < this.ROWS; ++row)
-            for (int col = 0; col < this.COLS; ++col)
-                if (this.backtrack(row, col, word, 0))
+        for (int row = 0; row < this.ROWS; row++) {
+            for (int col = 0; col < this.COLS; col++) {
+                if (this.backtrack(row, col, word, 0)) {
                     return true;
+                }
+            }
+        }
+
         return false;
     }
 
@@ -35,8 +48,11 @@ public class WordSearch {
         int[] rowOffsets = {0, 1, 0, -1}; //left, top, right, bottom
         int[] colOffsets = {1, 0, -1, 0};
 
-        for (int d = 0; d < 4; ++d) {
-            ret = this.backtrack(row + rowOffsets[d], col + colOffsets[d], word, index + 1);
+        for (int d = 0; d < 4; d++) {
+            ret = this.backtrack(row + rowOffsets[d],
+                    col + colOffsets[d],
+                    word,
+                    index + 1);
 
             if (ret)
                 break;

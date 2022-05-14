@@ -6,8 +6,8 @@ import java.util.Set;
 import java.util.List;
 
 /*
-Given a string s that contains parentheses and letters, remove the minimum number of invalid parentheses to make the input string valid.
-
+Given a string s that contains parentheses and letters,
+remove the minimum number of invalid parentheses to make the input string valid.
 Return all the possible results. You may return the answer in any order.
 
 Example 1:
@@ -28,8 +28,8 @@ public class RemoveInvalidParentheses {
         this.minimumRemoved = Integer.MAX_VALUE;
     }
 
-    private void recurse(String s,int index,
-                         int leftCount,int rightCount,StringBuilder expression,
+    private void recurse(String s, int index,
+                         int leftCount, int rightCount, StringBuilder expression,
                          int removedCount) {
 
         // If we have reached the end of string.
@@ -62,7 +62,11 @@ public class RemoveInvalidParentheses {
             // simply recurse further by adding it to the expression StringBuilder
             if (currentCharacter != '(' && currentCharacter != ')') {
                 expression.append(currentCharacter);
-                this.recurse(s, index + 1, leftCount, rightCount, expression, removedCount);
+
+                this.recurse(s, index + 1,
+                        leftCount, rightCount,
+                        expression, removedCount);
+
                 expression.deleteCharAt(length);
             } else {
 
@@ -85,9 +89,8 @@ public class RemoveInvalidParentheses {
     }
 
     public List<String> removeInvalidParentheses(String s) {
-
         this.reset();
         this.recurse(s, 0, 0, 0, new StringBuilder(), 0);
-        return new ArrayList(this.validExpressions);
+        return new ArrayList<>(this.validExpressions);
     }
 }

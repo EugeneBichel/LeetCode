@@ -22,17 +22,19 @@ public class Permutations {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> output = new LinkedList<>();
 
-        ArrayList<Integer> numsList = new ArrayList<>();
-        for (int num : nums)
+        List<Integer> numsList = new ArrayList<>();
+        for (int num : nums) {
             numsList.add(num);
+        }
 
         int n = nums.length;
         backtrack(n, numsList, output, 0);
+
         return output;
     }
 
     private void backtrack(int n,
-                           ArrayList<Integer> nums,
+                           List<Integer> nums,
                            List<List<Integer>> output,
                            int first) {
         // if all integers are used up

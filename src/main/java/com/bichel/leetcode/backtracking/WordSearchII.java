@@ -6,22 +6,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
-Given an m x n board of characters and a list of strings words, return all words on the board.
+Given an m x n board of characters and a list of strings words,
+return all words on the board.
 
 Each word must be constructed from letters of sequentially adjacent cells,
 where adjacent cells are horizontally or vertically neighboring.
 The same letter cell may not be used more than once in a word.
  */
 
-class TrieNode {
-    Map<Character, TrieNode> children = new HashMap<>();
-    String word = null;
-
-    public TrieNode() {
-    }
-}
-
 public class WordSearchII {
+    class TrieNode {
+        Map<Character, TrieNode> children = new HashMap<>();
+        String word = null;
+
+        public TrieNode() {
+        }
+    }
+
     char[][] _board = null;
     List<String> _result = new ArrayList<>();
 
