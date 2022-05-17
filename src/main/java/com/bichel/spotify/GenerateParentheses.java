@@ -1,4 +1,4 @@
-package com.bichel.facebook;
+package com.bichel.spotify;
 import java.util.ArrayList;
 import java.util.List;
 /*

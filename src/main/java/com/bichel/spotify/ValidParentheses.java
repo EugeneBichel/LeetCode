@@ -1,8 +1,7 @@
-package com.bichel.leetcode.stacks;
+package com.bichel.spotify;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
 
 public class ValidParentheses {
     public boolean isValid(String s) {

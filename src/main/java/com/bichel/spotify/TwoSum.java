@@ -1,4 +1,4 @@
-package com.bichel.leetcode.arrays;
+package com.bichel.spotify;
 
 import java.util.HashMap;
 import java.util.Map;
