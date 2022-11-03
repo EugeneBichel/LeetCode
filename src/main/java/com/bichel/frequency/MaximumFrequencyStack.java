@@ -24,28 +24,32 @@ import java.util.Map;
 public class MaximumFrequencyStack {
     Map<Integer, Integer> freq;
     Map<Integer, Deque<Integer>> group;
-    int maxfreq;
+    int maxFreq;
 
     public MaximumFrequencyStack() {
         freq = new HashMap<>();
         group = new HashMap<>();
-        maxfreq = 0;
+        maxFreq = 0;
     }
 
     public void push(int x) {
         int f = freq.getOrDefault(x, 0) + 1;
         freq.put(x, f);
-        if (f > maxfreq)
-            maxfreq = f;
+
+        if (f > maxFreq)
+            maxFreq = f;
 
         group.computeIfAbsent(f, z-> new ArrayDeque<>()).push(x);
     }
 
     public int pop() {
-        int x = group.get(maxfreq).pop();
+        int x = group.get(maxFreq).pop();
+
         freq.put(x, freq.get(x) - 1);
-        if (group.get(maxfreq).isEmpty())
-            maxfreq--;
+
+        if (group.get(maxFreq).isEmpty())
+            maxFreq--;
+
         return x;
     }
 }
