@@ -8,7 +8,10 @@ import java.util.Map;
 public class FindAllAnagramsInAString {
     public List<Integer> findAnagrams(String s, String p) {
         int ns = s.length(), np = p.length();
-        if (ns < np) return new ArrayList<>();
+
+        if (ns < np) {
+            return new ArrayList<>();
+        }
 
         Map<Character, Integer> pCount = new HashMap<>();
         Map<Character, Integer> sCount = new HashMap<>();
@@ -21,7 +24,7 @@ public class FindAllAnagramsInAString {
             }
         }
 
-        List<Integer> output = new ArrayList();
+        List<Integer> output = new ArrayList<>();
         // sliding window on the string s
         for (int i = 0; i < ns; ++i) {
             // add one more letter
