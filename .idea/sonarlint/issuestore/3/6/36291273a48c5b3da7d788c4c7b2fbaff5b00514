@@ -1,14 +1,0 @@
-
-D
-java:S3740G"/Provide the parametrized type for this generic.(Òæ‡L
-u	java:S116"[Rename this field "horizontal_lines" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’”©¬þÿÿÿÿ
-t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¸Œéêþÿÿÿÿ
-h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âµßøùÿÿÿÿ
-?
-java:S1659"$Declare "deltaY" on a separate line.(À”…Ðüÿÿÿÿ
-o
-java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÏýÞ£
-h	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œœ‡Œøÿÿÿÿ
-c	java:S100J"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›”—®
-k	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÖçÙþÿÿÿÿ

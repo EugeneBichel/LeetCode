@@ -12,20 +12,26 @@ public class PermutationInString {
             s1map[s1.charAt(i) - 'a']++;
             s2map[s2.charAt(i) - 'a']++;
         }
+
         for (int i = 0; i < s2.length() - s1.length(); i++) {
-            if (matches(s1map, s2map))
+            if (matches(s1map, s2map)) {
                 return true;
+            }
+
             s2map[s2.charAt(i + s1.length()) - 'a']++;
             s2map[s2.charAt(i) - 'a']--;
         }
+
         return matches(s1map, s2map);
     }
 
     private boolean matches(int[] s1map, int[] s2map) {
         for (int i = 0; i < 26; i++) {
-            if (s1map[i] != s2map[i])
+            if (s1map[i] != s2map[i]) {
                 return false;
+            }
         }
+
         return true;
     }
 }

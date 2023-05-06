@@ -9,9 +9,11 @@ import java.util.List;
 public class WordBreak {
     public boolean wordBreak(String s, List<String> wordDict) {
         Set<String> wordDictSet = new HashSet<>(wordDict);
+
         Queue<Integer> queue = new LinkedList<>();
         boolean[] visited = new boolean[s.length()];
         queue.add(0);
+
         while (!queue.isEmpty()) {
             int start = queue.remove();
             if (visited[start]) {

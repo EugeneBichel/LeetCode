@@ -1,8 +1,8 @@
 package com.bichel.classicproblems.interval;
 
 /*
-There is a car with capacity empty seats. The vehicle only drives east (i.e.,
-it cannot turn around and drive west).
+There is a car with capacity empty seats.
+The vehicle only drives east (i.e., it cannot turn around and drive west).
 
 You are given the integer capacity and an array trips
 where trip[i] = [numPassengersi, fromi, toi] indicates that the ith trip has numPassengersi passengers

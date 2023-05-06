@@ -16,10 +16,14 @@ public class MaximumDepthOfBinaryTree {
     }
 
     private int calcMaxLen(TreeNode root, int maxLen) {
-        if(root == null) return maxLen;
+        if(root == null)
+            return maxLen;
 
         maxLen++;
 
-        return Math.max(Math.max(calcMaxLen(root.left, maxLen), maxLen), Math.max(calcMaxLen(root.right, maxLen), maxLen));
+        return Math.max(
+                Math.max(calcMaxLen(root.left, maxLen), maxLen),
+                Math.max(calcMaxLen(root.right, maxLen), maxLen)
+        );
     }
 }
