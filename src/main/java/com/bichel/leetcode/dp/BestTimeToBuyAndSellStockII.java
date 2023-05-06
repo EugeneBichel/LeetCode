@@ -20,22 +20,21 @@ Output: 4
 Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
 Note that you cannot buy on day 1, buy on day 2 and sell them later,
 as you are engaging multiple transactions at the same time. You must sell before buying again.
-
  */
 
 public class BestTimeToBuyAndSellStockII {
     public int maxProfit(int[] prices) {
-        int maxprofit = 0;
+        int maxProfit = 0;
         int min = prices[0];
 
-        for(int i=1; i<prices.length; i++) {
-            if(prices[i] > min) {
-                maxprofit += prices[i] - min;
+        for (int i = 1; i < prices.length; i++) {
+            if (prices[i] > min) {
+                maxProfit += prices[i] - min;
             }
 
             min = prices[i];
         }
 
-        return maxprofit;
+        return maxProfit;
     }
 }

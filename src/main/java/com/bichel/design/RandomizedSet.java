@@ -12,20 +12,25 @@ public class RandomizedSet {
     private Random rand = new Random();
 
     public RandomizedSet() {
-        dict = new HashMap();
-        list = new ArrayList();
+        dict = new HashMap<>();
+        list = new ArrayList<>();
     }
 
     public boolean insert(int val) {
-        if (dict.containsKey(val)) return false;
+        if (dict.containsKey(val)) {
+            return false;
+        }
 
         dict.put(val, list.size());
         list.add(list.size(), val);
+
         return true;
     }
 
     public boolean remove(int val) {
-        if (! dict.containsKey(val)) return false;
+        if (! dict.containsKey(val)) {
+            return false;
+        }
 
         // move the last element to the place idx of the element to delete
         int lastElement = list.get(list.size() - 1);

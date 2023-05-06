@@ -20,12 +20,12 @@ public class TwoSumLessThanK {
         Arrays.sort(nums);
 
         int l = 0;
-        int r = nums.length-1;
+        int r = nums.length - 1;
 
-        while(l<r) {
+        while (l < r) {
             int sum = nums[l] + nums[r];
 
-            if(sum < k) {
+            if (sum < k) {
                 ans = Math.max(ans, sum);
                 l++;
             } else r--;

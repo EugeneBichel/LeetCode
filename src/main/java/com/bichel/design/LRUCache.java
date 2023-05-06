@@ -12,6 +12,7 @@ class LRUCache {
         DLinkedNode prev;
         DLinkedNode next;
     }
+
     private void addNode(DLinkedNode node) {
         /**
          * Always add the new node right after head.

@@ -1,6 +1,6 @@
-package com.bichel.leetcode.list;
+package com.bichel.leetcode.top_interview_questions;
 
-import java.math.BigDecimal;
+import com.bichel.leetcode.list.ListNode;
 
 /*
 You are given two non-empty linked lists representing two non-negative integers.

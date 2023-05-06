@@ -6,33 +6,34 @@ import java.util.Map;
 import java.util.Set;
 
 public class WordDictionary {
-    Map<Integer, Set<String>> d;
+    Map<Integer, Set<String>> dict;
 
-    /** Initialize your data structure here. */
     public WordDictionary() {
-        d = new HashMap();
+        dict = new HashMap<>();
     }
 
-
     public void addWord(String word) {
-        int m = word.length();
-        if (!d.containsKey(m)) {
-            d.put(m, new HashSet<>());
+        int wordLength = word.length();
+
+        if (!dict.containsKey(wordLength)) {
+            dict.put(wordLength, new HashSet<>());
         }
 
-        d.get(m).add(word);
+        dict.get(wordLength).add(word);
     }
 
     public boolean search(String word) {
-        int m = word.length();
+        int wordLength = word.length();
 
-        if (d.containsKey(m)) {
-            for (String w : d.get(m)) {
+        if (dict.containsKey(wordLength)) {
+            for (String w : dict.get(wordLength)) {
                 int i = 0;
-                while ((i < m) && (w.charAt(i) == word.charAt(i) || word.charAt(i) == '.')) {
+                while ((i < wordLength) && (w.charAt(i) == word.charAt(i) || word.charAt(i) == '.')) {
                     i++;
                 }
-                if (i == m) return true;
+                if (i == wordLength) {
+                    return true;
+                }
             }
         }
 

@@ -1,7 +1,5 @@
 package com.bichel.design;
 
-import com.bichel.design.BucketWithTree;
-
 public class HashSetDesign {
     private BucketWithTree[] bucketArray;
     private int keyRange;

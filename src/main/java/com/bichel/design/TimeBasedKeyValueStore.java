@@ -2,6 +2,7 @@ package com.bichel.design;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.TreeMap;
 
 /*
@@ -32,18 +33,23 @@ public class TimeBasedKeyValueStore {
             data.put(key, new TreeMap<>());
         }
 
+        //data.remove()
+
         data.get(key).put(timestamp, value);
     }
 
     public String get(String key, int timestamp) {
-        if (!data.containsKey(key)) return "";
+        if (!data.containsKey(key)) {
+            return "";
+        }
 
         TreeMap<Integer, String> record = data.get(key);
 
         Integer floorKey = record.floorKey(timestamp);
 
-        if (floorKey == null)
+        if (floorKey == null) {
             return "";
+        }
 
         return record.get(floorKey);
     }

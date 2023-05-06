@@ -85,15 +85,18 @@ public class NumberOfIslands {
 
         int nr = grid.length;
         int nc = grid[0].length;
-        int num_islands = 0;
+        int numIslands = 0;
 
         for (int r = 0; r < nr; ++r) {
             for (int c = 0; c < nc; ++c) {
+
                 if (grid[r][c] == '1') {
-                    num_islands++;
+                    numIslands++;
                     grid[r][c] = '0'; // mark as visited
+
                     Queue<Integer> neighbors = new LinkedList<>();
                     neighbors.add(r * nc + c);
+
                     while (!neighbors.isEmpty()) {
                         int id = neighbors.remove();
                         int row = id / nc;
@@ -119,6 +122,6 @@ public class NumberOfIslands {
             }
         }
 
-        return num_islands;
+        return numIslands;
     }
 }

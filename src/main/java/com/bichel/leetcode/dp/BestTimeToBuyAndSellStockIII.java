@@ -25,7 +25,7 @@ public class BestTimeToBuyAndSellStockIII {
         int[] rightProfits = new int[length + 1];
 
         // construct the bidirectional DP array
-        for (int l = 1; l < length; ++l) {
+        for (int l = 1; l < length; l++) {
             leftProfits[l] = Math.max(leftProfits[l - 1], prices[l] - leftMin);
             leftMin = Math.min(leftMin, prices[l]);
 

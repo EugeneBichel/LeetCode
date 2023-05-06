@@ -32,7 +32,9 @@ public class StringIterator {
             return letter;
         } else {
 
-            if (ind > arr.length - 1) return ' ';
+            if (ind > arr.length - 1) {
+                return ' ';
+            }
 
             if (hasNext()) {
                 letter = arr[ind];
@@ -47,12 +49,17 @@ public class StringIterator {
                 ind = r; // char + integer
 
                 return letter;
-            } else return ' ';
+            } else {
+                return ' ';
+            }
         }
     }
 
     public boolean hasNext() {
-        if (ind + 1 < arr.length || times > 0) return true;
-        else return false;
+        if (ind + 1 < arr.length || times > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

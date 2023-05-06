@@ -25,12 +25,15 @@ public class NumberOfDistinctIslands {
     public int numDistinctIslands(int[][] grid) {
         this.grid = grid;
         this.seen = new boolean[grid.length][grid[0].length];
+
         for (int row = 0; row < grid.length; row++) {
             for (int col = 0; col < grid[0].length; col++) {
                 dfs(row, col);
+
                 if (currentIsland.isEmpty()) {
                     continue;
                 }
+
                 // Translate the island we just found to the top left.
                 int minCol = grid[0].length - 1;
                 for (int i = 0; i < currentIsland.size(); i++) {
@@ -40,6 +43,7 @@ public class NumberOfDistinctIslands {
                     cell[0] -= row;
                     cell[1] -= minCol;
                 }
+
                 // If this island is unique, add it to the list.
                 if (currentIslandUnique()) {
                     uniqueIslands.add(currentIsland);

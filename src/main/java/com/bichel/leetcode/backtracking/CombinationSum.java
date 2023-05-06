@@ -26,7 +26,8 @@ public class CombinationSum {
         return results;
     }
 
-    private void backtrack(int remain, LinkedList<Integer> comb, int start, int[] candidates, List<List<Integer>> results) {
+    private void backtrack(int remain, LinkedList<Integer> comb, int start,
+                           int[] candidates, List<List<Integer>> results) {
 
         if (remain == 0) {
             results.add(new ArrayList<>(comb));
