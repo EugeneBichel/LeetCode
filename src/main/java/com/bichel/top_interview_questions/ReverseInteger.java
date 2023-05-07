@@ -1,4 +1,4 @@
-package com.bichel.amazon.others;
+package com.bichel.top_interview_questions;
 
 public class ReverseInteger {
     public int reverse(int x) {

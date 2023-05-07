@@ -1,4 +1,4 @@
-package com.bichel.leetcode.top_interview_questions;
+package com.bichel.top_interview_questions;
 
 import java.util.HashMap;
 import java.util.Map;

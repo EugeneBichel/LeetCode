@@ -1,4 +1,4 @@
-package com.bichel.leetcode.top_interview_questions;
+package com.bichel.top_interview_questions;
 
 /*
 Given a string s, find the length of the
