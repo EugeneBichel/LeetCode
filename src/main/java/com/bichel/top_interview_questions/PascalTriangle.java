@@ -6,7 +6,7 @@ import java.util.List;
 
 public class PascalTriangle {
     private static List<List<Integer>> betterSolution(int numRows) {
-        List<List<Integer>> triangle = new ArrayList<List<Integer>>();
+        List<List<Integer>> triangle = new ArrayList<>();
 
         // Base case; first row is always [1].
         triangle.add(new ArrayList<>());

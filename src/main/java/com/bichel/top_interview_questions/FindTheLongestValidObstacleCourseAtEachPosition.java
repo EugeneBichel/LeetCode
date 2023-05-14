@@ -1,9 +1,12 @@
 package com.bichel.top_interview_questions;
 
 /*
-You want to build some obstacle courses. You are given a 0-indexed integer array obstacles of length n, where obstacles[i] describes the height of the ith obstacle.
+You want to build some obstacle courses.
+You are given a 0-indexed integer array obstacles of length n,
+where obstacles[i] describes the height of the ith obstacle.
 
-For every index i between 0 and n - 1 (inclusive), find the length of the longest obstacle course in obstacles such that:
+For every index i between 0 and n - 1 (inclusive),
+find the length of the longest obstacle course in obstacles such that:
 
 You choose any number of obstacles between 0 and i inclusive.
 You must include the ith obstacle in the course.
@@ -17,27 +20,34 @@ import java.util.List;
 public class FindTheLongestValidObstacleCourseAtEachPosition {
     List<Integer> answer;
 
-    // Find the rightmost insertion position. We use a fixed-length array and a changeable right boundary
+    // Find the rightmost insertion position.
+    // We use a fixed-length array and a changeable right boundary
     // to represent an arraylist of dynamic size.
-    private int bisectRight(int[] A, int target, int right) {
-        if (right == 0)
+    private int bisectRight(int[] arr, int target, int right) {
+        if (right == 0) {
             return 0;
+        }
+
         int left = 0;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            if (A[mid] <= target)
+
+            if (arr[mid] <= target) {
                 left = mid + 1;
-            else
+            } else {
                 right = mid;
+            }
         }
         return left;
     }
 
     public int[] longestObstacleCourseAtEachPosition(int[] obstacles) {
-        int n = obstacles.length, lisLength = 0;
+        int n = obstacles.length;
+        int lisLength = 0;
 
         // lis[i] records the lowest increasing sequence of length i + 1.
-        int[] answer = new int[n], lis = new int[n];
+        int[] answer = new int[n];
+        int[] lis = new int[n];
 
         for (int i = 0; i < n; ++i) {
             int height = obstacles[i];

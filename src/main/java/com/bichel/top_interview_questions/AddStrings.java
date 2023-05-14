@@ -30,8 +30,9 @@ public class AddStrings {
             p2--;
         }
 
-        if (carry != 0)
+        if (carry != 0) {
             res.append(carry);
+        }
 
         return res.reverse().toString();
     }
