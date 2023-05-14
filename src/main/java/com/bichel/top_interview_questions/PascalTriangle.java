@@ -1,4 +1,4 @@
-package com.bichel.leetcode.math;
+package com.bichel.top_interview_questions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
