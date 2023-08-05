@@ -1,6 +1,6 @@
 package com.bichel.design;
 
-import com.bichel.leetcode.tree.TreeNode;
+import com.bichel.algorithms.tree.TreeNode;
 
 import java.util.Stack;
 

@@ -1,6 +1,6 @@
 package com.bichel.fbrecruiting.level1;
 
-import com.bichel.facebook.fbrecruiting.level1.Cafeteria;
+import com.bichel.algorithms.level1.Cafeteria;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

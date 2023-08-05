@@ -1,4 +1,4 @@
-package com.bichel.leetcode.design.cache;
+package com.bichel.algorithms.design.cache;
 
 /*
 Design and implement a data structure for a Least Frequently Used (LFU) cache.

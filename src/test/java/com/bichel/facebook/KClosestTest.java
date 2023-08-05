@@ -1,6 +1,6 @@
 package com.bichel.facebook;
 
-import com.bichel.leetcode.math.KClosest;
+import com.bichel.algorithms.math.KClosest;
 import org.junit.jupiter.api.Test;
 
 public class KClosestTest {
