@@ -1,4 +1,4 @@
-package com.bichel.algorithms.matrix;
+package com.bichel.algorithms.arrays;
 
 /*
 Given two sparse matrices mat1 of size m x k and mat2 of size k x n,

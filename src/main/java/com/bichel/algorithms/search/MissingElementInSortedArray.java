@@ -1,4 +1,4 @@
-package com.bichel.algorithms.binarysearch;
+package com.bichel.algorithms.search;
 
 public class MissingElementInSortedArray {
     public int missingElement(int[] nums, int k) {

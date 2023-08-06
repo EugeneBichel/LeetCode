@@ -1,4 +1,4 @@
-package com.bichel.algorithms.dfs;
+package com.bichel.algorithms.graph;
 
 class Node {
     public int val;

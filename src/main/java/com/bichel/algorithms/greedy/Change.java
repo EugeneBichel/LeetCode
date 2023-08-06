@@ -1,4 +1,4 @@
-package com.bichel.algorithms.GreedyAlgorithms;
+package com.bichel.algorithms.greedy;
 
 import java.util.Scanner;
 
