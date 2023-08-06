@@ -1,4 +1,4 @@
-package com.bichel.algorithms.level1;
+package com.bichel.algorithms;
 
 /*
 A cafeteria table consists of a row of NN seats, numbered from 11 to NN from left to right. Social distancing guidelines require that every diner be seated such that KK seats to their left and KK seats to their right (or all the remaining seats to that side if there are fewer than KK) remain empty.

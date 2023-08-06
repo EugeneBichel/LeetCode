@@ -1,4 +1,4 @@
-package com.bichel.algorithms.other;
+package com.bichel.algorithms;
 
 import java.util.List;
 import java.util.ArrayList;

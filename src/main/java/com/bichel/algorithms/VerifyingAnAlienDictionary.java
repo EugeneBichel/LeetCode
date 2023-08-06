@@ -1,4 +1,4 @@
-package com.bichel.algorithms.other;
+package com.bichel.algorithms;
 
 public class VerifyingAnAlienDictionary {
     public boolean isAlienSorted(String[] words, String order) {

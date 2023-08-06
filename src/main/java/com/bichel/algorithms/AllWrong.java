@@ -1,4 +1,4 @@
-package com.bichel.algorithms.warmup;
+package com.bichel.algorithms;
 
 /*
 There's a multiple-choice test with NN questions, numbered from 11 to NN. Each question has 22 answer options, labelled A and B. You know that the correct answer for the iith question is the iith character in the string CC, which is either "A" or "B", but you want to get a score of 00 on this test by answering every question incorrectly.
