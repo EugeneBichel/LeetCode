@@ -1,6 +1,6 @@
 package com.bichel.algorithms.design;
 
-import com.bichel.design.HashMapDesign;
+import com.bichel.systemdesign.HashMapDesign;
 import org.junit.jupiter.api.Test;
 
 public class HashMapDesignTest {
