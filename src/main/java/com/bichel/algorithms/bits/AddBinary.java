@@ -1,4 +1,4 @@
-package com.bichel.algorithms.bit;
+package com.bichel.algorithms.bits;
 
 import java.math.BigInteger;
 

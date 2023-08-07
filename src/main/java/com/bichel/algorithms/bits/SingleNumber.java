@@ -1,4 +1,4 @@
-package com.bichel.algorithms.bit;
+package com.bichel.algorithms.bits;
 
 /*
 Given a non-empty array of integers nums, every element appears twice

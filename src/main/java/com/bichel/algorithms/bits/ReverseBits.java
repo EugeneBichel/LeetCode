@@ -1,4 +1,4 @@
-package com.bichel.algorithms.bit;
+package com.bichel.algorithms.bits;
 
 public class ReverseBits {
     public int reverseBits(int n) {

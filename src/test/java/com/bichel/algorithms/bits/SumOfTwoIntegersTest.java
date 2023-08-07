@@ -1,6 +1,5 @@
 package com.bichel.algorithms.bits;
 
-import com.bichel.algorithms.bit.SumOfTwoIntegers;
 import org.junit.jupiter.api.Test;
 
 public class SumOfTwoIntegersTest {

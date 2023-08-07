@@ -1,4 +1,4 @@
-package com.bichel.algorithms.bit;
+package com.bichel.algorithms.bits;
 
 /*
 The Hamming distance between two integers is the number

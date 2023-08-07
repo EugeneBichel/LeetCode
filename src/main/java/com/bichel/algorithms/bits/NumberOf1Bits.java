@@ -1,4 +1,4 @@
-package com.bichel.algorithms.bit;
+package com.bichel.algorithms.bits;
 
 /*
 Write a function that takes an unsigned integer

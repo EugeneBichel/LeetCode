@@ -1,4 +1,4 @@
-package com.bichel.algorithms.bit;
+package com.bichel.algorithms.bits;
 
 /*
 An n-bit gray code sequence is a sequence of 2n integers where:
