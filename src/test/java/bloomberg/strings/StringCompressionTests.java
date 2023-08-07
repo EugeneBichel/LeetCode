@@ -1,8 +1,8 @@
 package bloomberg.strings;
 
 import com.bichel.algorithms.strings.StringCompression;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class StringCompressionTests {
     @Test
