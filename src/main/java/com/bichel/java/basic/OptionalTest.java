@@ -1,4 +1,4 @@
-package com.bichel.java;
+package com.bichel.java.basic;
 
 public class OptionalTest {
     /*

@@ -1,4 +1,4 @@
-package com.bichel.java;
+package com.bichel.java.streams;
 
 /*
 There are two ways in which we can create a parallel Stream:

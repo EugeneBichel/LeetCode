@@ -1,4 +1,4 @@
-package com.bichel.java;
+package com.bichel.java.collections;
 
 import java.util.ArrayList;
 import java.util.HashMap;
