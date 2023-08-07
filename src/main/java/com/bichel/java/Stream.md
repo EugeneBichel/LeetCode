@@ -31,7 +31,7 @@ Basically, flatMap() is used to do following operation:
     Stream<Set<String>> -> flatMap -> Stream<String>
     Stream<List<String>> -> flatMap -> Stream<String>
 
-ntroduction to reduction operations #
+Introduction to reduction operations #
 Reduction stream operations are those operations which reduce the stream into a single value. The operations that we are going to discuss in this lesson are immutable operations because they reduce the result into a single-valued immutable variable. Given a collection of objects, we may need to get the sum of all the elements, the max element, or any other operation which gives us a single value as a result. This can be achieved through reduction operations.
 
 Before we discuss all the reduction operations in detail, let’s first look at some key concepts of reduction:

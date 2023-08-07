@@ -63,10 +63,6 @@ would change after compilation:
 public void genericMethod(Building t) {
     ...
 }
-
-
-
-
-         */
+*/
     }
 }

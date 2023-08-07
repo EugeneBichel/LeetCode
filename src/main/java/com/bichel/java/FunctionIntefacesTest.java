@@ -12,13 +12,15 @@ public class FunctionIntefacesTest {
     Suppliers are useful when we don’t need to supply any value and
     obtain a result at the same time.
 
-    Consumers are functional interfaces that take in a parameter and do not produce anything.
+    Consumers are functional interfaces that take in a parameter and
+    do not produce anything.
 
-    Function is a category of functional interfaces that takes an object of type T and returns an object of type R.
+    Function is a category of functional interfaces that takes an object of type T
+    and returns an object of type R.
 
-    The UnaryOperator<T> interface represents a function that takes one argument of type T and returns a value of the same type. This is similar to the Function interface, which is a parent to the UnaryOperator interface.
-
-
+    The UnaryOperator<T> interface represents a function that takes one argument
+    of type T and returns a value of the same type. This is similar
+    to the Function interface, which is a parent to the UnaryOperator interface.
      */
 }
 

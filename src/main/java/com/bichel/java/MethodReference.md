@@ -1,4 +1,8 @@
-you might be wondering what the difference between a method reference and lambda expressions is. There is no difference. Method references are shortened versions of lambda expressions that call a specific method.
+You might be wondering 
+what the difference between a method reference and lambda expressions is. 
+
+There is no difference. 
+Method references are shortened versions of lambda expressions that call a specific method.
 
     Function<Person, Integer>  function = p  -> p.getAge();
 This can be written as:
@@ -8,7 +12,6 @@ This can be written as:
 
 Four kinds of method references #
 There are four kinds of method references.
-
 1. Static methods #
 The syntax to use static methods as method reference is ClassName::MethodName.
 

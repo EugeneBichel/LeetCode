@@ -2,8 +2,10 @@ package com.bichel.java;
 
 /*
 
-A CompletableFuture is a class in Java that belongs to the java.util.concurrent package.
-It is used for asynchronous computation. The code is executed as a non-blocking call in a separate thread, and the result is made available when it is ready.
+A CompletableFuture is a class in Java that belongs
+to the java.util.concurrent package.
+It is used for asynchronous computation.
+The code is executed as a non-blocking call in a separate thread, and the result is made available when it is ready.
 By doing this, the main thread does not block/wait for the completion of the task, and it can execute other tasks in parallel.
 
 The CompletableFuture class implements the CompletionStage and Future interface. The CompletionStage is a promise. It promises that the computation eventually will be done.

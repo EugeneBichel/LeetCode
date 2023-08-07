@@ -1,6 +1,7 @@
 package com.bichel.java.collections;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class HashSetTest {
     public static void main(String[] args) {
@@ -27,7 +28,7 @@ public class HashSetTest {
 
          */
 
-        HashSet<Integer> hashSet = new HashSet<>();
+        Set<Integer> hashSet = new HashSet<>();
 
         hashSet.add(3);
         hashSet.add(3);

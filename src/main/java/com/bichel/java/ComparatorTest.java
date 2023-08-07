@@ -23,7 +23,8 @@ class ComparatorDemo {
         personList.forEach(System.out::println);
 
         //Using thenComparing() method to sort the List on the basis of two criteria
-        Collections.sort(personList, Comparator
+        Collections.sort(personList,
+                Comparator
                 .comparing(SimplePerson::getName)
                 .thenComparing(SimplePerson::getAge));
 
