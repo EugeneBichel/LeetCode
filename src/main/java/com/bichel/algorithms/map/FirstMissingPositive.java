@@ -1,4 +1,4 @@
-package com.bichel.algorithms.hashmap;
+package com.bichel.algorithms.map;
 
 /*
 Given an unsorted integer array nums, return the smallest missing positive integer.

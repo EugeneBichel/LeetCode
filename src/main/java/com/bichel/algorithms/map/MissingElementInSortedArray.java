@@ -1,4 +1,4 @@
-package com.bichel.algorithms.hashmap;
+package com.bichel.algorithms.map;
 
 /*
 Given an integer array nums which is sorted in ascending order

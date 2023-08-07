@@ -1,4 +1,4 @@
-package com.bichel.algorithms.arrays;
+package com.bichel.algorithms.arrays.easy;
 
 /*
 Given an array nums of n integers and an integer target,

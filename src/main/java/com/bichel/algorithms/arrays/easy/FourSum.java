@@ -1,4 +1,4 @@
-package com.bichel.algorithms.arrays;
+package com.bichel.algorithms.arrays.easy;
 
 import java.util.ArrayList;
 import java.util.Collections;
