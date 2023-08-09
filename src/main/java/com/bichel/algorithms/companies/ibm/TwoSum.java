@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.companies.ibm;
 
 import java.util.HashMap;
 import java.util.Map;

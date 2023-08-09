@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.companies.ibm;
 
 /*
 Given a string s, find the length of the

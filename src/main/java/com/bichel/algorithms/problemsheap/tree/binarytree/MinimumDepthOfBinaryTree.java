@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
