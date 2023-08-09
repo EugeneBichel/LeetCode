@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.java;
 
 import java.io.*;
 import java.util.*;

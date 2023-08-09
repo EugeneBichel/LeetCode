@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.list;
 
 /*
 Convert a Binary Search Tree to a sorted Circular Doubly-Linked List in place.

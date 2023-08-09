@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.tree;
 
 /*
 Given an m x n matrix mat, return an array of

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.strings;
 
 /*
 Given a string s and an integer k, return true if s is a k-palindrome.

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.math;
 
 public class GreatestCommonDivisor {
     public static void main(String[] args) {

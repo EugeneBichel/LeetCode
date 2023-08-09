@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.strings;
 
 /*
 A message containing letters from A-Z is being encoded to numbers using the following mapping:

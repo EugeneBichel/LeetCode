@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.bfs_dfs;
 
 /*
 Given an array of strings words (without duplicates),

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.dynamic_programming;
 
 import java.util.ArrayList;
 

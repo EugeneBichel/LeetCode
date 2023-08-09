@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.tree;
+
+import com.bichel.algorithms.problemsheap.NaryTreeNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

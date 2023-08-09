@@ -4,8 +4,9 @@ import java.util.*;
 
 public class FibonacciHuge {
     private static long getFibonacciHugeNaive(long n, long m) {
-        if (n <= 1)
+        if (n <= 1) {
             return n;
+        }
 
         long previous = 0;
         long current  = 1;

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.strings;
 
 import java.util.Arrays;
 import java.util.List;

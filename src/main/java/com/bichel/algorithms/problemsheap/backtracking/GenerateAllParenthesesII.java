@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.backtracking;
 import java.util.ArrayList;
 import java.util.List;
 

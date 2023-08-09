@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.tree;
 
 /*
 Given the head of a singly linked list where elements are sorted

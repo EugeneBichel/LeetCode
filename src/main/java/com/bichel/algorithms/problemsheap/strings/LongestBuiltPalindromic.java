@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.strings;
 
 public class LongestBuiltPalindromic {
     public int longestPalindrome(String s) {

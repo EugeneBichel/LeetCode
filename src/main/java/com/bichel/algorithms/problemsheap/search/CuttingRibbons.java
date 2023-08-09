@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.search;
 
 /*
 You are given an integer array ribbons, where ribbons[i] represents

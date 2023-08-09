@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.strings;
 
 /*
 A string can be abbreviated by replacing any number of non-adjacent,

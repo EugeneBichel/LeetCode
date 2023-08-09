@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.bfs_dfs;
+
+import com.bichel.algorithms.problemsheap.graph.GraphNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;

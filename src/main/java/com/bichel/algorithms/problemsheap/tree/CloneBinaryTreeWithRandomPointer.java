@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.tree;
 
 public class CloneBinaryTreeWithRandomPointer {
    /* private Map<Node, NodeCopy> visitedMap = new HashMap<>();

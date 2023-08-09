@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.sort;
 
 /*
 order and str are strings composed of lowercase letters.

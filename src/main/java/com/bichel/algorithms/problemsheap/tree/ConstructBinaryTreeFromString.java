@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.tree;
 
 /*
 You need to construct a binary tree from a string consisting of parenthesis and integers.
@@ -12,6 +12,7 @@ Time Complexity: O(N)
 Space Complexity: O(H)
  */
 
+import com.bichel.algorithms.problemsheap.Pair;
 import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.ArrayDeque;
