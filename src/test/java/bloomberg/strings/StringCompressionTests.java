@@ -1,6 +1,6 @@
 package bloomberg.strings;
 
-import com.bichel.algorithms.strings.StringCompression;
+import com.bichel.algorithms.problemsheap.strings.StringCompression;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

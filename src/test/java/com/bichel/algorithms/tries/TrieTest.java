@@ -1,5 +1,6 @@
 package com.bichel.algorithms.tries;
 
+import com.bichel.algorithms.problemsheap.tries.Trie;
 import org.junit.jupiter.api.Test;
 
 public class TrieTest {

@@ -1,5 +1,6 @@
 package com.bichel.algorithms.arrays;
 
+import com.bichel.algorithms.problemsheap.arrays.RobotBoundedInCircle;
 import org.junit.jupiter.api.Test;
 
 public class RobotBoundedInCircleTest {

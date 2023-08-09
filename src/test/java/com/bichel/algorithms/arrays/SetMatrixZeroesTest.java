@@ -1,5 +1,6 @@
 package com.bichel.algorithms.arrays;
 
+import com.bichel.algorithms.problemsheap.arrays.SetMatrixZeroes;
 import org.junit.jupiter.api.Test;
 
 public class SetMatrixZeroesTest {

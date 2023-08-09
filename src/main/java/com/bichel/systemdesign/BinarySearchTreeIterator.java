@@ -1,6 +1,6 @@
 package com.bichel.systemdesign;
 
-import com.bichel.algorithms.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.Stack;
 

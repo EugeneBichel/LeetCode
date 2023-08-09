@@ -1,6 +1,6 @@
 package com.bichel.interviewbit;
 
-import com.bichel.algorithms.math.AddBinary;
+import com.bichel.algorithms.problemsheap.math.AddBinary;
 import org.junit.jupiter.api.Test;
 
 public class AddBinaryTest {

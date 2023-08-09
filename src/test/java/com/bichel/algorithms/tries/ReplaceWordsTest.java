@@ -1,5 +1,6 @@
 package com.bichel.algorithms.tries;
 
+import com.bichel.algorithms.problemsheap.tries.ReplaceWords;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

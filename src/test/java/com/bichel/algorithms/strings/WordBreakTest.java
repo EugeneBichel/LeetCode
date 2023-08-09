@@ -1,5 +1,6 @@
 package com.bichel.algorithms.strings;
 
+import com.bichel.algorithms.problemsheap.strings.WordBreak;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

@@ -1,5 +1,7 @@
 package com.bichel.algorithms.tree;
 
+import com.bichel.algorithms.problemsheap.tree.FindLeavesOfBinaryTree;
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

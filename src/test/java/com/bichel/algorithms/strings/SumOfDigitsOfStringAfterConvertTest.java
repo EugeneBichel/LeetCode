@@ -1,5 +1,6 @@
 package com.bichel.algorithms.strings;
 
+import com.bichel.algorithms.problemsheap.strings.SumOfDigitsOfStringAfterConvert;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

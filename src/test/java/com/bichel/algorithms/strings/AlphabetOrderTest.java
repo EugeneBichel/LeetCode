@@ -1,5 +1,6 @@
 package com.bichel.algorithms.strings;
 
+import com.bichel.algorithms.problemsheap.strings.AlphabetOrder;
 import org.junit.jupiter.api.Test;
 
 public class AlphabetOrderTest {

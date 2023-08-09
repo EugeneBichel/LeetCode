@@ -1,5 +1,6 @@
 package com.bichel.algorithms.bfs_dfs;
 
+import com.bichel.algorithms.problemsheap.bfs_dfs.MakingALargeIslandUsingDFS;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

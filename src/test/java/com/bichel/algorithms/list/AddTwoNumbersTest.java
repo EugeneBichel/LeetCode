@@ -1,5 +1,7 @@
 package com.bichel.algorithms.list;
 
+import com.bichel.algorithms.problemsheap.list.AddTwoNumbers;
+import com.bichel.algorithms.problemsheap.list.ListNode;
 import org.junit.jupiter.api.Test;
 
 public class AddTwoNumbersTest {

@@ -1,5 +1,6 @@
 package com.bichel.algorithms.math;
 
+import com.bichel.algorithms.problemsheap.math.IsPowerOfTwo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

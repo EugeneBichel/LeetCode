@@ -1,5 +1,7 @@
 package com.bichel.algorithms.tree;
 
+import com.bichel.algorithms.problemsheap.tree.KthSmallestElementInABST;
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

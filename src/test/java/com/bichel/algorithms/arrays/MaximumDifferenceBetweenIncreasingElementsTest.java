@@ -1,5 +1,6 @@
 package com.bichel.algorithms.arrays;
 
+import com.bichel.algorithms.problemsheap.arrays.MaximumDifferenceBetweenIncreasingElements;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

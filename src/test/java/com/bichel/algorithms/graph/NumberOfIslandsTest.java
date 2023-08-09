@@ -1,5 +1,6 @@
 package com.bichel.algorithms.graph;
 
+import com.bichel.algorithms.problemsheap.graph.NumberOfIslands;
 import org.junit.jupiter.api.Test;
 
 public class NumberOfIslandsTest {

@@ -1,5 +1,6 @@
 package com.bichel.algorithms.stacks;
 
+import com.bichel.algorithms.problemsheap.stacks.MaxStack;
 import org.junit.jupiter.api.Test;
 
 class MaxStackTest {
