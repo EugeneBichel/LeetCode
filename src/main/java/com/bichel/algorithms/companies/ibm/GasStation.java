@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.companies.ibm;
 
 /*
 There are n gas stations along a circular route,

@@ -1,11 +1,13 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.companies.ibm;
 
 public class ReverseInteger {
     public int reverse(int x) {
         long rev = 0;
 
         int sign = 1;
-        if (x < 0) sign = -1;
+        if (x < 0) {
+            sign = -1;
+        }
 
         x = Math.abs(x);
 
@@ -16,7 +18,9 @@ public class ReverseInteger {
 
         rev *= sign;
 
-        if (rev < Integer.MIN_VALUE || rev > Integer.MAX_VALUE) return 0;
+        if (rev < Integer.MIN_VALUE || rev > Integer.MAX_VALUE) {
+            return 0;
+        }
 
         return (int) rev;
     }

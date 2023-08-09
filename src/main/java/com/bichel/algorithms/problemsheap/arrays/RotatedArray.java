@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap;
+package com.bichel.algorithms.problemsheap.arrays;
 
 /*
 Suppose a sorted array A is rotated at some pivot unknown to you beforehand.
