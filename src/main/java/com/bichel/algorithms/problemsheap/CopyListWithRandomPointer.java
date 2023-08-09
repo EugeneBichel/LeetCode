@@ -1,5 +1,7 @@
 package com.bichel.algorithms.problemsheap;
 
+import com.bichel.algorithms.problemsheap.list.RandomNode;
+
 import java.util.HashMap;
 import java.util.Map;
 
