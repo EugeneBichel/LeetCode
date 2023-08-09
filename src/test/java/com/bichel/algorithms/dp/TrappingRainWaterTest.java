@@ -2,7 +2,7 @@ package com.bichel.algorithms.dp;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import com.bichel.algorithms.problemsheap.dp.TrappingRainWater;
+import com.bichel.algorithms.problemsheap.dynamic_programming.TrappingRainWater;
 import org.junit.jupiter.api.Test;
 
 public class TrappingRainWaterTest {
