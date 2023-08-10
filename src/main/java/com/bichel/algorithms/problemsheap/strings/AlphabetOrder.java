@@ -22,7 +22,7 @@ public class AlphabetOrder {
         public char getCh() {return this.ch;}
     }
 
-    boolean isAlienSorted(String[] words, String order) {
+    public boolean isAlienSorted(String[] words, String order) {
         List<Character> letters = new ArrayList<>();
 
         for(char ch: order.toCharArray()) {
@@ -44,7 +44,7 @@ public class AlphabetOrder {
         return true;
     }
 
-    boolean isW1BeforeW2(String w1, String w2, Map<Character, Integer> alphabet) {
+    private boolean isW1BeforeW2(String w1, String w2, Map<Character, Integer> alphabet) {
         int size = Math.min(w1.length(), w2.length());
 
         for (int i = 0; i < size; i++) {

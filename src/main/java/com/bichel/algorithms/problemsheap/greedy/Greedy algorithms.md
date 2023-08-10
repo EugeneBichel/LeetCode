@@ -1,5 +1,5 @@
 [wikipedia](https://en.wikipedia.org/wiki/Greedy_algorithm):
-    A greedy algorithsm is an algorithm paradigm that follows 
+    A greedy algorithm is an algorithm paradigm that follows 
     the problem solving heuristic of making the locally optimal
     choice at each stage with the hope of finding a global optimum.
     In many problems, a greedy strategy does not in general produce
@@ -12,5 +12,4 @@
     solution, but it is often faster to calculate.
 
 
-    
     

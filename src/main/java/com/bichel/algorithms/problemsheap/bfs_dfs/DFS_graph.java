@@ -1,6 +1,6 @@
 package com.bichel.algorithms.problemsheap.bfs_dfs;
 
-import com.bichel.algorithms.problemsheap.LinkedList;
+import com.bichel.java.collections.LinkedList.LinkedList;
 
 public class DFS_graph {
     static class Graph {

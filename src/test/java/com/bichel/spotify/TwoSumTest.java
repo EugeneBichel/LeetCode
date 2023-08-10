@@ -2,12 +2,10 @@ package com.bichel.spotify;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import com.bichel.algorithms.problemsheap.arrays.easy.TwoSum;
 import org.junit.jupiter.api.Test;
 
 class TwoSumTest {
-    /**
-     * Method under test: {@link TwoSum#getIndices(int[], int)}
-     */
     @Test
     void testGetIndices() {
         int[] actualIndices = (new TwoSum()).getIndices(new int[]{1000, 1000, 1000, 1000}, 1);
@@ -38,4 +36,3 @@ class TwoSumTest {
         assertEquals(0, actualIndices[1]);
     }
 }
-
