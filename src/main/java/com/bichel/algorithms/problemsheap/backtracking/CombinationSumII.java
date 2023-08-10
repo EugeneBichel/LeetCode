@@ -8,23 +8,21 @@ import java.util.List;
 
 public class CombinationSumII {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        // container to hold the final combinations
         List<List<Integer>> results = new ArrayList<>();
         LinkedList<Integer> comb = new LinkedList<>();
 
         Map<Integer, Integer> counter = new HashMap<>();
         for (int candidate : candidates) {
-            if (counter.containsKey(candidate))
+            if (counter.containsKey(candidate)) {
                 counter.put(candidate, counter.get(candidate) + 1);
-            else
+            } else {
                 counter.put(candidate, 1);
+            }
         }
 
         // convert the counter table to a list of (num, count) tuples
         List<int[]> counterList = new ArrayList<>();
-        counter.forEach((key, value) -> {
-            counterList.add(new int[]{key, value});
-        });
+        counter.forEach((key, value) -> counterList.add(new int[]{key, value}));
 
         backtrack(comb, target, 0, counterList, results);
         return results;
@@ -35,11 +33,12 @@ public class CombinationSumII {
                            List<int[]> counter,
                            List<List<Integer>> results) {
 
-        if (remain <= 0) {
-            if (remain == 0) {
-                // make a deep copy of the current combination.
-                results.add(new ArrayList<Integer>(comb));
-            }
+        if (remain < 0) {
+            return;
+        }
+        if (remain == 0) {
+            // make a deep copy of the current combination.
+            results.add(new ArrayList<>(comb));
             return;
         }
 

@@ -32,7 +32,9 @@ public class CombinationSum {
         if (remain == 0) {
             results.add(new ArrayList<>(comb));
             return;
-        } else if (remain < 0) {
+        }
+
+        if (remain < 0) {
             return;
         }
 
