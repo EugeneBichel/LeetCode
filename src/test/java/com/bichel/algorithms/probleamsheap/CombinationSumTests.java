@@ -1,7 +1,7 @@
 package com.bichel.algorithms.probleamsheap;
 
 import java.util.List;
-import com.bichel.algorithms.problemsheap.CombinationSum;
+import com.bichel.algorithms.unsorted.CombinationSum;
 import org.junit.jupiter.api.Test;
 
 class CombinationSumTests {

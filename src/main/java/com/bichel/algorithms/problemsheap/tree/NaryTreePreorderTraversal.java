@@ -1,6 +1,6 @@
 package com.bichel.algorithms.problemsheap.tree;
 
-import com.bichel.algorithms.problemsheap.NaryTreeNode;
+import com.bichel.algorithms.unsorted.NaryTreeNode;
 
 import java.util.Collections;
 import java.util.LinkedList;

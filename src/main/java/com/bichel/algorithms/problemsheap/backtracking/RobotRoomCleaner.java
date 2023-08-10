@@ -4,7 +4,7 @@ package com.bichel.algorithms.problemsheap.backtracking;
 https://leetcode.com/problems/robot-room-cleaner/
  */
 
-import com.bichel.algorithms.problemsheap.Pair;
+import com.bichel.algorithms.unsorted.Pair;
 
 import java.util.HashSet;
 import java.util.Set;

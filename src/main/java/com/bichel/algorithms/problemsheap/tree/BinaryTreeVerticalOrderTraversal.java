@@ -7,8 +7,7 @@ of its nodes' values. (i.e., from top to bottom, column by column).
 If two nodes are in the same row and column, the order should be from left to right.
  */
 
-import com.bichel.algorithms.problemsheap.Pair;
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.unsorted.Pair;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

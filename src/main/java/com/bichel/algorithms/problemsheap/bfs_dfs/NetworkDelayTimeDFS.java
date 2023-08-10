@@ -1,6 +1,6 @@
 package com.bichel.algorithms.problemsheap.bfs_dfs;
 
-import com.bichel.algorithms.problemsheap.Pair;
+import com.bichel.algorithms.unsorted.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;

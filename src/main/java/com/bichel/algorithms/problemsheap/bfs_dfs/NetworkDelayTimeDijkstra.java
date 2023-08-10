@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import com.bichel.algorithms.problemsheap.Pair;
+import com.bichel.algorithms.unsorted.Pair;
 
 /*
 You are given a network of n nodes, labeled from 1 to n.

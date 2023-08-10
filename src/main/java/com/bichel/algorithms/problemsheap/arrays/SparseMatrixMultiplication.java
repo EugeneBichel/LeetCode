@@ -6,7 +6,7 @@ return the result of mat1 x mat2.
 You may assume that multiplication is always possible.
  */
 
-import com.bichel.algorithms.problemsheap.Pair;
+import com.bichel.algorithms.unsorted.Pair;
 import java.util.List;
 import java.util.ArrayList;
 

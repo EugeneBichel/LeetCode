@@ -1,6 +1,6 @@
 package com.bichel.fbrecruiting.level1;
 
-import com.bichel.algorithms.problemsheap.Cafeteria;
+import com.bichel.algorithms.unsorted.Cafeteria;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

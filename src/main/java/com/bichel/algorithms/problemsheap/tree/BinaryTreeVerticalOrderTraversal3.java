@@ -16,8 +16,7 @@ Space Complexity: O(N) where N is the number of nodes in the tree.
 The analysis follows the same logic as in the previous BFS approach.
  */
 
-import com.bichel.algorithms.problemsheap.Pair;
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.unsorted.Pair;
 
 import java.util.ArrayList;
 import java.util.Collections;

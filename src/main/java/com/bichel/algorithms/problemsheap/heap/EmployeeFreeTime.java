@@ -18,7 +18,7 @@ Also, we wouldn't include intervals like [5, 5] in our answer,
 as they have zero length.
  */
 
-import com.bichel.algorithms.problemsheap.Interval;
+import com.bichel.algorithms.unsorted.Interval;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.PriorityQueue;

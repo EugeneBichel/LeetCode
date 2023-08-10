@@ -12,8 +12,7 @@ Time Complexity: O(N)
 Space Complexity: O(H)
  */
 
-import com.bichel.algorithms.problemsheap.Pair;
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.unsorted.Pair;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
