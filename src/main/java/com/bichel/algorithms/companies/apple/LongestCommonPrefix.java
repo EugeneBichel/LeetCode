@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.strings;
+package com.bichel.algorithms.companies.apple;
 
 public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
