@@ -1,9 +1,10 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.problemsheap.strings;
 
 import java.util.Stack;
 
 /*
-You are given a 0-indexed string s of even length n. The string consists of exactly n / 2 opening brackets '[' and n / 2 closing brackets ']'.
+You are given a 0-indexed string s of even length n.
+The string consists of exactly n / 2 opening brackets '[' and n / 2 closing brackets ']'.
 
 A string is called balanced if and only if:
 

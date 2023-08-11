@@ -1,4 +1,4 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.problemsheap.math;
 
 import java.util.ArrayList;
 

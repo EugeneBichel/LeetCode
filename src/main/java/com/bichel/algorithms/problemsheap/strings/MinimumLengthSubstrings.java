@@ -1,4 +1,4 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.problemsheap.strings;
 
 import java.util.HashMap;
 import java.util.Map;

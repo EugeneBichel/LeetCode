@@ -1,4 +1,4 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.problemsheap.backtracking;
 
 /*
 Given a digit string, return all possible letter combinations that the number could represent.
