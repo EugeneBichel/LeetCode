@@ -61,13 +61,14 @@ public class Subsets2 {
     private void findAllSubsets(int[] nums, List<List<Integer>> subsets, List<Integer> subset, int startInd) {
         subsets.add(new ArrayList<>(subset));
 
-        for(int i=startInd; i<nums.length; i++) {
-            if(i!= startInd && nums[i] == nums[i-1]) {
+        for(int i = startInd; i < nums.length; i++) {
+            if(i != startInd && nums[i] == nums[i-1]) {
                 continue;
             }
 
             subset.add(nums[i]);
             findAllSubsets(nums, subsets, subset, i+1);
+            //backtrack
             subset.remove(subset.size() - 1);
         }
     }

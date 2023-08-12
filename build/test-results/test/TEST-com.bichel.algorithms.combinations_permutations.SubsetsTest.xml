@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bichel.algorithms.combinations_permutations.SubsetsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-12T17:31:29" hostname="Yauhens-MBP" time="0.035">
+  <properties/>
+  <testcase name="testSubsets()" classname="com.bichel.algorithms.combinations_permutations.SubsetsTest" time="0.035"/>
+  <system-out><![CDATA[[]
+[1, ]
+[2, ]
+[3, ]
+[1, 2, ]
+[1, 3, ]
+[2, 3, ]
+[1, 2, 3, ]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
