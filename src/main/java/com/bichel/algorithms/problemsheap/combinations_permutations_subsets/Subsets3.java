@@ -1,4 +1,4 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 
 import java.util.ArrayList;
 import java.util.List;

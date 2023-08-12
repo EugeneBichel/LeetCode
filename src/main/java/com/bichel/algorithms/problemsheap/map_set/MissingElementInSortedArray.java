@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.map;
+package com.bichel.algorithms.problemsheap.map_set;
 
 /*
 Given an integer array nums which is sorted in ascending order

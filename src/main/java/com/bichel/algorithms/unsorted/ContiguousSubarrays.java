@@ -24,10 +24,11 @@ public class ContiguousSubarrays {
         i += step;
 
         while (i >= 0 && i < a.length) {
-            if (a[i] < m)
+            if (a[i] < m) {
                 s++;
-            else
+            } else {
                 break;
+            }
 
             i += step;
         }

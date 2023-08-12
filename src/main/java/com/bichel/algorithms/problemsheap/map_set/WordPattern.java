@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.map;
+package com.bichel.algorithms.problemsheap.map_set;
 
 import java.util.HashMap;
 import java.util.Map;

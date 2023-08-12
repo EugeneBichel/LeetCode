@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.map;
+package com.bichel.algorithms.problemsheap.map_set;
 
 /*
 Given a pattern and a string s, return true if s matches the pattern.

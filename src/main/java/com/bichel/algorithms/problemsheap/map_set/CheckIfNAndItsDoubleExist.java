@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.set;
+package com.bichel.algorithms.problemsheap.map_set;
 
 /*
 Given an array arr of integers,

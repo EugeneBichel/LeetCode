@@ -83,7 +83,6 @@ public class ContinuousSubarraySum {
             }
 
             if(map.containsKey(runningSum)) {
-
                 //more than 1: at least 2 items in continuous subarray
                 if (i - map.get(runningSum) > 1) {
                     return true;

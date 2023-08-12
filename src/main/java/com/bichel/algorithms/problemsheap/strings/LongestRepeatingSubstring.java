@@ -30,8 +30,11 @@ public class LongestRepeatingSubstring {
         while (l <= r) {
             int pivot = l + (r - l) / 2;
 
-            if (search(pivot, n, s)) l = pivot + 1;
-            else r = pivot - 1;
+            if (search(pivot, n, s)) {
+                l = pivot + 1;
+            } else {
+                r = pivot - 1;
+            }
         }
 
         return l - 1;
@@ -44,7 +47,9 @@ public class LongestRepeatingSubstring {
         for (int start = 0; start < n - len + 1; start++) {
             temp = s.substring(start, start + len);
 
-            if (seen.contains(temp)) return true;
+            if (seen.contains(temp)) {
+                return true;
+            }
 
             seen.add(temp);
         }

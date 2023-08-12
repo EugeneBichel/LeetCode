@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.map;
+package com.bichel.algorithms.problemsheap.map_set;
 
 /*
 Given an unsorted integer array nums, return the smallest missing positive integer.

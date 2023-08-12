@@ -7,7 +7,6 @@ public class IsIsomorphic {
     public boolean isIsomorphic(String s1, String s2) {
 
         Map<Character, Character> map = new HashMap<>();
-        //Arrays.f
         char[] c1 = s1.toCharArray();
 
         for(int i=0; i<c1.length; i++) {

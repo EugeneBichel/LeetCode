@@ -1,11 +1,11 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.problemsheap.strings;
 
 /*
 Given a string s, return true if the s can be palindrome
 after deleting at most one character from it.
  */
 
-public class ValidPalindrome2 {
+public class ValidPalindrome {
     private boolean isPalindrome(String s, int l, int r) {
 
         char[] a = s.toCharArray();
