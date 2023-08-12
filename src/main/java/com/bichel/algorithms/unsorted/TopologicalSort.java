@@ -1,7 +1,5 @@
 package com.bichel.algorithms.unsorted;
 
-import com.bichel.algorithms.problemsheap.LinkedList;
-
 import java.util.Stack;
 
 public class TopologicalSort {

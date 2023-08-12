@@ -11,8 +11,9 @@ public class Permutations {
         List<List<Integer>> output = new LinkedList<>();
 
         List<Integer> origin = new ArrayList<>();
-        for (int num : nums)
+        for (int num : nums) {
             origin.add(num);
+        }
 
         int n = nums.length;
         backtrack(n, origin, output, 0);
@@ -21,9 +22,10 @@ public class Permutations {
 
     private void backtrack(int n, List<Integer> nums,
                            List<List<Integer>> output, int first) {
-        // if all integers are used up
-        if (first == n)
+        if (first == n) {
             output.add(new ArrayList<>(nums));
+            return;
+        }
 
         for (int i = first; i < n; i++) {
             // place i-th integer first in the current permutation

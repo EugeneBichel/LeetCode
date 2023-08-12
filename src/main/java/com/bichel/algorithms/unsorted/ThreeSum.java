@@ -42,7 +42,9 @@ public class ThreeSum {
                     end--;
                 } else if (sum < target) {
                     start++;
-                } else return sum;
+                } else {
+                    return sum;
+                }
 
                 if (Math.abs(sum - target) < Math.abs(result - target)) {
                     result = sum;
