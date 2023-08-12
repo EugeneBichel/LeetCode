@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.combinations_permutations;
+package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 
 /*
 Given two integers n and k, return all possible combinations

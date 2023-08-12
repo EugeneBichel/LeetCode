@@ -1,6 +1,6 @@
 package com.bichel.algorithms.combinations_permutations;
 
-import com.bichel.algorithms.problemsheap.combinations_permutations.AllPossibleCombOfRElementsInArray;
+import com.bichel.algorithms.problemsheap.combinations_permutations_subsets.AllPossibleCombOfRElementsInArray;
 import org.junit.jupiter.api.Test;
 
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.combinations_permutations;
+package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 
 /*
 The set [1, 2, 3, ..., n] contains a total of n! unique permutations.

@@ -1,6 +1,6 @@
 package com.bichel.algorithms.combinations_permutations;
 
-import com.bichel.algorithms.problemsheap.combinations_permutations.Permutations;
+import com.bichel.algorithms.problemsheap.combinations_permutations_subsets.Permutations;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.combinations_permutations;
+package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.combinations_permutations;
+package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 
 /*
 Find all valid combinations of k numbers that sum up to n such

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.combinations_permutations;
+package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 
 /*
 Implement next permutation, which rearranges numbers into

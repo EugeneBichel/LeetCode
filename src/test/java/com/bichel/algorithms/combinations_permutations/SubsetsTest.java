@@ -1,7 +1,7 @@
 package com.bichel.algorithms.combinations_permutations;
 
 import java.util.List;
-import com.bichel.algorithms.problemsheap.combinations_permutations.Subsets;
+import com.bichel.algorithms.problemsheap.combinations_permutations_subsets.Subsets;
 import org.junit.jupiter.api.Test;
 
 public class SubsetsTest {
