@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bichel.algorithms.math.PowTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-12T17:13:42" hostname="Yauhens-MBP" time="400.663">
+  <properties/>
+  <testcase name="testPow()" classname="com.bichel.algorithms.math.PowTest" time="400.663"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

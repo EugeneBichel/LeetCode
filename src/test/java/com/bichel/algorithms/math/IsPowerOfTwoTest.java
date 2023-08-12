@@ -1,14 +1,14 @@
 package com.bichel.algorithms.math;
 
 import com.bichel.algorithms.problemsheap.math.IsPowerOfTwo;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class IsPowerOfTwoTest {
-    @Test
-    public void testTestCase1() {
-        IsPowerOfTwo pr = new IsPowerOfTwo();
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-        Assertions.assertTrue(pr.isPowerOfTwo(16));
+class IsPowerOfTwoTest {
+    @Test
+    void testTestCase1() {
+        IsPowerOfTwo program = new IsPowerOfTwo();
+        assertTrue(program.isPowerOfTwo(16));
     }
 }
