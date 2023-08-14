@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.problemsheap.tree.algorithms.traversal;
 
 import com.bichel.algorithms.problemsheap.graph.NtierNode;
 

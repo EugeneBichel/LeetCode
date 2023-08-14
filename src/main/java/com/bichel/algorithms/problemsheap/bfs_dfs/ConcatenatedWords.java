@@ -51,5 +51,4 @@ public class ConcatenatedWords {
 
         return false;
     }
-
 }
