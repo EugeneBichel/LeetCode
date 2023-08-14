@@ -1,6 +1,6 @@
 package com.bichel.algorithms.tree;
 
-import com.bichel.algorithms.problemsheap.tree.MorrisTraversal;
+import com.bichel.algorithms.problemsheap.tree.traversal.MorrisTraversal;
 import com.bichel.algorithms.problemsheap.tree.TreeNode;
 import org.junit.jupiter.api.Test;
 
