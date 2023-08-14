@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.np_complete;
+package com.bichel.algorithms.famouseproblems.np_complete;
 
 import java.util.*;
 

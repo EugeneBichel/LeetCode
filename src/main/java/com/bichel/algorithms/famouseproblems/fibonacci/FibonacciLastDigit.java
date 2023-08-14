@@ -1,11 +1,12 @@
-package com.bichel.algorithms.problemsheap.fibonacci;
+package com.bichel.algorithms.famouseproblems.fibonacci;
 
 import java.util.*;
 
 public class FibonacciLastDigit {
     private static int getFibonacciLastDigitNaive(int n) {
-        if (n <= 1)
+        if (n <= 1) {
             return n;
+        }
 
         int previous = 0;
         int current  = 1;

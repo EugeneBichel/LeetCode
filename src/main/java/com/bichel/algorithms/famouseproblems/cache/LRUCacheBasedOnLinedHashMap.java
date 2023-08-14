@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.cache;
+package com.bichel.algorithms.famouseproblems.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,6 +1,4 @@
-package com.bichel.algorithms.problemsheap.fibonacci;
-
-import java.util.*;
+package com.bichel.algorithms.famouseproblems.fibonacci;
 
 public class FibonacciHuge {
     private static long getFibonacciHugeNaive(long n, long m) {
@@ -9,7 +7,7 @@ public class FibonacciHuge {
         }
 
         long previous = 0;
-        long current  = 1;
+        long current = 1;
 
         for (long i = 0; i < n - 1; ++i) {
             long tmp_previous = previous;
@@ -18,13 +16,6 @@ public class FibonacciHuge {
         }
 
         return current % m;
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        long n = scanner.nextLong();
-        long m = scanner.nextLong();
-        System.out.println(getFibonacciHugeNaive(n, m));
     }
 }
 
