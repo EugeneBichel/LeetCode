@@ -20,20 +20,18 @@ public class FindLeavesOfBinaryTree {
 
     private int getHeight(TreeNode root) {
 
-        // return -1 for null nodes
-        if (root == null) return -1;
+        if (root == null) {
+            return -1;
+        }
 
-        // first calculate the height of the left and right children
         int leftHeight = getHeight(root.left);
         int rightHeight = getHeight(root.right);
 
-        // based on the height of the left and right children, obtain the height of the current (parent) node
         int currHeight = Math.max(leftHeight, rightHeight) + 1;
 
         // collect the pair -> (height, val)
-        this.pairs.add(new Pair<Integer, Integer>(currHeight, root.val));
+        this.pairs.add(new Pair<>(currHeight, root.val));
 
-        // return the height of the current node
         return currHeight;
     }
 

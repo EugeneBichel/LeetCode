@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 You are given the root of a binary search tree (BST) and an integer val.
@@ -8,10 +8,13 @@ and return the subtree rooted with that node.
 If such a node does not exist, return null
  */
 
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
+
 public class SearchInABinarySearchTree {
     public TreeNode searchBST(TreeNode root, int val) {
-        while (root != null && val != root.val)
+        while (root != null && val != root.val) {
             root = val < root.val ? root.left : root.right;
+        }
 
         return root;
     }

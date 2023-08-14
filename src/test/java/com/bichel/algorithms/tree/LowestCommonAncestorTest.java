@@ -21,7 +21,7 @@ public class LowestCommonAncestorTest {
 
         LowestCommonAncestor pr = new LowestCommonAncestor();
 
-        TreeNode lca = pr.lowestCommonAncestor(root,
+        TreeNode lca = pr.findLowestCommonAncestor(root,
                 new TreeNode(5), new TreeNode(10));
 
         if (lca != null)

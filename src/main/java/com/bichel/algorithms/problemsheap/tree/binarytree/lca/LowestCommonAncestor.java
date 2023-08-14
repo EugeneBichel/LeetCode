@@ -7,7 +7,7 @@ public class LowestCommonAncestor {
     private boolean hasP = false;
     private boolean hasQ = false;
 
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public TreeNode findLowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         TreeNode lca = findLca(root, p, q);
         return hasP && hasQ ? lca : null;
     }

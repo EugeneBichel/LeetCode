@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 Given the root of a binary tree and an integer targetSum,
@@ -21,6 +21,8 @@ that sum to target".
 
 
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 Given the root of a binary tree and an integer targetSum,
@@ -6,6 +6,8 @@ return all root-to-leaf paths where each path's sum equals targetSum.
 
 A leaf is a node with no children.
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

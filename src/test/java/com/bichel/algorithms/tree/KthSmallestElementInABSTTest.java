@@ -1,5 +1,6 @@
 package com.bichel.algorithms.tree;
 
+import com.bichel.algorithms.problemsheap.tree.BinarySearchTree;
 import com.bichel.algorithms.problemsheap.tree.binarysearchtree.KthSmallestElementInABST;
 import com.bichel.algorithms.problemsheap.tree.TreeNode;
 import org.junit.jupiter.api.Assertions;
@@ -9,11 +10,12 @@ public class KthSmallestElementInABSTTest {
     @Test
     public void test1() {
         //1 2 3 4 5
-        TreeNode root = TreeNode.insertNode(null, 3);
-        TreeNode.insertNode(root, 2);
-        TreeNode.insertNode(root, 4);
-        TreeNode.insertNode(root, 1);
-        TreeNode.insertNode(root, 5);
+        BinarySearchTree binaryTree = new BinarySearchTree();
+        TreeNode root = binaryTree.insertNode(null, 3);
+        binaryTree.insertNode(root, 2);
+        binaryTree.insertNode(root, 4);
+        binaryTree.insertNode(root, 1);
+        binaryTree.insertNode(root, 5);
 
         KthSmallestElementInABST pr = new KthSmallestElementInABST();
         int k = 1;

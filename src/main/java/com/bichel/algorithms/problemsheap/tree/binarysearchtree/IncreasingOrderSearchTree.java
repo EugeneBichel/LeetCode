@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarysearchtree;
 
 /*
 Given the root of a binary search tree,
@@ -6,6 +6,8 @@ rearrange the tree in in-order so that the leftmost node in
 the tree is now the root of the tree,
 and every node has no left child and only one right child.
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.List;
 import java.util.ArrayList;
