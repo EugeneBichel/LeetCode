@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.basic;
+
+import com.bichel.algorithms.problemsheap.sort.Utility;
 
 public class ShellSortTest {
 

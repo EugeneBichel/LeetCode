@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.quicksort;
 
 /*
 1. First, it selects a value from the list, which serves as a pivot value to divide the list

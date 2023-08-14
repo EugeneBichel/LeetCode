@@ -1,6 +1,5 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.quicksort;
 
-import java.io.*;
 import java.util.*;
 
 public class Sorting {
@@ -12,7 +11,7 @@ public class Sorting {
         int m2 = r;
 
         if (r - l <= 1) {
-            if(a[r] < a[l]) {
+            if (a[r] < a[l]) {
                 exch(a, r, l);
             }
 
@@ -23,26 +22,26 @@ public class Sorting {
         int mid = l;
         int pivot = a[r];
 
-        while(mid <= r) {
-            if(a[mid] == pivot) {
+        while (mid <= r) {
+            if (a[mid] == pivot) {
                 mid++;
-            } else if(a[mid] <= pivot) {
+            } else if (a[mid] <= pivot) {
                 exch(a, l, mid);
                 l++;
                 mid++;
-            } else if(a[mid] > pivot) {
+            } else if (a[mid] > pivot) {
                 exch(a, mid, r);
                 r--;
             }
         }
 
-        m1 = l-1;
+        m1 = l - 1;
         m2 = mid;
         int[] m = {m1, m2};
         return m;
     }
 
-    private static void exch(int[] a, int i , int j) {
+    private static void exch(int[] a, int i, int j) {
         int temp = a[i];
         a[i] = a[j];
         a[j] = temp;
@@ -79,46 +78,4 @@ public class Sorting {
         randomizedQuickSort(a, l, m[0]);
         randomizedQuickSort(a, m[1], r);
     }
-
-    public static void main(String[] args) {
-        FastScanner scanner = new FastScanner(System.in);
-        int n = scanner.nextInt();
-        int[] a = new int[n];
-        for (int i = 0; i < n; i++) {
-            a[i] = scanner.nextInt();
-        }
-        randomizedQuickSort(a, 0, n - 1);
-        for (int i = 0; i < n; i++) {
-            System.out.print(a[i] + " ");
-        }
-    }
-
-    static class FastScanner {
-        BufferedReader br;
-        StringTokenizer st;
-
-        FastScanner(InputStream stream) {
-            try {
-                br = new BufferedReader(new InputStreamReader(stream));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        String next() {
-            while (st == null || !st.hasMoreTokens()) {
-                try {
-                    st = new StringTokenizer(br.readLine());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            return st.nextToken();
-        }
-
-        int nextInt() {
-            return Integer.parseInt(next());
-        }
-    }
 }
-

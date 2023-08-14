@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.quicksort;
 
 public class Qsort1 {
     public static void main(String[] args) {

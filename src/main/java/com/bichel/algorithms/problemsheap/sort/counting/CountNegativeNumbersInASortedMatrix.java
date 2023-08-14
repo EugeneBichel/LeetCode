@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.counting;
 
 /*
 Given a m x n matrix grid which is sorted in non-increasing order

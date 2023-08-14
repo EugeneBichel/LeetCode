@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.insertion;
 
 public class InsertionSort {
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class InsertionSort {
 
     private static void sort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
-            for (int j = i; j >= 0; j--) {
+            for (int j = i; j > 0; j--) {
                 if (arr[j - 1] > arr[j]) {
                     int temp = arr[j];
                     arr[j] = arr[j - 1];

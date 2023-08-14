@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.quicksort;
+
+import com.bichel.algorithms.problemsheap.sort.Utility;
 
 public class QuickSort3 {
     public static void sort(Comparable[] arr) {

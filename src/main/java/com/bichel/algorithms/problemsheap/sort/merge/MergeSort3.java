@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.merge;
+
+import com.bichel.algorithms.problemsheap.sort.Utility;
 
 public class MergeSort3 {
     public static void sort(Comparable[] arr) {

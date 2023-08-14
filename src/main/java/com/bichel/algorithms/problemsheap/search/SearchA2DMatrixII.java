@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.search;
 
 /*
 Write an efficient algorithm that searches for a value target in an m x n integer matrix.
@@ -81,7 +81,7 @@ public class SearchA2DMatrixII {
             return false;
         }
 
-        int mid = left + (right-left)/2;
+        int mid = left + (right - left) / 2;
 
         // Locate `row` such that matrix[row-1][mid] < target < matrix[row][mid]
         int row = up;
@@ -92,8 +92,9 @@ public class SearchA2DMatrixII {
             row++;
         }
 
-        return searchRec(left, row, mid-1, down) || searchRec(mid+1, up, right, row-1);
+        return searchRec(left, row, mid - 1, down) || searchRec(mid + 1, up, right, row - 1);
     }
+
     public boolean searchMatrix2(int[][] mat, int targ) {
         // cache input values in object to avoid passing them unnecessarily
         // to `searchRec`
@@ -105,6 +106,6 @@ public class SearchA2DMatrixII {
             return false;
         }
 
-        return searchRec(0, 0, matrix[0].length-1, matrix.length-1);
+        return searchRec(0, 0, matrix[0].length - 1, matrix.length - 1);
     }
 }

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.merge;
 
 /*
 There are 2 approaches to implement the merge sort: top down or bottom up.
@@ -25,6 +25,7 @@ public class MergeSort {
         int[] right = mergeSort(Arrays.copyOfRange(input, pivot, input.length));
         return merge(left, right);
     }
+
     private int[] merge(int[] left, int[] right) {
         int[] ret = new int[left.length + right.length];
         int left_cursor = 0, right_cursor = 0, ret_cursor = 0;

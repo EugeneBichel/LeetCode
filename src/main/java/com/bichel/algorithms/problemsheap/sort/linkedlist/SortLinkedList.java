@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.sort;
+package com.bichel.algorithms.problemsheap.sort.linkedlist;
 
 /*
 Given the head of a linked list, return the list after sorting it in ascending order
@@ -38,12 +38,15 @@ public class SortLinkedList {
 
     ListNode getMid(ListNode head) {
         ListNode midPrev = null;
+
         while (head != null && head.next != null) {
             midPrev = (midPrev == null) ? head : midPrev.next;
             head = head.next.next;
         }
+
         ListNode mid = midPrev.next;
         midPrev.next = null;
+
         return mid;
     }
 }

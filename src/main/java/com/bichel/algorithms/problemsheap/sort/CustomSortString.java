@@ -61,8 +61,9 @@ public class CustomSortString {
                 if (sorted[ind] == ' ') {
                     sorted[ind] = source[i];
                 } else {
-                    while (sorted[ind] != ' ')
+                    while (sorted[ind] != ' ') {
                         ind++;
+                    }
 
                     sorted[ind] = source[i];
                 }
