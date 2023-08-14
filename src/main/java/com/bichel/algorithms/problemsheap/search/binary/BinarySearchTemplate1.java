@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.search;
+package com.bichel.algorithms.problemsheap.search.binary;
 
 public class BinarySearchTemplate1 {
     int binarySearch(int[] nums, int target) {
@@ -9,6 +9,7 @@ public class BinarySearchTemplate1 {
         while (left <= right) {
             // Prevent (left + right) overflow
             int mid = left + (right - left) / 2;
+
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] < target) {

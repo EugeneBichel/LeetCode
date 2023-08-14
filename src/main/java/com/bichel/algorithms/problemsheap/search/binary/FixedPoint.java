@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.search;
+package com.bichel.algorithms.problemsheap.search.binary;
 
 /*
 Given an array of distinct integers arr,
@@ -23,8 +23,12 @@ public class FixedPoint {
             if (arr[pivot] == pivot) {
                 ans = pivot;
                 r = pivot - 1;
-            } else if (arr[pivot] < pivot) l = pivot + 1;
-            else r = pivot - 1;
+            } else if (arr[pivot] < pivot) {
+                l = pivot + 1;
+            }
+            else {
+                r = pivot - 1;
+            }
         }
 
         return ans;

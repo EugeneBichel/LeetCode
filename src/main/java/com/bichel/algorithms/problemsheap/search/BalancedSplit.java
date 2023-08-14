@@ -14,7 +14,9 @@ public class BalancedSplit {
             int a = arr[l];
             int b = arr[r];
 
-            if(a == b && sum == 0) return false;
+            if(a == b && sum == 0) {
+                return false;
+            }
 
             if(sum + a <= 0) {
                 sum += a;

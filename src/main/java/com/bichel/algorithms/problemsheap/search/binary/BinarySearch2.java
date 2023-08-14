@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.search;
+package com.bichel.algorithms.problemsheap.search.binary;
 
 public class BinarySearch2 {
 
@@ -38,8 +38,11 @@ public class BinarySearch2 {
 
     static int linearSearch(int[] a, int x) {
         for (int i = 0; i < a.length; i++) {
-            if (a[i] == x) return i;
+            if (a[i] == x) {
+                return i;
+            }
         }
+
         return -1;
     }
 }

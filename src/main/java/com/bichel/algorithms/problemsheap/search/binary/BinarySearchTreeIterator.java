@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.search;
+package com.bichel.algorithms.problemsheap.search.binary;
 
 /*
 Implement the BSTIterator class that represents an iterator over the in-order traversal of a binary search tree (BST):

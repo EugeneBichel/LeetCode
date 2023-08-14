@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.search;
+package com.bichel.algorithms.problemsheap.search.binary;
 
 /*
 Given an array of integers nums which is sorted in ascending order,
@@ -16,9 +16,13 @@ public class BinarySearch {
         while (l <= r) {
             int pivot = l + (r - l) / 2;
 
-            if (nums[pivot] == target) return pivot;
-            else if (nums[pivot] < target) l = pivot + 1;
-            else r = pivot - 1;
+            if (nums[pivot] == target) {
+                return pivot;
+            } else if (nums[pivot] < target) {
+                l = pivot + 1;
+            } else {
+                r = pivot - 1;
+            }
         }
 
         return -1;
