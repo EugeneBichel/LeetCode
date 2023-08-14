@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 public class BinaryTreeLongestConsecutiveSequence {
     private int maxLen = 0;

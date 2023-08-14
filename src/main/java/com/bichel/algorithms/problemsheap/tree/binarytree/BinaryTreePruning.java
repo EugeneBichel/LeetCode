@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 Given the root of a binary tree, return the same tree where every subtree
@@ -27,6 +27,8 @@ Constraints:
 The number of nodes in the tree is in the range [1, 200].
 Node.val is either 0 or 1.
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 public class BinaryTreePruning {
     public TreeNode pruneTree(TreeNode root) {

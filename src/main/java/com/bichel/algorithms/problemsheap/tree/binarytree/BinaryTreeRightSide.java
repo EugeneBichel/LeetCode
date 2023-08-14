@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 Given the root of a binary tree,
@@ -9,6 +9,8 @@ Example 1:
 Input: root = [1,2,3,null,5,null,4]
 Output: [1,3,4]
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

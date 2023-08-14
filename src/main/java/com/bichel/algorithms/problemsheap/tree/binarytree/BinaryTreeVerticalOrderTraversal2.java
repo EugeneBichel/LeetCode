@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 Given the root of a binary tree, return the vertical order traversal
@@ -16,6 +16,7 @@ Space Complexity: O(N) where N is the number of nodes in the tree.
 The analysis follows the same logic as in the previous BFS approach.
  */
 
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 import com.bichel.algorithms.unsorted.Pair;
 
 import java.util.ArrayDeque;

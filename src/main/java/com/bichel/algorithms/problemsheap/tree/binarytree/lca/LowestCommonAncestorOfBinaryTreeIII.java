@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree.lca;
 
 import com.bichel.algorithms.problemsheap.graph.ParentNode;
 

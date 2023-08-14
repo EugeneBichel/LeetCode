@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 Given the root of a binary tree,
@@ -6,6 +6,8 @@ return the zigzag level order traversal of its nodes' values.
 (i.e., from left to right,
 then right to left for the next level and alternate between).
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

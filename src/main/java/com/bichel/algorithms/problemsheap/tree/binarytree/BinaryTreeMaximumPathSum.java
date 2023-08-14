@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree;
 
 /*
 A path in a binary tree is a sequence of nodes
@@ -16,6 +16,8 @@ Space complexity: O(H), where H is a tree height, to keep the recursion stack.
 In the average case of balanced tree, the tree height H = logN,
 in the worst case of skewed tree, H = N.
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 public class BinaryTreeMaximumPathSum {
     int max_sum = Integer.MIN_VALUE;

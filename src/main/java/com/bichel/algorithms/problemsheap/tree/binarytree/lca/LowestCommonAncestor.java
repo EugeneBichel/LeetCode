@@ -1,4 +1,6 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree.lca;
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 public class LowestCommonAncestor {
 
@@ -11,8 +13,9 @@ public class LowestCommonAncestor {
     }
 
     private TreeNode findLca(TreeNode root, TreeNode p, TreeNode q) {
-        if(root == null)
+        if(root == null) {
             return null;
+        }
 
         TreeNode leftLca = findLca(root.left, p, q);
         TreeNode rightLca = findLca(root.right, p, q);
@@ -28,8 +31,8 @@ public class LowestCommonAncestor {
             return root;
         }
 
-        if(leftLca != null && rightLca != null) return root;
-        if(leftLca == null && rightLca == null) return null;
+        if(leftLca != null && rightLca != null) { return root; }
+        if(leftLca == null && rightLca == null) { return null; }
 
         return leftLca != null ? leftLca : rightLca;
     }

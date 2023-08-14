@@ -16,8 +16,6 @@ plus any pixels connected 4-directionally to those pixels
 Replace the color of all of the aforementioned pixels with newColor.
 
 Return the modified image after performing the flood fill.
-
-
  */
 
 import java.util.LinkedList;
@@ -36,7 +34,6 @@ public class FloodFill {
 
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
         bfs(image, sr, sc,newColor);
-
         return image;
     }
 

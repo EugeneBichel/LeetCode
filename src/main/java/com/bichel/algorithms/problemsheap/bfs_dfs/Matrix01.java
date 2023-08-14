@@ -45,8 +45,11 @@ public class Matrix01 {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                if (mat[i][j] == 0) q.add(new Pair(i, j));
-                else mat[i][j] = Integer.MAX_VALUE;
+                if (mat[i][j] == 0) {
+                    q.add(new Pair(i, j));
+                } else {
+                    mat[i][j] = Integer.MAX_VALUE;
+                }
             }
         }
 
@@ -62,8 +65,13 @@ public class Matrix01 {
             for (Pair neighbor : neighbors) {
                 int row = p.row + neighbor.row;
                 int col = p.col + neighbor.col;
-                if (row < 0 || col < 0 || row >= rows || col >= cols || mat[row][col] <= mat[p.row][p.col] + 1)
+
+                if (row < 0 || col < 0 || row >= rows ||
+                        col >= cols ||
+                        mat[row][col] <= mat[p.row][p.col] + 1) {
                     continue;
+                }
+
                 mat[row][col] = mat[p.row][p.col] + 1;
                 q.add(new Pair(row, col));
             }

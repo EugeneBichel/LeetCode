@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree;
+package com.bichel.algorithms.problemsheap.tree.binarytree.lca;
 
 /*
 Given the root of a binary tree, return the lowest common ancestor of its deepest leaves.
@@ -12,6 +12,8 @@ The lowest common ancestor of a set S of nodes,
 is the node A with the largest depth such that every node in S
 is in the subtree with root A.
  */
+
+import com.bichel.algorithms.problemsheap.tree.TreeNode;
 
 public class LowestCommonAncestorOfDeepestLeaves {
     private class DeepPair {
