@@ -1,6 +1,6 @@
 package com.bichel.algorithms.bfs_dfs;
 
-import com.bichel.algorithms.problemsheap.bfs_dfs.Matrix01;
+import com.bichel.algorithms.problemsheap.bfs_dfs.directions.Matrix01;
 import org.junit.jupiter.api.Test;
 
 public class Matrix01Test {

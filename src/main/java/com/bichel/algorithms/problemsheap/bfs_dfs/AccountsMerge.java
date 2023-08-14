@@ -18,7 +18,6 @@ import java.util.List;
 
 public class AccountsMerge {
     public List<List<String>> accountsMerge(List<List<String>> accountList) {
-        int accountListSize = accountList.size();
 
         for (List<String> account : accountList) {
             int accountSize = account.size();

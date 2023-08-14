@@ -3,10 +3,6 @@ package com.bichel.algorithms.problemsheap.graph;
 import java.util.LinkedList;
 
 public class BFS {
-    public static void main(String[] args) {
-
-    }
-
     private static boolean searchBFS(LinkedList<Integer>[] adjList, int a) {
         LinkedList<Integer> queue = new LinkedList<>();
         queue.push(a);

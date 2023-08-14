@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.famouseproblems.islands;
 
 import com.bichel.algorithms.companies.datastructures.Pair;
 

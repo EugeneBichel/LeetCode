@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.famouseproblems.islands;
 
 /*
 There are n cities. Some of them are connected, while some are not.

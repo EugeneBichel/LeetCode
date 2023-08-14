@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.famouseproblems.islands;
 
 /*
 You are given an m x n binary matrix grid.

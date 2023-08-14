@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.famouseproblems.islands;
 
 /*
 
@@ -61,6 +61,7 @@ public class NumberOfIslands {
 
         return numIslands;
     }
+
     private void dfs(char[][] grid, int r, int c) {
         int nr = grid.length;
         int nc = grid[0].length;
@@ -75,9 +76,8 @@ public class NumberOfIslands {
         dfs(grid, r, c - 1);
         dfs(grid, r, c + 1);
     }
-
     //using BFS
-    public int numIslandsUsingBFS(char[][] grid) {
+    private int numIslandsUsingBFS(char[][] grid) {
         if (grid == null || grid.length == 0) {
             return 0;
         }
