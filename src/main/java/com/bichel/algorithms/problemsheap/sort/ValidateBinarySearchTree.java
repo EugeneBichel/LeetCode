@@ -5,7 +5,7 @@ Sometimes, tree related problems can be solved using divide-and-conquer algorith
 
  */
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 public class ValidateBinarySearchTree {
     public boolean isValidBST(TreeNode root) {

@@ -11,7 +11,7 @@ Notice that by initializing the pointer to a non-existent smallest number, the f
 You may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.
  */
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.bichel.algorithms.problemsheap.bfs_dfs.binarytree;
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

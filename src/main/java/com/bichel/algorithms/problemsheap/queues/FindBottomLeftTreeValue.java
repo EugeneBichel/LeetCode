@@ -1,6 +1,6 @@
 package com.bichel.algorithms.problemsheap.queues;
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

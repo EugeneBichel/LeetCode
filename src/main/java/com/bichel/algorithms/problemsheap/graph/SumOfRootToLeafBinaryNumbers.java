@@ -21,7 +21,7 @@ You start from curr_number = 1,
 then shift one register to the left and add the next digit: curr_number = (1 << 1) | 1 = 3.
  */
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

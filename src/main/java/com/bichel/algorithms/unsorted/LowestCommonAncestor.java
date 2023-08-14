@@ -1,6 +1,6 @@
 package com.bichel.algorithms.unsorted;
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 public class LowestCommonAncestor {
     private boolean hasB = false;

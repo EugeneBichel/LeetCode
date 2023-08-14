@@ -13,7 +13,7 @@ and the right pointer should point to its successor.
 You should return the pointer to the smallest element of the linked list.
  */
 
-import com.bichel.algorithms.problemsheap.tree.TreeNode;
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 
 /*
 Time complexity : O(N) since each node is processed exactly once.
