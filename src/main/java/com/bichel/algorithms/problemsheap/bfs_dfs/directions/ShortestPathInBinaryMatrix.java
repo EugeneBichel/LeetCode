@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.problemsheap.bfs_dfs.directions;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.problemsheap.bfs_dfs.directions;
 
 public class LongestIncreasingPathInaMatrix {
     private static final int[][] dirs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};

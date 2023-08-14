@@ -11,11 +11,11 @@ public class IslandPerimeter {
                 if (grid[r][c] == 1) {
                     result += 4;
 
-                    if (r > 0 && grid[r-1][c] == 1) {
+                    if (r > 0 && grid[r - 1][c] == 1) {
                         result -= 2;
                     }
 
-                    if (c > 0 && grid[r][c-1] == 1) {
+                    if (c > 0 && grid[r][c - 1] == 1) {
                         result -= 2;
                     }
                 }

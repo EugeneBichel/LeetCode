@@ -15,14 +15,18 @@ public class NaryTreeLevelTraverse {
     }
 
     private void bfs(NtierNode root, List<List<Integer>> levels, Integer level) {
-        if(root == null) return;
+        if(root == null) {
+            return;
+        }
 
-        if(level == levels.size()) levels.add(new ArrayList<>());
+        if(level == levels.size()) {
+            levels.add(new ArrayList<>());
+        }
 
         levels.get(level).add(root.val);
 
-        for(int i=0; i< root.children.size(); i++) {
-            bfs(root.children.get(i), levels, level+1);
+        for(int i = 0; i < root.children.size(); i++) {
+            bfs(root.children.get(i), levels, level + 1);
         }
     }
 }

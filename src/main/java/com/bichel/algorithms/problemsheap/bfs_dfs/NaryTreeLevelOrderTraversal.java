@@ -11,21 +11,23 @@ public class NaryTreeLevelOrderTraversal {
     public List<List<Integer>> levelOrder(NtierNode root) {
 
         List<List<Integer>> levels = new ArrayList<>();
-        if(root == null) return levels;
+        if (root == null) {
+            return levels;
+        }
 
         Queue<NtierNode> queue = new LinkedList<>();
         queue.add(root);
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
 
             List<Integer> level = new ArrayList<>();
             int lenLevel = queue.size();
 
-            for(int i=0; i<lenLevel; i++) {
+            for (int i = 0; i < lenLevel; i++) {
                 NtierNode node = queue.remove();
                 level.add(node.val);
 
-                for(int j=0; j<node.children.size(); j++) {
+                for (int j = 0; j < node.children.size(); j++) {
                     queue.add(node.children.get(j));
                 }
             }

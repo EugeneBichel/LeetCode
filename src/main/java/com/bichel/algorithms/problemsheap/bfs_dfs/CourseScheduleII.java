@@ -38,7 +38,7 @@ public class CourseScheduleII {
         this.color.put(node, GRAY);
 
         // Traverse on neighboring vertices
-        for (Integer neighbor : this.adjList.getOrDefault(node, new ArrayList<Integer>())) {
+        for (Integer neighbor : this.adjList.getOrDefault(node, new ArrayList<>())) {
             if (this.color.get(neighbor) == WHITE) {
                 this.dfs(neighbor);
             } else if (this.color.get(neighbor) == GRAY) {

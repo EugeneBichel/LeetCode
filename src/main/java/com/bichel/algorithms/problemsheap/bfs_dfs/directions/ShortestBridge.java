@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bfs_dfs;
+package com.bichel.algorithms.problemsheap.bfs_dfs.directions;
 
 /*
 You are given an n x n binary matrix grid

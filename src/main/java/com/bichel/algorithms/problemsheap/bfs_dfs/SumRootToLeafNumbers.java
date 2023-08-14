@@ -1,5 +1,7 @@
 package com.bichel.algorithms.problemsheap.bfs_dfs;
 
+import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -16,25 +18,6 @@ A leaf node is a node with no children.
 
 public class SumRootToLeafNumbers {
 
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public int sumNumbers(TreeNode root) {
         List<Integer> nums = new ArrayList<>();
         int num = 0;
@@ -48,7 +31,9 @@ public class SumRootToLeafNumbers {
     }
 
     private void preorder(TreeNode root, List<Integer> nums, Integer num) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
 
         num = num * 10 + root.val;
 

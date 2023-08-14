@@ -43,7 +43,9 @@ public class WordLadder {
             for(int i=0; i<size; i++) {
                 String curWord = queue.poll();
 
-                if(curWord.equals(endWord)) return level;
+                if(curWord.equals(endWord)) {
+                    return level;
+                }
 
                 List<String> neighbors = neighbors(curWord);
 

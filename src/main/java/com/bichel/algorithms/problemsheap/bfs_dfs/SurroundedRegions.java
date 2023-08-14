@@ -1,5 +1,7 @@
 package com.bichel.algorithms.problemsheap.bfs_dfs;
 
+import com.bichel.algorithms.companies.datastructures.Pair;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,16 +11,6 @@ capture all regions that are 4-directionally surrounded by 'X'.
 
 A region is captured by flipping all 'O's into 'X's in that surrounded region.
  */
-
-class Pair<U, V> {
-    public U first;
-    public V second;
-
-    public Pair(U first, V second) {
-        this.first = first;
-        this.second = second;
-    }
-}
 
 public class SurroundedRegions {
     private Integer ROWS = 0;
