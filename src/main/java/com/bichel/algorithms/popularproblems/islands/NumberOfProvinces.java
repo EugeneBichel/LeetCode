@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.islands;
+package com.bichel.algorithms.popularproblems.islands;
 
 /*
 There are n cities. Some of them are connected, while some are not.

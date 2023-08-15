@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.islands;
+package com.bichel.algorithms.popularproblems.islands;
 
 /*
 You are given an empty 2D binary grid of size m x n.

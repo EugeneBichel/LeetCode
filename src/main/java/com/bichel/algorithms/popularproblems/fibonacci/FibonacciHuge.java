@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.fibonacci;
+package com.bichel.algorithms.popularproblems.fibonacci;
 
 public class FibonacciHuge {
     private static long getFibonacciHugeNaive(long n, long m) {

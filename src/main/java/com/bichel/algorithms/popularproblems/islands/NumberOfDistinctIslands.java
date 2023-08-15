@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.islands;
+package com.bichel.algorithms.popularproblems.islands;
 
 /*
 You are given an m x n binary matrix grid.

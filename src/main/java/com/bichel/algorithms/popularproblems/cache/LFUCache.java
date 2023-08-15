@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.cache;
+package com.bichel.algorithms.popularproblems.cache;
 
 /*
 Design and implement a data structure for

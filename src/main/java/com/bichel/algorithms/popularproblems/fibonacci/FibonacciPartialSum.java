@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.fibonacci;
+package com.bichel.algorithms.popularproblems.fibonacci;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems;
+package com.bichel.algorithms.popularproblems;
 
 import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
 

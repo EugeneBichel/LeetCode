@@ -1,4 +1,4 @@
-package com.bichel.algorithms.famouseproblems.islands;
+package com.bichel.algorithms.popularproblems.islands;
 
 import com.bichel.algorithms.companies.datastructures.Pair;
 
