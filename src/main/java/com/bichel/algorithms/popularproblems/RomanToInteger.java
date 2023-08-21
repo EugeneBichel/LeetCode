@@ -15,10 +15,12 @@ Output: 58
 Explanation: L = 50, V= 5, III = 3.
  */
 
-public class RomanToInteger {
-    static Map<String, Integer> values = new HashMap<>();
+class RomanToInteger {
+    private Map<String, Integer> values;
 
-    static {
+    RomanToInteger() {
+        values = new HashMap<>();
+
         values.put("M", 1000);
         values.put("D", 500);
         values.put("C", 100);
