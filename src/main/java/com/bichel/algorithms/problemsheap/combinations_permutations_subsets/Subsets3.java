@@ -3,7 +3,7 @@ package com.bichel.algorithms.problemsheap.combinations_permutations_subsets;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subsets {
+public class Subsets3 {
     public List<List<Integer>> subsets(int[] nums) {
         final int n = nums.length;
         List<List<Integer>> res = new ArrayList<>();

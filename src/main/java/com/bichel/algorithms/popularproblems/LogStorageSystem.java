@@ -34,10 +34,10 @@ and the Hour, Minute, and Second for each log entry can be ignored.
  */
 
 public class LogStorageSystem {
-    TreeMap<Long, Integer> map;
+    private TreeMap<Long, Integer> map;
 
     public LogStorageSystem() {
-        map = new TreeMap<Long, Integer>();
+        map = new TreeMap<>();
     }
 
     public void put(int id, String timestamp) {
@@ -48,17 +48,26 @@ public class LogStorageSystem {
     public long convert(int[] st) {
         st[1] = st[1] - (st[1] == 0 ? 0 : 1);
         st[2] = st[2] - (st[2] == 0 ? 0 : 1);
-        return (st[0] - 1999L) * (31 * 12) * 24 * 60 * 60 + st[1] * 31 * 24 * 60 * 60 + st[2] * 24 * 60 * 60 + st[3] * 60 * 60 + st[4] * 60 + st[5];
+
+        return (st[0] - 1999L) * (31 * 12) * 24 * 60 * 60 +
+                st[1] * 31 * 24 * 60 * 60 +
+                st[2] * 24 * 60 * 60 +
+                st[3] * 60 * 60 +
+                st[4] * 60 +
+                st[5];
     }
 
     public List<Integer> retrieve(String s, String e, String gra) {
         List<Integer> res = new ArrayList<>();
         long start = granularity(s, gra, false);
         long end = granularity(e, gra, true);
+        
         for (long key : map.tailMap(start).keySet()) {
-            if (key >= start && key < end)
+            if (key >= start && key < end) {
                 res.add(map.get(key));
+            }
         }
+
         return res;
     }
 

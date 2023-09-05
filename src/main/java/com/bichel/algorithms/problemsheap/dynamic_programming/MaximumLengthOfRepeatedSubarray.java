@@ -36,10 +36,10 @@ public class MaximumLengthOfRepeatedSubarray {
 
     private int withHashMap(int[] nums1, int[] nums2) {
         int maxL = 0;
-        Map<Integer, ArrayList<Integer>> Bstarts = new HashMap();
+        Map<Integer, ArrayList<Integer>> Bstarts = new HashMap<>();
 
         for (int j = 0; j < nums2.length; j++) {
-            Bstarts.computeIfAbsent(nums2[j], x -> new ArrayList()).add(j);
+            Bstarts.computeIfAbsent(nums2[j], x -> new ArrayList<>()).add(j);
         }
 
         for (int i = 0; i < nums1.length; i++) {

@@ -11,7 +11,9 @@ A subarray is a contiguous subsequence of the array.
 
 public class MaximumProductSubarray {
     public int maxProduct(int[] nums) {
-        if (nums.length == 0) return 0;
+        if (nums.length == 0) {
+            return 0;
+        }
 
         int max_so_far = nums[0];
         int min_so_far = nums[0];
