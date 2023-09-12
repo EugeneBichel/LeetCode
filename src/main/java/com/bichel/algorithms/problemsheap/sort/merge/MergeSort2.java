@@ -51,14 +51,10 @@ public class MergeSort2 {
 
         while(i < arr1.length && j < arr2.length) {
             if(arr1[i] < arr2[j]) {
-                arr[k] = arr1[i];
-                i++;
+                arr[k++] = arr1[i++];
             } else {
-                arr[k] = arr2[j];
-                j++;
+                arr[k++] = arr2[j++];
             }
-
-            k++;
         }
 
         while(i < arr1.length) {

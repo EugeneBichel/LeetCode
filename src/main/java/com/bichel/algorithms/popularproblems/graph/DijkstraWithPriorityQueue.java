@@ -8,83 +8,81 @@ import java.util.PriorityQueue;
 import java.util.Set;
 
 public class DijkstraWithPriorityQueue {
-    // Member variables of this class
     private int dist[];
     private Set<Integer> settled;
-    private PriorityQueue<Node2> pq;
-    // Number of vertices
-    private int V;
-    List<List<Node2> > adj;
+    private PriorityQueue<NodeWithCost> priorityQueue;
+    private int numV;
+    private List<List<NodeWithCost>> adj;
 
-    public DijkstraWithPriorityQueue(int V) {
-        // This keyword refers to current object itself
-        this.V = V;
-        dist = new int[V];
+    public DijkstraWithPriorityQueue(int numV) {
+        this.numV = numV;
+        dist = new int[numV];
         settled = new HashSet<>();
-        pq = new PriorityQueue<Node2>(V, new NodeComparator());
+        priorityQueue = new PriorityQueue<>(numV, Comparator.comparingInt(o -> o.cost));
     }
 
-    public void dijkstra(List<List<Node2>> adj, int src) {
+    public void dijkstra(List<List<NodeWithCost>> adj, int src) {
         this.adj = adj;
 
-        for (int i = 0; i < V; i++) {
+        //by default set max value
+        for (int i = 0; i < numV; i++) {
             dist[i] = Integer.MAX_VALUE;
         }
 
         // Add source node to the priority queue
-        pq.add(new Node2(src, 0));
+        priorityQueue.add(new NodeWithCost(src, 0));
 
         // Distance to the source is 0
         dist[src] = 0;
 
-        while (settled.size() != V) {
+        while (settled.size() != numV) {
 
             // Terminating condition check when
             // the priority queue is empty, return
-            if (pq.isEmpty()) {
+            if (priorityQueue.isEmpty()) {
                 return;
             }
 
-            // Removing the minimum distance node
-            // from the priority queue
-            int u = pq.remove().node;
+            // Removing the minimum distance node from the priority queue
+            int u = priorityQueue.remove().node;
 
-            // Adding the node whose distance is
-            // finalized
-            if (settled.contains(u))
-
+            // Adding the node whose distance is finalized
+            if (settled.contains(u)) {
                 // Continue keyword skips execution for
                 // following check
                 continue;
+            }
 
             // We don't have to call e_Neighbors(u)
             // if u is already present in the settled set.
             settled.add(u);
 
-            e_Neighbours(u);
+            traverseNeighbours(u);
         }
     }
 
-    private void e_Neighbours(int u) {
-
+    private void traverseNeighbours(int u) {
         int edgeDistance = -1;
         int newDistance = -1;
 
         // All the neighbors of v
-        for (int i = 0; i < adj.get(u).size(); i++) {
-            Node2 v = adj.get(u).get(i);
+        List<NodeWithCost> neighbors = adj.get(u);
+
+        for (int i = 0; i < neighbors.size(); i++) {
+            NodeWithCost nextNode = neighbors.get(i);
 
             // If current node hasn't already been processed
-            if (!settled.contains(v.node)) {
-                edgeDistance = v.cost;
+            if (!settled.contains(nextNode.node)) {
+                edgeDistance = nextNode.cost;
                 newDistance = dist[u] + edgeDistance;
 
                 // If new distance is cheaper in cost
-                if (newDistance < dist[v.node])
-                    dist[v.node] = newDistance;
+                if (newDistance < dist[nextNode.node]) {
+                    dist[nextNode.node] = newDistance;
+                }
 
                 // Add the current node to the queue
-                pq.add(new Node2(v.node, dist[v.node]));
+                priorityQueue.add(new NodeWithCost(nextNode.node, dist[nextNode.node]));
             }
         }
     }
@@ -96,22 +94,22 @@ public class DijkstraWithPriorityQueue {
         // Adjacency list representation of the
         // connected edges by declaring List class object
         // Declaring object of type List<Node2>
-        List<List<Node2>> adj = new ArrayList<>();
+        List<List<NodeWithCost>> adj = new ArrayList<>();
 
         // Initialize list for every node
         for (int i = 0; i < V; i++) {
-            List<Node2> item = new ArrayList<>();
+            List<NodeWithCost> item = new ArrayList<>();
             adj.add(item);
         }
 
         // Inputs for the GFG(dpq) graph
-        adj.get(0).add(new Node2(1, 9));
-        adj.get(0).add(new Node2(2, 6));
-        adj.get(0).add(new Node2(3, 5));
-        adj.get(0).add(new Node2(4, 3));
+        adj.get(0).add(new NodeWithCost(1, 9));
+        adj.get(0).add(new NodeWithCost(2, 6));
+        adj.get(0).add(new NodeWithCost(3, 5));
+        adj.get(0).add(new NodeWithCost(4, 3));
 
-        adj.get(2).add(new Node2(1, 2));
-        adj.get(2).add(new Node2(3, 4));
+        adj.get(2).add(new NodeWithCost(1, 2));
+        adj.get(2).add(new NodeWithCost(3, 4));
 
         // Calculating the single source shortest path
         DijkstraWithPriorityQueue dpq = new DijkstraWithPriorityQueue(V);
@@ -127,28 +125,12 @@ public class DijkstraWithPriorityQueue {
     }
 }
 
-class Node2 {
+class NodeWithCost {
     public int node;
     public int cost;
 
-    public Node2() {
-    }
-
-    public Node2(int node, int cost) {
+    public NodeWithCost(int node, int cost) {
         this.node = node;
         this.cost = cost;
-    }
-}
-class NodeComparator implements Comparator<Node2> {
-
-    @Override
-    public int compare(Node2 o1, Node2 o2) {
-        if (o1.cost < o2.cost)
-            return -1;
-
-        if (o1.cost > o2.cost)
-            return 1;
-
-        return 0;
     }
 }
