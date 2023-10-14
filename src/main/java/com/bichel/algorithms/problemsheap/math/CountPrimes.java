@@ -14,11 +14,14 @@ they are 2, 3, 5, 7.
 public class CountPrimes {
     public int countPrimes(int n) {
 
-        if (n <= 2) return 0;
+        if (n <= 2) {
+            return 0;
+        }
+
         boolean[] nums = new boolean[n];
 
         for (int i = 2; i <= (int) Math.sqrt(n); i++) {
-            if (nums[i] == false)
+            if (!nums[i])
                 for (int j = i * i; j < n; j += i) {
                     nums[j] = true;
                 }
@@ -26,7 +29,9 @@ public class CountPrimes {
 
         int numOfPrimes = 0;
         for (int i = 2; i < n; i++) {
-            if (nums[i] == false) numOfPrimes++;
+            if (!nums[i]) {
+                numOfPrimes++;
+            }
         }
 
         return numOfPrimes;

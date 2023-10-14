@@ -27,4 +27,30 @@ public class MinCostClimbingStairs {
 
         return minCost[minCost.length-1];
     }
+
+    //recursive
+    public int minCostClimbingStairs2(int[] cost) {
+        int[] memo = new int[cost.length + 1];
+        int minCost = climbStairs(cost.length, cost, memo);
+
+        return minCost;
+    }
+
+    private int climbStairs(int i, int[] cost, int[] memo) {
+        int n = cost.length;
+
+        if(i < 2) {
+            return 0;
+        }
+        if(memo[i] > 0) {
+            return memo[i];
+        }
+
+        int oneStep = climbStairs(i-1, cost, memo) + cost[i-1];
+        int twoStep = climbStairs(i-2, cost, memo) + cost[i-2];
+
+        memo[i] = Math.min(oneStep, twoStep);
+
+        return memo[i];
+    }
 }

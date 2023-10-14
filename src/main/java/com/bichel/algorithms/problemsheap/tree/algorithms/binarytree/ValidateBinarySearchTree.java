@@ -9,8 +9,9 @@ public class ValidateBinarySearchTree {
 
     private boolean isValid(TreeNode root, Integer low, Integer high) {
 
-        if (root == null)
+        if (root == null) {
             return true;
+        }
 
         if ((low != null && root.val <= low) ||
                 (high != null && root.val >= high))

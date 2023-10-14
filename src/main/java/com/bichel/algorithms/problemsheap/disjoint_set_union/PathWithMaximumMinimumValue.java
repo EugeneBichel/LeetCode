@@ -59,8 +59,10 @@ public class PathWithMaximumMinimumValue {
 
     // 4 directions to a cell's possible neighbors.
     private int[][] dirs = new int[][]{{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
     public int maximumMinimumPath(int[][] grid) {
-        int R = grid.length, C = grid[0].length;
+        int R = grid.length;
+        int C = grid[0].length;
 
         // Sort all the cells by their values.
         List<int[]> vals = new ArrayList<>();

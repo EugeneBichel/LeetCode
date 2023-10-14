@@ -9,7 +9,7 @@ public class AllPossibleCombOfRElementsInArray {
 
         int[] a = new int[n];
         for (int k = 0; k < n; k++) {
-            a[k] = k+1;
+            a[k] = k + 1;
         }
 
         for (int k = 0; k < n; k++) {

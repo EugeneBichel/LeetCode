@@ -23,7 +23,9 @@ public class PathSum2 {
     }
 
     private void preorder(TreeNode root, List<List<Integer>> sets, List<Integer> set, int targetSum) {
-        if (root == null) return;
+        if (root == null) {
+            return;
+        }
 
         set.add(root.val);
         targetSum -= root.val;

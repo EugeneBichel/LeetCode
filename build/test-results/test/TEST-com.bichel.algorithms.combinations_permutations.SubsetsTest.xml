@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bichel.algorithms.combinations_permutations.SubsetsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-12T17:31:29" hostname="Yauhens-MBP" time="0.035">
+<testsuite name="com.bichel.algorithms.combinations_permutations.SubsetsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-19T09:15:20" hostname="Yauhens-MacBook-Pro.local" time="0.034">
   <properties/>
-  <testcase name="testSubsets()" classname="com.bichel.algorithms.combinations_permutations.SubsetsTest" time="0.035"/>
+  <testcase name="testSubsets()" classname="com.bichel.algorithms.combinations_permutations.SubsetsTest" time="0.034"/>
   <system-out><![CDATA[[]
 [1, ]
 [2, ]

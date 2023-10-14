@@ -9,11 +9,17 @@ public class FindDistanceInaBinaryTree {
     }
 
     private int findDist(TreeNode node, int val, int dist) {
-        if(node == null) { return -1; }
-        if(node.val == val) { return dist; }
+        if (node == null) {
+            return -1;
+        }
 
-        int lDist = findDist(node.left, val, dist+1);
-        if(lDist == -1) {
+        if (node.val == val) {
+            return dist;
+        }
+
+        int lDist = findDist(node.left, val, dist + 1);
+
+        if (lDist == -1) {
             return findDist(node.right, val, dist + 1);
         }
 
