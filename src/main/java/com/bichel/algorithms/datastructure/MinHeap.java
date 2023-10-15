@@ -1,7 +1,7 @@
 package com.bichel.algorithms.datastructure;
 
 /**
- * 
+ *
  */
 class MinHeap {
     // To store array of elements in heap
@@ -27,7 +27,6 @@ class MinHeap {
         arr[b] = temp;
     }
 
-
     // Get the Parent index for the given index
     private int parent(int key) {
         return (key - 1) / 2;
@@ -43,12 +42,9 @@ class MinHeap {
         return 2 * key + 2;
     }
 
-
     // Inserts a new key
     public boolean insertKey(int key) {
         if (current_heap_size == capacity) {
-
-            // heap is full
             return false;
         }
 
@@ -82,7 +78,6 @@ class MinHeap {
     public int getMin() {
         return heapArray[0];
     }
-
 
     // Method to remove minimum element
     // (or root) from min heap
