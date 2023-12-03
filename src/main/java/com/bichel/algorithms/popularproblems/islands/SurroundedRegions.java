@@ -13,26 +13,27 @@ A region is captured by flipping all 'O's into 'X's in that surrounded region.
  */
 
 public class SurroundedRegions {
-    private Integer ROWS = 0;
-    private Integer COLS = 0;
+    private int rows = 0;
+    private int cols = 0;
 
     public void solve(char[][] board) {
         if (board == null || board.length == 0) {
             return;
         }
-        this.ROWS = board.length;
-        this.COLS = board[0].length;
+
+        this.rows = board.length;
+        this.cols = board[0].length;
 
         List<Pair<Integer, Integer>> borders = new LinkedList<>();
 
         // Step 1). construct the list of border cells
-        for (int r = 0; r < this.ROWS; ++r) {
+        for (int r = 0; r < rows; r++) {
             borders.add(new Pair<>(r, 0));
-            borders.add(new Pair<>(r, this.COLS - 1));
+            borders.add(new Pair<>(r, this.cols - 1));
         }
-        for (int c = 0; c < this.COLS; ++c) {
+        for (int c = 0; c < cols; c++) {
             borders.add(new Pair<>(0, c));
-            borders.add(new Pair<>(this.ROWS - 1, c));
+            borders.add(new Pair<>(this.rows - 1, c));
         }
 
         // Step 2). mark the escaped cells
@@ -41,8 +42,8 @@ public class SurroundedRegions {
         }
 
         // Step 3). flip the cells to their correct final states
-        for (int r = 0; r < this.ROWS; ++r) {
-            for (int c = 0; c < this.COLS; ++c) {
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
                 if (board[r][c] == 'O')
                     board[r][c] = 'X';
                 if (board[r][c] == 'E')
@@ -62,9 +63,9 @@ public class SurroundedRegions {
                 continue;
 
             board[row][col] = 'E';
-            if (col < this.COLS - 1)
+            if (col < this.cols - 1)
                 queue.offer(new Pair<>(row, col + 1));
-            if (row < this.ROWS - 1)
+            if (row < this.rows - 1)
                 queue.offer(new Pair<>(row + 1, col));
             if (col > 0)
                 queue.offer(new Pair<>(row, col - 1));
