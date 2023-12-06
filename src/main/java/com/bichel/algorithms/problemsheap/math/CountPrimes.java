@@ -21,10 +21,11 @@ public class CountPrimes {
         boolean[] nums = new boolean[n];
 
         for (int i = 2; i <= (int) Math.sqrt(n); i++) {
-            if (!nums[i])
+            if (!nums[i]) {
                 for (int j = i * i; j < n; j += i) {
                     nums[j] = true;
                 }
+            }
         }
 
         int numOfPrimes = 0;

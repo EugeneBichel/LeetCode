@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree.algorithms.binarytree;
+package com.bichel.algorithms.problemsheap.tree.algorithms.traversal;
 
 import com.bichel.algorithms.problemsheap.graph.Triplet;
 import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;

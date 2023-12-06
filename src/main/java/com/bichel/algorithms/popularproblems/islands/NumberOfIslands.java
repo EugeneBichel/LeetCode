@@ -61,7 +61,6 @@ public class NumberOfIslands {
 
         return numIslands;
     }
-
     private void dfs(char[][] grid, int r, int c) {
         int nr = grid.length;
         int nc = grid[0].length;
@@ -76,6 +75,7 @@ public class NumberOfIslands {
         dfs(grid, r, c - 1);
         dfs(grid, r, c + 1);
     }
+
     //using BFS
     private int numIslandsUsingBFS(char[][] grid) {
         if (grid == null || grid.length == 0) {

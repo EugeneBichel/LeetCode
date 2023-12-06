@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bits;
+package com.bichel.algorithms.problemsheap.bits.easy;
 
 import java.math.BigInteger;
 

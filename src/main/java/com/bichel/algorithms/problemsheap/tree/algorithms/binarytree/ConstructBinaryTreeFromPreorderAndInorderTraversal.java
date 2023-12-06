@@ -12,6 +12,14 @@ Output: [3,9,20,null,null,15,7]
 Time complexity : O(N)
 Space complexity : O(N)
 
+
+Preorder traversal follows Root -> Left -> Right,
+    therefore, given the preorder array preorder,
+    we have easy access to the root which is preorder[0].
+
+Inorder traversal follows Left -> Root -> Right,
+    therefore if we know the position of Root,
+    we can recursively split the entire array into two subtrees.
  */
 
 import com.bichel.algorithms.problemsheap.tree.datastructure.TreeNode;
@@ -36,7 +44,9 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
 
     private TreeNode arrayToTree(int[] preorder, int left, int right) {
         // if there are no elements to construct the tree
-        if (left > right) return null;
+        if (left > right) {
+            return null;
+        }
 
         // select the preorder_index element as the root and increment it
         int rootValue = preorder[preorderIndex++];

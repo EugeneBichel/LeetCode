@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.tree.algorithms.binarytree;
+package com.bichel.algorithms.problemsheap.tree.algorithms.traversal;
 
 /*
 Given the root of a binary tree,
@@ -33,15 +33,17 @@ public class BinaryTreeZigzagLevelOrderTraversal {
             TreeNode currNode = nodeQueue.pollFirst();
 
             if (currNode != null) {
-                if (isOrderLeft)
+                if (isOrderLeft) {
                     levelList.addLast(currNode.val);
-                else
+                } else {
                     levelList.addFirst(currNode.val);
+                }
 
-                if (currNode.left != null)
+                if (currNode.left != null) {
                     nodeQueue.addLast(currNode.left);
-                if (currNode.right != null)
+                } if (currNode.right != null) {
                     nodeQueue.addLast(currNode.right);
+                }
             } else {
                 // we finish the scan of one level
                 results.add(levelList);

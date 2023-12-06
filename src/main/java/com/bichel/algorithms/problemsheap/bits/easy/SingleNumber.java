@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.bits;
+package com.bichel.algorithms.problemsheap.bits.easy;
 
 /*
 Given a non-empty array of integers nums, every element appears twice
@@ -14,10 +14,13 @@ Output: 1
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
-        if(nums.length == 1) return nums[0];
+        if (nums.length == 1) {
+            return nums[0];
+        }
+
         int res = 0;
-        for(int i=0; i<nums.length; i++) {
-            res ^=nums[i];
+        for (int i = 0; i < nums.length; i++) {
+            res ^= nums[i];
         }
 
         return res;
