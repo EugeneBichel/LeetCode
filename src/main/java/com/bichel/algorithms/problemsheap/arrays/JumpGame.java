@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.dynamic_programming;
+package com.bichel.algorithms.problemsheap.arrays;
 
 /*
 You are given an integer array nums. You are initially positioned at the array's first index,
@@ -8,27 +8,35 @@ Return true if you can reach the last index, or false otherwise.
  */
 
 public class JumpGame {
-    enum Index {
-        GOOD, BAD, UNKNOWN
-    }
-
     public boolean canJump(int[] nums) {
-        Index[] memo = new Index[nums.length];
-        for (int i = 0; i < memo.length; i++) {
-            memo[i] = Index.UNKNOWN;
-        }
-        memo[memo.length - 1] = Index.GOOD;
+        boolean[] memo = new boolean[nums.length];
+        memo[memo.length - 1] = true;
 
         for (int i = nums.length - 2; i >= 0; i--) {
             int furthestJump = Math.min(i + nums[i], nums.length - 1);
+
             for (int j = i + 1; j <= furthestJump; j++) {
-                if (memo[j] == Index.GOOD) {
-                    memo[i] = Index.GOOD;
+                if (memo[j] == true) {
+                    memo[i] = true;
                     break;
                 }
             }
         }
 
-        return memo[0] == Index.GOOD;
+        return memo[0];
+    }
+
+    public boolean canJump2(int[] nums) {
+        int reachablePos = 0;
+
+        for(int currPos = 0; currPos < nums.length; currPos++) {
+            if(currPos > reachablePos) {
+                return false;
+            }
+
+            reachablePos = Math.max(reachablePos, currPos + nums[currPos]);
+        }
+
+        return true;
     }
 }

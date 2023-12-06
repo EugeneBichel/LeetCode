@@ -26,13 +26,16 @@ public class EvaluateDivision {
         // Step 1). build the graph from the equations
         for (int i = 0; i < equations.size(); i++) {
             List<String> equation = equations.get(i);
-            String dividend = equation.get(0), divisor = equation.get(1);
+            String dividend = equation.get(0);
+            String divisor = equation.get(1);
             double quotient = values[i];
 
-            if (!graph.containsKey(dividend))
+            if (!graph.containsKey(dividend)) {
                 graph.put(dividend, new HashMap<>());
-            if (!graph.containsKey(divisor))
+            }
+            if (!graph.containsKey(divisor)) {
                 graph.put(divisor, new HashMap<>());
+            }
 
             graph.get(dividend).put(divisor, quotient);
             graph.get(divisor).put(dividend, 1 / quotient);
@@ -45,11 +48,12 @@ public class EvaluateDivision {
             List<String> query = queries.get(i);
             String dividend = query.get(0), divisor = query.get(1);
 
-            if (!graph.containsKey(dividend) || !graph.containsKey(divisor))
+            if (!graph.containsKey(dividend) || !graph.containsKey(divisor)) {
                 results[i] = -1.0;
-            else if (dividend == divisor)
+            }
+            else if (dividend.equals(divisor)) {
                 results[i] = 1.0;
-            else {
+            } else {
                 HashSet<String> visited = new HashSet<>();
                 results[i] = backtrackEvaluate(graph, dividend, divisor, 1, visited);
             }

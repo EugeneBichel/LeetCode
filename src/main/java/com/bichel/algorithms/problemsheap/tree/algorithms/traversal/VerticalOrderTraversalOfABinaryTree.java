@@ -22,10 +22,11 @@ public class VerticalOrderTraversalOfABinaryTree {
     List<Triplet<Integer, Integer, Integer>> nodeList = new ArrayList<>();
 
     private void dfs(TreeNode node, Integer row, Integer column) {
-        if (node == null)
+        if (node == null) {
             return;
+        }
 
-        nodeList.add(new Triplet(column, row, node.val));
+        nodeList.add(new Triplet<>(column, row, node.val));
 
         // preorder DFS traversal
         dfs(node.left, row + 1, column - 1);
@@ -48,8 +49,7 @@ public class VerticalOrderTraversalOfABinaryTree {
                 } else {
                     return t1.second - t2.second;
                 }
-            }
-            else {
+            } else {
                 return t1.first - t2.first;
             }
         });
@@ -62,7 +62,7 @@ public class VerticalOrderTraversalOfABinaryTree {
             Integer column = triplet.first;
             Integer value = triplet.third;
 
-            if (column == currColumnIndex) {
+            if (column.equals(currColumnIndex)) {
                 currColumn.add(value);
             } else {
                 output.add(currColumn);

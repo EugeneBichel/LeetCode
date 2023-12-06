@@ -1,4 +1,4 @@
-package com.bichel.algorithms.problemsheap.dynamic_programming;
+package com.bichel.algorithms.problemsheap.arrays;
 
 /*
 You are given an array prices where prices[i]

@@ -24,13 +24,13 @@ public class MinimumRemoveToMakeValidParentheses {
         Deque<Integer> stack = new ArrayDeque<>();
         Set<Integer> indToRemove = new HashSet<>();
 
-        for(int i=0; i<s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
-            if(ch == '(') {
+            if (ch == '(') {
                 stack.push(i);
-            } else if(ch == ')') {
-                if( !stack.isEmpty()) {
+            } else if (ch == ')') {
+                if (!stack.isEmpty()) {
                     stack.pop();
                 } else {
                     indToRemove.add(i);
@@ -38,13 +38,15 @@ public class MinimumRemoveToMakeValidParentheses {
             }
         }
 
-        while(!stack.isEmpty()) {
+        while (!stack.isEmpty()) {
             indToRemove.add(stack.pop());
         }
 
         StringBuilder sb = new StringBuilder();
-        for(int i=0; i<s.length(); i++) {
-            if(!indToRemove.contains(i)) sb.append(s.charAt(i));
+        for (int i = 0; i < s.length(); i++) {
+            if (!indToRemove.contains(i)) {
+                sb.append(s.charAt(i));
+            }
         }
 
         return sb.toString();
