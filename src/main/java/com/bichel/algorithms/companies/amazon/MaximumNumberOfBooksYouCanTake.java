@@ -53,3 +53,40 @@ public class MaximumNumberOfBooksYouCanTake {
         return (2 * books[r] - (cnt - 1)) * cnt / 2;
     }
 }
+
+class Solution {
+    public long maximumBooks(int[] books) {
+        int n = books.length;
+        int[] idx = new int[n];
+        idx[0] = -1;
+        for (int i = 1; i < n; i++) {
+            if (books[i] > books[i - 1] + 1) {
+                idx[i] = i - 1;
+                continue;
+            }
+
+            int j = idx[i - 1];
+            while (j >= 0 && i - j > books[i] - books[j]) {
+                j = idx[j];
+            }
+            idx[i] = j;
+        }
+        // System.out.println(Arrays.toString(idx));
+        long[] dp = new long[n];
+        long ans = books[0];
+        dp[0] = books[0];
+        for (int i = 1; i < n; i++) {
+            int prevIdx = idx[i];
+            if (prevIdx >= 0) {
+                long prev = ((long)books[i] + books[i] - (i - prevIdx) + 1) * (i - prevIdx) / 2;
+                dp[i] = dp[prevIdx] + prev;
+            } else {
+                long prev = ((long)books[i] + Math.max(1, books[i] - i)) * Math.min(i + 1, books[i]) / 2;
+                dp[i] = prev;
+            }
+            ans = Math.max(ans, dp[i]);
+        }
+        // System.out.println(Arrays.toString(dp));
+        return ans;
+    }
+}
