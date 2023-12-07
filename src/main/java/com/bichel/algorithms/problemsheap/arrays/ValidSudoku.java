@@ -11,7 +11,6 @@ public class ValidSudoku {
 
         for (int r = 0; r < N; r++) {
             for (int c = 0; c < N; c++) {
-                // Check if the position is filled with number
                 if (board[r][c] == '.') {
                     continue;
                 }

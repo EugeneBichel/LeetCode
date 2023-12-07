@@ -13,33 +13,27 @@ Input: nums = [0,1]
 Output: [[0,1],[1,0]]
  */
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.stream.Collectors;
 
 public class Permutations {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> output = new LinkedList<>();
+        List<Integer> numsList = Arrays.stream(nums).boxed().collect(Collectors.toList());
 
-        List<Integer> numsList = new ArrayList<>();
-        for (int num : nums) {
-            numsList.add(num);
-        }
-
-        int n = nums.length;
-        backtrack(n, numsList, output, 0);
-
+        backtrack(nums.length, numsList, output, 0);
         return output;
     }
 
-    private void backtrack(int n,
-                           List<Integer> nums,
-                           List<List<Integer>> output,
-                           int first) {
+    private void backtrack(int n, List<Integer> nums, List<List<Integer>> output, int first) {
         // if all integers are used up
-        if (first == n)
+        if (first == n) {
             output.add(new ArrayList<>(nums));
+        }
 
         for (int i = first; i < n; i++) {
             // place i-th integer first

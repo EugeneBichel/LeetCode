@@ -12,19 +12,32 @@ Output: [1,2,3,6,9,8,7,4,5]
 -100 <= matrix[i][j] <= 100
 Note that elements in the matrix are constrained to -100 <= matrix[row][col] <= 100,
 therefore we can select a number that is out of this range to mark it.
-In this article, 101 is selected for marking purposes.
-
-
  */
 
 public class SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
-        int VISITED = 101;
+        final int visited = 101;
         int rows = matrix.length;
         int columns = matrix[0].length;
 
+        /*
+        Given that we are at (row, col),
+        where row is the row index,
+        and col is the column index.
+
+        move right: (row, col + 1)
+        move downwards: (row + 1, col)
+        move left: (row, col - 1)
+        move upwards: (row - 1, col)
+         */
         // Four directions that we will move: right, down, left, up.
-        int[][] directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+        int[][] directions = {
+                //r, c
+                {0, 1},//right
+                {1, 0},//up
+                {0, -1},//left
+                {-1, 0}//down
+        };
 
         // Initial direction: moving right.
         int currDir = 0;
@@ -40,7 +53,7 @@ public class SpiralMatrix {
         // Store the first element and mark it as visited.
         List<Integer> result = new ArrayList<>();
         result.add(matrix[0][0]);
-        matrix[0][0] = VISITED;
+        matrix[0][0] = visited;
 
         while (changeDir < 2) {
             while (row + directions[currDir][0] >= 0 &&
@@ -48,7 +61,7 @@ public class SpiralMatrix {
                     col + directions[currDir][1] >= 0 &&
                     col + directions[currDir][1] < columns &&
                     matrix[row + directions[currDir][0]]
-                            [col + directions[currDir][1]] != VISITED) {
+                            [col + directions[currDir][1]] != visited) {
                 // Reset this to 0 since we did not break and change the direction.
                 changeDir = 0;
 
@@ -57,7 +70,7 @@ public class SpiralMatrix {
                 col = col + directions[currDir][1];
 
                 result.add(matrix[row][col]);
-                matrix[row][col] = VISITED;
+                matrix[row][col] = visited;
             }
 
             // Change our direction.
