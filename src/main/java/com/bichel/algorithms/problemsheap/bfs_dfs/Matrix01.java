@@ -1,4 +1,4 @@
-package com.bichel.algorithms.popularproblems;
+package com.bichel.algorithms.problemsheap.bfs_dfs;
 
 import java.util.LinkedList;
 import java.util.Queue;

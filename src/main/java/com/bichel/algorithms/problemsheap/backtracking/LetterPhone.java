@@ -1,7 +1,8 @@
 package com.bichel.algorithms.problemsheap.backtracking;
 
 /*
-Given a digit string, return all possible letter combinations that the number could represent.
+Given a digit string,
+return all possible letter combinations that the number could represent.
 
 A mapping of digit to letters (just like on the telephone buttons) is given below.
  */
@@ -9,14 +10,14 @@ A mapping of digit to letters (just like on the telephone buttons) is given belo
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.List;
 
 public class LetterPhone {
-
-    private ArrayList<String> combinations = new ArrayList<>();
+    private List<String> combinations = new ArrayList<>();
     private Map<Character, String> letters;
     private String phoneDigits;
 
-    public ArrayList<String> letterCombinations(String digits) {
+    public List<String> letterCombinations(String digits) {
         // If the input is empty, immediately return an empty answer array
         if (digits.length() == 0) {
             return combinations;
@@ -56,6 +57,16 @@ public class LetterPhone {
             backtrack(index + 1, path);
             // Backtrack by removing the letter before moving onto the next
             path.deleteCharAt(path.length() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        String digits = "23";
+        LetterPhone letterPhone = new LetterPhone();
+        List<String> combs = letterPhone.letterCombinations(digits);
+
+        for(String comb : combs) {
+            System.out.println(comb);
         }
     }
 }
