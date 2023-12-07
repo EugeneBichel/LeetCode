@@ -1,4 +1,4 @@
-package com.bichel.algorithms.companies.datastructures;
+package com.bichel.algorithms.datastructure;
 
 public class Pair<U, V> {
     public U first;

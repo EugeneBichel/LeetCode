@@ -1,6 +1,6 @@
 package com.bichel.algorithms.popularproblems.islands;
 
-import com.bichel.algorithms.companies.datastructures.Pair;
+import com.bichel.algorithms.datastructure.Pair;
 
 import java.util.LinkedList;
 import java.util.List;
