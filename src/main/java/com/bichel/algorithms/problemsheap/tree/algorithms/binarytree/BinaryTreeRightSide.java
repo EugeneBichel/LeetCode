@@ -20,8 +20,9 @@ import java.util.List;
 public class BinaryTreeRightSide {
     public List<Integer> rightSide(TreeNode root) {
         List<Integer> items = new ArrayList<>();
-        if (root == null)
+        if (root == null) {
             return items;
+        }
 
         traverse(root, items, 0);
 
@@ -29,20 +30,24 @@ public class BinaryTreeRightSide {
     }
 
     private void traverse(TreeNode root, List<Integer> items, int level) {
-        if(level == items.size())
+        if (level == items.size()) {
             items.add(root.val);
+        }
 
-        if(root.right != null)
-            traverse(root.right, items, level+1);
-        if(root.left != null)
-            traverse(root.left, items, level+1);
+        if (root.right != null) {
+            traverse(root.right, items, level + 1);
+        }
+        if (root.left != null) {
+            traverse(root.left, items, level + 1);
+        }
     }
 
     public List<Integer> usingTwoDeque(TreeNode root) {
         if (root == null) return new ArrayList<>();
 
         ArrayDeque<TreeNode> nextLevel = new ArrayDeque<>() {{ offer(root); }};
-        Deque<TreeNode> currLevel = new ArrayDeque<>();
+        new ArrayDeque<>();
+        Deque<TreeNode> currLevel;
         List<Integer> rightside = new ArrayList<>();
 
         TreeNode node = null;
