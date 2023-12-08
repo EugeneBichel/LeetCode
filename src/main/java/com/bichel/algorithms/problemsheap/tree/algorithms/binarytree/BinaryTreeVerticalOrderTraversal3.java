@@ -54,8 +54,7 @@ public class BinaryTreeVerticalOrderTraversal3 {
 
         dfs(root, 0, 0);
 
-        // Retrieve the resuts, by ordering by column and sorting by row
-        for (int i = minColumn; i < maxColumn + 1; ++i) {
+        for (int i = minColumn; i < maxColumn + 1; i++) {
 
             Collections.sort(columnTable.get(i), (p1, p2) -> p1.key - p2.key);
 

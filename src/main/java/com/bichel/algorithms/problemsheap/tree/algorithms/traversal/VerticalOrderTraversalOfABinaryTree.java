@@ -19,7 +19,7 @@ In such a case, sort these nodes by their values.
 Return the vertical order traversal of the binary tree.
  */
 public class VerticalOrderTraversalOfABinaryTree {
-    List<Triplet<Integer, Integer, Integer>> nodeList = new ArrayList<>();
+    private List<Triplet<Integer, Integer, Integer>> nodeList = new ArrayList<>();
 
     private void dfs(TreeNode node, Integer row, Integer column) {
         if (node == null) {

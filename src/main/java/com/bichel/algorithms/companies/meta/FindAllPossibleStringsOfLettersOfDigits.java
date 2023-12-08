@@ -37,9 +37,7 @@ public class FindAllPossibleStringsOfLettersOfDigits {
 
         // Initiate backtracking with an empty path and starting index of 0
         this.phoneDigits = digits;
-
         backtrack(0, new StringBuilder());
-
         return combinations;
     }
 
