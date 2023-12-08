@@ -26,17 +26,23 @@ public class Trie {
 
     private void insert(String word, TrieNode node) {
         for (int i = 0; i < word.length(); i++) {
-
             char newLetter = word.charAt(i);
-
             if(!node.children.containsKey(newLetter)) {
                 node.children.put(newLetter, new TrieNode());
             }
-
             node = node.children.get(newLetter);
         }
 
         node.end = true;
+    }
+
+    public boolean search(String word) {
+        TrieNode node = search(word, root);
+        if(node != null && node.end == true) {
+            return true;
+        }
+
+        return false;
     }
 
     private TrieNode search(String word, TrieNode node) {
@@ -49,13 +55,6 @@ public class Trie {
         }
 
         return node;
-    }
-
-    public boolean search(String word) {
-        TrieNode node = search(word, root);
-        if(node != null && node.end == true) return true;
-
-        return false;
     }
 
     public boolean startsWith(String prefix) {

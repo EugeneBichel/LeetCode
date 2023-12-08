@@ -13,8 +13,9 @@ Complexity Analysis
 
 Time complexity: O(N) since one has to visit each node.
 
-Space complexity: )(H) to keep the recursion stack,
-where H is a tree height. The worst-case situation is a skewed tree, when H = N.
+Space complexity: O(H) to keep the recursion stack,
+where H is a tree height. The worst-case situation is a skewed tree,
+when H = N.
  */
 
 public class BinaryTreeRightSideView {
@@ -25,10 +26,13 @@ public class BinaryTreeRightSideView {
     }
 
     private void dfs(TreeNode node, int level, List<Integer> ans) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
 
-        if (level == ans.size())
+        if (level == ans.size()) {
             ans.add(node.val);
+        }
 
         if (node.right != null) {
             dfs(node.right, level + 1, ans);

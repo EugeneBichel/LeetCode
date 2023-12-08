@@ -99,7 +99,6 @@ public class NumberOfIslands {
 
         return numIslands;
     }
-
     private void dfs(char[][] grid, int r, int c) {
         int nr = grid.length;
         int nc = grid[0].length;

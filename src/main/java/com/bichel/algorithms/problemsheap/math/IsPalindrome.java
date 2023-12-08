@@ -1,10 +1,6 @@
 package com.bichel.algorithms.problemsheap.math;
 
 public class IsPalindrome {
-    public static void main(String[] args) {
-
-    }
-
     public boolean isPalindrome2(int x) {
         String str = String.valueOf(x);
 
