@@ -20,52 +20,11 @@ import java.util.Deque;
 
 public class ConstructBinaryTreeFromString {
     public TreeNode str2tree(String s) {
-
-        if (s.isEmpty()) {
-            return null;
-        }
-
-        TreeNode root = new TreeNode();
-        Deque<TreeNode> stack = new ArrayDeque<>();
-        stack.add(root);
-
-        for (int index = 0; index < s.length(); ) {
-
-            TreeNode node = stack.pop();
-
-            // NOT_STARTED
-            if (Character.isDigit(s.charAt(index)) || s.charAt(index) == '-') {
-
-                Pair<Integer, Integer> numberData = this.getNumber(s, index);
-                int value = numberData.getKey();
-                index = numberData.getValue();
-
-                node.val = value;
-
-                // Next, if there is any data left, we check for the first subtree
-                // which according to the problem statement will always be the left child.
-                if (index < s.length() && s.charAt(index) == '(') {
-
-                    stack.add(node);
-
-                    node.left = new TreeNode();
-                    stack.add(node.left);
-                }
-            } else if (s.charAt(index) == '(' && node.left != null) { // LEFT_DONE
-
-                stack.add(node);
-
-                node.right = new TreeNode();
-                stack.add(node.right);
-            }
-
-            ++index;
-        }
-
-        return stack.isEmpty() ? root : stack.pop();
+        return this.str2treeInternal(s, 0).getKey();
     }
 
     private Pair<Integer, Integer> getNumber(String s, int index) {
+
         boolean isNegative = false;
 
         // A negative number
@@ -80,6 +39,41 @@ public class ConstructBinaryTreeFromString {
             index++;
         }
 
-        return new Pair<>(isNegative ? -number : number, index);
+        return new Pair<Integer, Integer>(isNegative ? -number : number, index);
+    }
+
+    private Pair<TreeNode, Integer> str2treeInternal(String s, int index) {
+
+        if (index == s.length()) {
+            return new Pair<TreeNode, Integer>(null, index);
+        }
+
+        // Start of the tree will always contain a number representing
+        // the root of the tree. So we calculate that first.
+        Pair<Integer, Integer> numberData = this.getNumber(s, index);
+        int value = numberData.getKey();
+        index = numberData.getValue();
+
+        TreeNode node = new TreeNode(value);
+        Pair<TreeNode, Integer> data;
+
+        // Next, if there is any data left, we check for the first subtree
+        // which according to the problem statement will always be the left child.
+        if (index < s.length() && s.charAt(index) == '(') {
+            data = this.str2treeInternal(s, index + 1);
+            node.left = data.getKey();
+            index = data.getValue();
+        }
+
+
+        // Indicates a right child
+        if (node.left != null && index < s.length() && s.charAt(index) == '(') {
+            data = this.str2treeInternal(s, index + 1);
+            node.right = data.getKey();
+            index = data.getValue();
+        }
+
+
+        return new Pair<>(node, index < s.length() && s.charAt(index) == ')' ? index + 1 : index);
     }
 }
