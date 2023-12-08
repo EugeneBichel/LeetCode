@@ -1,4 +1,4 @@
-package com.bichel.algorithms.unsorted;
+package com.bichel.algorithms.companies.meta;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -18,8 +18,6 @@ Follow up: What if only one of the vectors is sparse?
 
 A sparse vector is a vector that has mostly zero values,
 while a dense vector is a vector where most of the elements are non-zero.
-
-
  */
 
 class DotProductOfTwoSparseVectors {
@@ -27,28 +25,21 @@ class DotProductOfTwoSparseVectors {
 
     DotProductOfTwoSparseVectors(int[] nums) {
         map = new HashMap<>();
-        for (int i = 0; i < nums.length; i++)
-            if (nums[i] != 0)
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] != 0) {
                 map.put(i, nums[i]);
+            }
+        }
     }
 
-    // Return the dotProduct of two sparse vectors
     public int dotProduct(DotProductOfTwoSparseVectors vec) {
-
         int product = 0;
-
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (vec.containsIndex(entry.getKey()))
-                product += entry.getValue() * vec.getValue(entry.getKey());
+        for(Map.Entry<Integer, Integer> entry: map.entrySet()) {
+            if(vec.map.containsKey(entry.getKey())) {
+                product += entry.getValue() * vec.map.get(entry.getKey());
+            }
         }
 
         return product;
-    }
-
-    public boolean containsIndex(int key) {
-        return this.map.containsKey(key);
-    }
-    public int getValue(int key) {
-        return map.get(key);
     }
 }
