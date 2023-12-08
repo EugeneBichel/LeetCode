@@ -63,11 +63,9 @@ public class ConstructBinaryTreeFromString {
         }
 
         return stack.isEmpty() ? root : stack.pop();
-
     }
 
     private Pair<Integer, Integer> getNumber(String s, int index) {
-
         boolean isNegative = false;
 
         // A negative number
@@ -82,6 +80,6 @@ public class ConstructBinaryTreeFromString {
             index++;
         }
 
-        return new Pair<Integer, Integer>(isNegative ? -number : number, index);
+        return new Pair<>(isNegative ? -number : number, index);
     }
 }
