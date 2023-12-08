@@ -21,10 +21,7 @@ Input: s = ""
 Output: 0
  */
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class LongestSubstringWithoutRepeatingCharacters {
     private static int betterSol(String s) {
