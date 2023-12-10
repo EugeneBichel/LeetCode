@@ -1,6 +1,6 @@
 package com.bichel.algorithms.topinterview;
 
-import com.bichel.algorithms.datastructure.Pair;
+import com.bichel.datastructure.Pair;
 
 import java.util.Arrays;
 import java.util.Collections;

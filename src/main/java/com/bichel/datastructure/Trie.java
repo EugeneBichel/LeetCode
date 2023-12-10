@@ -1,4 +1,4 @@
-package com.bichel.algorithms.datastructure;
+package com.bichel.datastructure;
 
 import java.util.HashMap;
 import java.util.Map;
